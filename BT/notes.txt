@@ -1,0 +1,7 @@
+
+Important features of a node:
+-type
+-label (for action and decision nodes)
+-children (for priority and sequence nodes)
+-parent
+-id

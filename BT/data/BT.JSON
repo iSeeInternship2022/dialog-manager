@@ -1,0 +1,522 @@
+{
+	"root" : 0,
+
+	"nodes" : [
+		{
+			"id" : 0,
+			"type" : "sequence",
+			"label" : "none",
+			"children" : [1, 2]
+		},
+
+		{
+			"id" : 1,
+			"type" : "action",
+			"label" : "greet",
+			"children" : "none"
+		},
+
+		{
+			"id" : 2,
+			"type" : "priority",
+			"label" : "none",
+			"children" : [3, 25]
+		},
+
+		{
+			"id" : 3,
+			"type" : "sequence",
+			"label" : "none",
+			"children" : [4, 5, 6, 9, 10]
+		},
+
+		{
+			"id" : 4,
+			"type" : "decision",
+			"label" : "user_satisfied",
+			"children" : "none"
+		},
+
+		{
+			"id" : 5,
+			"type" : "action",
+			"label" : "ask_to_take_survey",
+			"children" : "none"
+		},
+
+		{
+			"id" : 6,
+			"type" : "priority",
+			"label" : "none",
+			"children" : [7, 8]
+		},
+
+		{
+			"id" : 7,
+			"type" : "decision",
+			"label" : "user_answered",
+			"children" : "none"
+		},
+
+		{
+			"id" : 8,
+			"type" : "action",
+			"label" : "wait_for_answer",
+			"children" : "none"
+		},
+
+		{
+			"id" : 9,
+			"type" : "action",
+			"label" : "detect_intent",
+			"children" : "none"
+		},	
+		
+		{
+			"id" : 10,
+			"type" : "priority",
+			"label" : "none",
+			"children" : [11, 22]
+		},
+
+		{
+			"id" : 11,
+			"type" : "sequence",
+			"label" : "none",
+			"children" : [12, 13, 21]
+		},
+		
+		{
+			"id" : 12,
+			"type" : "decision",
+			"label" : "intent_is_approval",
+			"children" : "none"
+		},
+		{
+			"id" : 13,
+			"type" : "priority",
+			"label" : "none",
+			"children" : [14, 15]
+		},
+
+		{
+			"id" : 14,
+			"type" : "decision",
+			"label" : "survey_completed",
+			"children" : "none"
+		},
+
+		{
+			"id" : 15,
+			"type" : "sequence",
+			"label" : "none",
+			"children" : [16, 17, 20]
+		},
+
+		{
+			"id" : 16,
+			"type" : "action",
+			"label" : "state_question",
+			"children" : "none"
+		},
+
+		{
+			"id" : 17,
+			"type" : "priority",
+			"label" : "none",
+			"children" : [18, 19]
+		},
+
+		{
+			"id" : 18,
+			"type" : "decision",
+			"label" : "user_answered",
+			"children" : "none"
+		},
+
+		{
+			"id" : 19,
+			"type" : "action",
+			"label" : "wait_for_answer",
+			"children" : "none"
+		},
+
+		{
+			"id" : 20,
+			"type" : "action",
+			"label" : "next_question",
+			"children" : "none"
+		},
+
+		{
+			"id" : 21,
+			"type" : "action",
+			"label" : "goodbye",
+			"children" : "none"
+		},
+
+		{
+			"id" : 22,
+			"type" : "sequence",
+			"label" : "none",
+			"children" : [23, 24]
+		},
+
+		{
+			"id" : 23,
+			"type" : "decision",
+			"label" : "intent_is_refusal",
+			"children" : "none"
+		},
+
+		{
+			"id" : 24,
+			"type" : "action",
+			"label" : "goodbye",
+			"children" : "none"
+		},
+
+		{
+			"id" : 25,
+			"type" : "sequence",
+			"label" : "none",
+			"children" : [26, 29, 30]
+		},
+
+		{
+			"id" : 26,
+			"type" : "priority",
+			"label" : "none",
+			"children" : [27, 28]
+		},
+
+		{
+			"id" : 27,
+			"type" : "decision",
+			"label" : "user_answered",
+			"children" : "none"
+		},
+
+		{
+			"id" : 28,
+			"type" : "action",
+			"label" : "wait_for_answer",
+			"children" : "none"
+		},
+
+		{
+			"id" : 29,
+			"type" : "action",
+			"label" : "detect_intent",
+			"children" : "none"
+		},
+
+		{
+			"id" : 30,
+			"type" : "priority",
+			"label" : "none",
+			"children" : [31, 36, 45]
+		},
+
+		{
+			"id" : 31,
+			"type" : "sequence",
+			"label" : "none",
+			"children" : [32, 35]
+		},
+
+		{
+			"id" : 32,
+			"type" : "priority",
+			"label" : "none",
+			"children" : [33, 34]
+		},
+
+		{
+			"id" : 33,
+			"type" : "decision",
+			"label" : "intent_is_satisfaction",
+			"children" : "none"
+		},
+
+		{
+			"id" : 34,
+			"type" : "decision",
+			"label" : "intent_is_wishing_to_end",
+			"children" : "none"
+		},
+
+		{
+			"id" : 35,
+			"type" : "action",
+			"label" : "set_user_as_satisfied",
+			"children" : "none"
+		},
+
+		{
+			"id" : 36,
+			"type" : "sequence",
+			"label" : "none",
+			"children" : [37, 38, 39]
+		},
+
+		{
+			"id" : 37,
+			"type" : "decision",
+			"label" : "intent_is_question",
+			"children" : "none"
+		},
+
+		{
+			"id" : 38,
+			"type" : "action",
+			"label" : "explain",
+			"children" : "none"
+		},
+
+		{
+			"id" : 39,
+			"type" : "action",
+			"label" : "reset_users_answer",
+			"children" : "none"
+		},
+
+		{
+			"id" : 40,
+			"type" : "sequence",
+			"label" : "none",
+			"children" : [41, 42, 43, 44]
+		},
+
+		{
+			"id" : 41,
+			"type" : "decision",
+			"label" : "intent_is_affirmation",
+			"children" : "none"
+		},
+
+		{
+			"id" : 42,
+			"type" : "action",
+			"label" : "affirm",
+			"children" : "none"
+		},
+
+		{
+			"id" : 43,
+			"type" : "action",
+			"label" : "reset_users_answer",
+			"children" : "none"
+		},
+
+		{
+			"id" : 44,
+			"type" : "action",
+			"label" : "reset_users_intent",
+			"children" : "none"
+		},
+
+		{
+			"id" : 45,
+			"type" : "sequence",
+			"label" : "none",
+			"children" : [46, 47, 48, 51]
+		},
+
+		{
+			"id" : 46,
+			"type" : "decision",
+			"label" : "intent_is_argument",
+			"children" : "none"
+		},
+
+		{
+			"id" : 47,
+			"type" : "action",
+			"label" : "ask_more_details",
+			"children" : "none"
+		},
+
+		{
+			"id" : 48,
+			"type" : "priority",
+			"label" : "none",
+			"children" : [49, 50]
+		},
+
+		{
+			"id" : 49,
+			"type" : "decision",
+			"label" : "user_answered",
+			"children" : "none"
+		},
+
+		{
+			"id" : 50,
+			"type" : "action",
+			"label" : "wait_for_answer",
+			"children" : "none"
+		},
+
+		{
+			"id" : 51,
+			"type" : "action",
+			"label" : "detect_intent",
+			"children" : "none"
+		},
+
+		{
+			"id" : 52,
+			"type" : "priority",
+			"label" : "none",
+			"children" : [53, 68]
+		},
+
+		{
+			"id" : 53,
+			"type" : "sequence",
+			"label" : "none",
+			"children" : [54, 55, 56, 59]
+		},
+
+		{
+			"id" : 54,
+			"type" : "decision",
+			"label" : "intent_is_details",
+			"children" : "none"
+		},
+
+		{
+			"id" : 55,
+			"type" : "action",
+			"label" : "ask_if_clarification_wanted",
+			"children" : "none"
+		},
+
+		{
+			"id" : 56,
+			"type" : "priority",
+			"label" : "none",
+			"children" : [57, 58]
+		},
+
+		{
+			"id" : 57,
+			"type" : "decision",
+			"label" : "user_answered",
+			"children" : "none"
+		},
+
+		{
+			"id" : 58,
+			"type" : "action",
+			"label" : "wait_for_answer",
+			"children" : "none"
+		},
+
+		{
+			"id" : 59,
+			"type" : "action",
+			"label" : "detect_intent",
+			"children" : "none"
+		},
+
+		{
+			"id" : 60,
+			"type" : "priority",
+			"label" : "none",
+			"children" : [61, 65]
+		},
+
+		{
+			"id" : 61,
+			"type" : "sequence",
+			"label" : "none",
+			"children" : [62, 63, 64]
+		},
+
+		{
+			"id" : 62,
+			"type" : "decision",
+			"label" : "intent_is_approval",
+			"children" : "none"
+		},
+
+		{
+			"id" : 63,
+			"type" : "action",
+			"label" : "explain",
+			"children" : "none"
+		},
+
+		{
+			"id" : 64,
+			"type" : "action",
+			"label" : "reset_users_answer",
+			"children" : "none"
+		},
+
+		{
+			"id" : 65,
+			"type" : "sequence",
+			"label" : "none",
+			"children" : [66, 67]
+		},
+
+		{
+			"id" : 66,
+			"type" : "decision",
+			"label" : "intent_is_refusal",
+			"children" : "none"
+		},
+
+		{
+			"id" : 67,
+			"type" : "action",
+			"label" : "set_user_as_satisfied",
+			"children" : "none"
+		},
+
+		{
+			"id" : 68,
+			"type" : "sequence",
+			"label" : "none",
+			"children" : [69, 70]
+		},
+
+		{
+			"id" : 69,
+			"type" : "decision",
+			"label" : "intent_is_refusal",
+			"children" : "none"
+		},
+
+		{
+			"id" : 70,
+			"type" : "action",
+			"label" : "set_user_as_satisfied",
+			"children" : "none"
+		}
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	]
+}
