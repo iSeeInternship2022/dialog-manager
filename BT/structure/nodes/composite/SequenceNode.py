@@ -1,8 +1,8 @@
-import structure.nodes.Node as Node
+from structure.nodes.Node import Node
 
 
 
-class SequenceNode(Node.Node) :
+class SequenceNode(Node) :
 	def __init__(self, id) -> None:
 		super().__init__(id)
 		

@@ -1,8 +1,8 @@
-import structure.nodes.Node as Node
+from structure.nodes.Node import Node
 
 
 
-class PriorityNode(Node.Node) :
+class RepTillSuccNode(Node) :
 	def __init__(self, id) -> None:
 		super().__init__(id)
 
@@ -15,20 +15,15 @@ class PriorityNode(Node.Node) :
 		#if we come from a child node
 		if (predecessor.Node in self.children):
 
-			#if this child is true, we can exit this node returning true
+			#if this child is true, we re-execute the child
 			if(predecessor.Node.status == 'True'):
-				self.status = 'True'
+				self.status = 'Running'
 				self.parent.goToNext(self)
 
-			#else if this child is false and the last one, we exit the node returning false
-			elif(self.children.index(predecessor.Node.id) == self.children.count()-1):
-					self.status = 'False'
-					self.parent.goToNext(self)
-
-			#else if this child is false but not the last, we check its next sibling
-			else:
-				self.children[self.children.index(predecessor.Node.id)+1].goToNext(self)
-				self.status = 'Running'
+			#else if this child is false we exit
+			elif(self.children.count() >= 1):
+					self.status = 'True'
+					self.children[0].goToNext(self)
 		
 		else:
 

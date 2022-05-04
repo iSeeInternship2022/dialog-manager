@@ -16,5 +16,9 @@ class Node :
 		pass
 
 	@abstractmethod
+	def tick(self, predecessor : "Node"):
+		pass
+
+	@abstractmethod
 	def toString(self):
 		pass

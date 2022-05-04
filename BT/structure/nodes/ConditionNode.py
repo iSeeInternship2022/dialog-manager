@@ -1,5 +1,6 @@
-import structure.nodes.Node as Node
-class DecisionNode(Node.Node) :
+from structure.nodes.Node import Node
+
+class ConditioNode(Node) :
 	def __init__(self, id, label) -> None:
 		super().__init__(id)
 		self.predicate = label
