@@ -23,5 +23,6 @@ class ActionNode(Node.Node) :
 
 		else:
 			self.thread = threading.Thread(target=do_action, args=(self.action,))
+			self.thread.start()
 			self.status = 'Running'
 			BT.getBT().tree.root.Node.tick(self)

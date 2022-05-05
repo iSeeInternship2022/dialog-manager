@@ -44,9 +44,9 @@ class BT:
 		#t.start()
 
 
-	def do(action):
+	# def do(action):
 
-		print(action)
+	# 	print(action)
 
 	def send(self, message):
 		self.interface.send_to_user(message)
