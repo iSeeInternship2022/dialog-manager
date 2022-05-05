@@ -8,5 +8,5 @@ class ConditioNode(Node) :
 	def toString(self):
 		return "Node : " + str(self.id) + " |  Type : desicion |  Label : " + self.predicate
 
-	def goToNext(self, predecessor : "Node"):
+	def tick(self, predecessor : "Node"):
 		pass

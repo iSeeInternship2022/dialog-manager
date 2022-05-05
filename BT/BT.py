@@ -25,8 +25,10 @@ class BT:
 		self.tree = tg.generateTree("data\BT-editor.JSON")
 		self.tree.print_tree()
 		self.user_satisfied = False	
-		self.currentState = self.tree.root
+		#self.currentState = self.tree.root
 		self.interface = UiConsole()
+		self.last_user_answer = ''
+		self.user_intent = ''
 
 	def run(self):
 		self.interface.send_to_user("Welcome!")
@@ -46,6 +48,11 @@ class BT:
 
 		print(action)
 
+	def send(self, message):
+		self.interface.send_to_user(message)
+	
+	def receive(self):
+		self.last_user_answer = self.interface.get_response
 
 
 
