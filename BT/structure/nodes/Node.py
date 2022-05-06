@@ -12,8 +12,9 @@ class Node :
 
 
 	@abstractmethod
-	def goToNext(self, predecessor : "Node"):
+	def tick(self, predecessor : "Node"):
 		pass
+
 
 	@abstractmethod
 	def toString(self):

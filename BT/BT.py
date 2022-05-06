@@ -1,7 +1,6 @@
 import threading
 
 import data.TreeGenerator as tg
-from network.BT_Network import BT_Network as Network
 from ui.UiConsole import UiConsole
 
 
@@ -22,33 +21,28 @@ class BT:
 		else:
 			BT.__instance = self
 		
-		self.tree = tg.generateTree("data\BT-editor.JSON")
+		self.tree = tg.generateTree("BT\data\BT-editor.JSON")
 		self.tree.print_tree()
 		self.user_satisfied = False	
-		self.currentState = self.tree.root
+		#self.currentState = self.tree.root
 		self.interface = UiConsole()
+		self.last_user_answer = ''
+		self.user_intent = ''
+		self.survey_is_completed = False
 
 	def run(self):
 		self.interface.send_to_user("Welcome!")
-
-		#one thread will do the needed action
-		#t = threading.Thread(target=self.do, args=(self.tree.getCurrentAction,))
-		#t.start()
-
-		#one other will traverse the tree to check that nothing has changed and what is the current action to do
-		# creating thread
-		#t = threading.Thread(target=do, args=("greet",))
-		# starting thread 2
-		#t.start()
+		self.tree.root.tick(self.tree.root)
 
 
-	def do(action):
 
-		print(action)
-
+	def send(self, message):
+		self.interface.send_to_user(message)
+	
+	def receive(self):
+		self.last_user_answer = self.interface.get_response
 
 
 
 #WIP main
 
-BT().getBT().run()

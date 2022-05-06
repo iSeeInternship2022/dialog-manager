@@ -1,9 +1,9 @@
 from regex import R
 import structure.nodes.NodeType as nt
-import structure.nodes.ActionNode as Action
-import structure.nodes.DecisionNode as Decision
-import structure.nodes.PriorityNode as Priority
-import structure.nodes.SequenceNode as Sequence
+import structure.nodes.action.ActionNode as Action
+import structure.nodes.ConditionNode as Decision
+import structure.nodes.composite.PriorityNode as Priority
+import structure.nodes.composite.SequenceNode as Sequence
 import structure.nodes.Node as Node
 
 
@@ -13,7 +13,7 @@ def makeNode(type, id, label) :
 	if type == "Succeeder":
 		res = Action.ActionNode(id, label)
 	elif type == "Evaluation Method":
-		res = Decision.DecisionNode(id, label)
+		res = Decision.ConditioNode(id, label)
 	elif type == "Priority":
 		res = Priority.PriorityNode(id)
 	elif type == "Sequence":
@@ -26,7 +26,7 @@ def makeNode(type, id, label) :
 
 	# switcher = {
     # 	nt.NodeType.action: Action.ActionNode.__init__(id, label),
-    # 	nt.NodeType.decision: Decision.DecisionNode.__init__(id, label),
+    # 	nt.NodeType.decision: Decision.ConditionNode.__init__(id, label),
     # 	nt.NodeType.priority: Priority.PriorityNode.__init__(id),
 	# 	nt.NodeType.sequence: Sequence.SequenceNode.__init__(id),
     # }

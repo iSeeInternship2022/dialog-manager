@@ -1,8 +1,14 @@
 from enum import Enum
 
-#DEPRECIATED
 class NodeType(Enum):
-	action = 1
-	decision = 2
-	priority = 3
-	sequence = 4
+	ACTION = 1
+	CONDITION = 2
+	PRIORITY = 3
+	SEQUENCE = 4
+	REPTILLFAIL = 5
+	REPTILLSUCC = 6
+	REPX = 7
+	INVERTER = 8
+	LIMITXACTIVATION = 9
+	SUCCEEEDER = 10
+	FAILER = 11
