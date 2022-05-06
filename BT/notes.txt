@@ -5,3 +5,9 @@ Important features of a node:
 -children (for priority and sequence nodes)
 -parent
 -id
+
+
+6/5
+Faire input/output dans un nouveau terminal pour séparer du callback trace
+Pourquoi il greet tout le temps ?
+J'ai peut etre oublié d'implementer certaines actions

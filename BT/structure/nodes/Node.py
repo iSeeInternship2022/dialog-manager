@@ -4,7 +4,7 @@ from ast import List
 
 class Node :
 	def __init__(self, id) -> None:
-		self.children = [Node]
+		self.children = []
 		self.parent = None
 		self.id = id
 		self.status = False

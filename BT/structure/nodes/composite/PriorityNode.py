@@ -7,7 +7,7 @@ class PriorityNode(Node) :
 		super().__init__(id)
 
 	def toString(self):
-		kids =" ".join(str(elem) for elem in self.children)
+		kids =" " + (str(len(self.children)))
 		return "Node : " + str(self.id) + " |  Type : priority" + " | children : " + kids
 
 	def tick(self, predecessor : "Node"):
@@ -36,7 +36,7 @@ class PriorityNode(Node) :
 			#we check the first child (if it has one)
 			if(len(self.children)>0):
 				self.children[0].tick(self)
-				self.status = 'Running'
+				self.status = State.RUNNING
 
 			else:
 				self.parent.tick(self)

@@ -8,7 +8,7 @@ class SequenceNode(Node) :
 		super().__init__(id)
 		
 	def toString(self):
-		kids =" ".join(str(elem) for elem in self.children)
+		kids =" "+ (str(len(self.children)))
 		return ("Node : " + str(self.id) + " |  Type : sequence" + " | children : " + kids)
 
 	def tick(self, predecessor : "Node"):
@@ -16,7 +16,7 @@ class SequenceNode(Node) :
 
 		#if we come from a child node
 
-		if (predecessor in self.children):
+		if (predecessor.id in self.children):
 
 			#if the child is true but has unchecked siblings
 			if(predecessor.status == State.SUCCESS and self.children.index(predecessor.id) < self.children.count()-1):
@@ -24,7 +24,7 @@ class SequenceNode(Node) :
 				self.children[self.children.index(predecessor.id)+1].tick(self)
 				
 
-			#if this child is true, and it's the last child
+			#if this child is true, and its the last child
 			elif(predecessor.status == State.SUCCESS):
 				self.status = State.SUCCESS
 				self.parent.tick(self)
@@ -40,6 +40,7 @@ class SequenceNode(Node) :
 			#we check the first child (if it has one)
 			if(len(self.children)>0):
 				self.status = State.RUNNING
+				print(self.children[0].toString())
 				self.children[0].tick(self)
 				
 

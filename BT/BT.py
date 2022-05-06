@@ -1,3 +1,4 @@
+from asyncore import loop
 import threading
 
 import data.TreeGenerator as tg
@@ -32,7 +33,9 @@ class BT:
 
 	def run(self):
 		self.interface.send_to_user("Welcome!")
-		self.tree.root.tick(self.tree.root)
+		while(True):
+			self.tree.root.tick(self.tree.root)
+		
 
 
 
@@ -42,6 +45,8 @@ class BT:
 	def receive(self):
 		self.last_user_answer = self.interface.get_response
 
+	def restart(self):
+		pass
 
 
 #WIP main

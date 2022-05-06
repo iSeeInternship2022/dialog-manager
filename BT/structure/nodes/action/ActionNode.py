@@ -20,7 +20,7 @@ class ActionNode(Node.Node) :
 
 		if(self.status == State.RUNNING):
 			if(self.thread.is_alive()):
-				BT.getBT().tree.root.tick(self)
+				BT.BT.getBT().restart()
 			else:
 				self.status = State.SUCCESS
 				self.parent.tick(self)
@@ -29,4 +29,4 @@ class ActionNode(Node.Node) :
 			self.thread = threading.Thread(target=do_action, args=(self.action,))
 			self.thread.start()
 			self.status = State.RUNNING
-			BT.getBT().tree.root.tick(self)
+			BT.BT.getBT().restart()
