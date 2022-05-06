@@ -19,8 +19,9 @@ class SequenceNode(Node) :
 
 				#if the child is true but has unchecked siblings
 				if(predecessor.status == 'True' and self.children.index(predecessor.id) < self.children.count()-1):
-					self.children[self.children.index(predecessor.id)+1].tick(self)
 					self.status = 'Running'
+					self.children[self.children.index(predecessor.id)+1].tick(self)
+					
 
 				#if this child is true, and it's the last child
 				elif(predecessor.status == 'True'):
@@ -37,10 +38,12 @@ class SequenceNode(Node) :
 
 			#we check the first child (if it has one)
 			if(len(self.children)>0):
-				self.children[0].tick(self)
 				self.status = 'Running'
+				self.children[0].tick(self)
+				
 
 			else:
-				self.parent.tick(self)
 				self.status = 'False'
+				self.parent.tick(self)
+				
 

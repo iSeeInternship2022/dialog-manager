@@ -4,7 +4,7 @@ import BT
 
 from structure.reactions.Predicates import check_predicate
 
-class ConditioNode(Node) :
+class ConditionNode(Node) :
 	def __init__(self, id, label) -> None:
 		super().__init__(id)
 		self.predicate = label

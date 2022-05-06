@@ -13,7 +13,7 @@ def makeNode(type, id, label) :
 	if type == "Succeeder":
 		res = Action.ActionNode(id, label)
 	elif type == "Evaluation Method":
-		res = Decision.ConditioNode(id, label)
+		res = Decision.ConditionNode(id, label)
 	elif type == "Priority":
 		res = Priority.PriorityNode(id)
 	elif type == "Sequence":

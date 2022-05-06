@@ -33,6 +33,8 @@ def generateTree(path) :
 			for i in parser.BT_nodes[n]["children"]:
 				nodes.get(n).children.append(nodes.get(i))
 	
+
+	#make the root a RootNode and attach the first node
 	root_id = parser.BT_root
 	root = RootNode('0')
 	root.children[0] = nodes.get(root_id)
