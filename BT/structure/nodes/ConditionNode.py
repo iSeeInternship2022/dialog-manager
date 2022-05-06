@@ -1,7 +1,7 @@
 from structure.nodes.Node import Node
 import threading
 import BT
-
+from structure.nodes.StateType import StateType as State
 from structure.reactions.Predicates import check_predicate
 
 class ConditionNode(Node) :
@@ -18,8 +18,8 @@ class ConditionNode(Node) :
 		bool = check_predicate(self.predicate)
 
 		if(bool):
-				self.status = 'Success'
+				self.status = State.SUCCESS
 		else:
-			self.status = 'Failure'
+			self.status = State.FAILURE
 
 		self.parent.tick(self)

@@ -1,5 +1,5 @@
 from structure.nodes.Node import Node
-
+from structure.nodes.StateType import StateType as State
 
 
 class RepTillSuccNode(Node) :
@@ -17,13 +17,13 @@ class RepTillSuccNode(Node) :
 		if (predecessor.Node in self.children):
 
 			#if this child is true, we re-execute the child
-			if(predecessor.Node.status == 'True'):
-				self.status = 'Running'
+			if(predecessor.Node.status == State.SUCCESS):
+				self.status = State.RUNNING
 				self.parent.tick(self)
 
 			#else if this child is false we exit
 			elif(len(self.children) >= 1):
-					self.status = 'True'
+					self.status = State.SUCCESS
 					self.children[0].tick(self)
 		
 		else:
@@ -31,10 +31,10 @@ class RepTillSuccNode(Node) :
 			#we check the first child (if it has one)
 			if(len(self.children)>0):
 				self.children[0].tick(self)
-				self.statut = 'Running'
+				self.statut = State.RUNNING
 
 			else:
 				self.parent.tick(self)
-				self.statut = 'False'
+				self.statut = State.FAILURE
 
 

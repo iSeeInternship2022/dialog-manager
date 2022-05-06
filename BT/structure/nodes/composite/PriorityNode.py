@@ -1,5 +1,5 @@
 from structure.nodes.Node import Node
-
+from structure.nodes.StateType import StateType as State
 
 
 class PriorityNode(Node) :
@@ -17,19 +17,19 @@ class PriorityNode(Node) :
 		if (predecessor in self.children):
 
 			#if this child is true, we can exit this node returning true
-			if(predecessor.status == 'True'):
-				self.status = 'True'
+			if(predecessor.status == State.SUCCESS):
+				self.status = State.SUCCESS
 				self.parent.tick(self)
 
 			#else if this child is false and the last one, we exit the node returning false
 			elif(self.children.index(predecessor.id) == len(self.children)-1):
-					self.status = 'False'
+					self.status = State.FAILURE
 					self.parent.tick(self)
 
 			#else if this child is false but not the last, we check its next sibling
 			else:
 				self.children[self.children.index(predecessor.id)+1].tick(self)
-				self.status = 'Running'
+				self.status = State.RUNNING
 		
 		else:
 
@@ -40,6 +40,6 @@ class PriorityNode(Node) :
 
 			else:
 				self.parent.tick(self)
-				self.status = 'False'
+				self.status = State.FAILURE
 
 
