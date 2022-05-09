@@ -10,7 +10,7 @@ class ConditionNode(Node) :
 		self.predicate = label
 
 	def toString(self):
-		return "Node : " + str(self.id) + " |  Type : desicion |  Label : " + self.predicate
+		return ( "DECISION "+str(self.status) + " " + str(self.id) + " " + self.predicate)
 
 	def tick(self, predecessor : "Node"):
 		BT.BT.getBT().logger.log(self.toString())

@@ -7,7 +7,7 @@ class Succeder(Node.Node) :
 		super().__init__(id)
 
 	def toString(self):
-		return ("Node : " + str(self.id) + " |  Type : succeder")
+		return ( "SUCCEDER "+str(self.status) + " " + str(self.id))
 
 	def tick(self, predecessor : "Node"):
 		BT.BT.getBT().logger.log(self.toString())

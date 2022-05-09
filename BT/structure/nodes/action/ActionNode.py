@@ -12,7 +12,7 @@ class ActionNode(Node.Node) :
 		self.thread = None
 
 	def toString(self):
-		return ("Node : " + str(self.id) + " |  Type : action |  Label : " + self.action)
+		return ( "ACTION "+str(self.status) + " " + str(self.id) + " " + self.action)
 
 	def tick(self, predecessor : "Node"):
 
@@ -27,7 +27,8 @@ class ActionNode(Node.Node) :
 				self.parent.tick(self)
 
 		else:
+			self.status = State.RUNNING
 			self.thread = threading.Thread(target=do_action, args=(self.action,))
 			self.thread.start()
-			self.status = State.RUNNING
+			
 			BT.BT.getBT().restart()

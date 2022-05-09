@@ -32,6 +32,7 @@ class BT:
 		self.last_user_answer = ''
 		self.user_intent = ''
 		self.survey_is_completed = False
+		self.user_greeted = False
 
 	def run(self):
 		self.interface.send_to_user("Welcome!")

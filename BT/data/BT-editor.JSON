@@ -55,7 +55,7 @@
         "y": 180
       },
       "children": [
-        "5b5048d0-425f-47dd-97a3-6042fd0c923f",
+        "aeace93e-91d4-40b5-9779-c9bae029b1c8",
         "83682d53-feda-4da1-9b8e-fc10006c51ad",
         "ebc2cbd3-196b-4833-be87-b7115a9f70e7",
         "b46f8de3-f841-4182-853c-487a656e7f6b"
@@ -257,7 +257,7 @@
       "children": [
         "68e51b43-eda8-4fb3-ad03-d97164551ad3",
         "957c80ca-2734-4b29-819e-b14fe93e2892",
-        "68cdd328-d186-4e10-8bfe-3ac1363649d6",
+        "9a8403bb-2f28-4b35-85d8-34ad024e288f",
         "4a5f4fa5-c40c-4170-baff-e94b4e4db755",
         "8db76e06-6ad7-4678-8eed-99e27c38bce2",
         "eb688b03-7053-4fd8-8cfd-15e00acf0d14"
@@ -469,7 +469,6 @@
       "children": [
         "e6e4d01a-fe3c-4fd1-b2ec-821ce049a236",
         "b4c9092e-1d50-4de2-851f-2fe5b2154798",
-        "f22f9d5e-102c-457e-855c-fc9acd83eb07",
         "94146c4e-9600-4503-a59a-2027e3c23dc0",
         "d21bb1f8-8283-4f60-ae1a-02cc339b4344",
         "72ee8447-636b-46ca-8425-e0434635c76b"
@@ -478,11 +477,11 @@
     "7c98d6b6-efd7-4115-8cdb-21d7c7c8c5ce": {
       "id": "7c98d6b6-efd7-4115-8cdb-21d7c7c8c5ce",
       "name": "Evaluation Method",
-      "title": "user_not_answered",
+      "title": "user_answered",
       "description": "asked a question or disproved",
       "properties": {},
       "display": {
-        "x": -1512,
+        "x": -1320,
         "y": 576
       }
     },
@@ -493,7 +492,7 @@
       "description": "",
       "properties": {},
       "display": {
-        "x": -1320,
+        "x": -1524,
         "y": 576
       }
     },
@@ -504,8 +503,8 @@
       "description": "",
       "properties": {},
       "display": {
-        "x": -480,
-        "y": -132
+        "x": -468,
+        "y": -24
       }
     },
     "d1bdc108-ca9b-4dee-9c49-fa2a2f7cc512": {
@@ -519,7 +518,7 @@
         "y": -300
       },
       "children": [
-        "43b3be20-cc9e-42fa-b6e0-7b394c4c56a2",
+        "2d79263e-826b-4901-b203-9e83c98dc803",
         "d2054a42-43b1-4eb7-94dd-dc62cc2f55da"
       ]
     },
@@ -684,7 +683,7 @@
       },
       "children": [
         "c5e269ba-9186-4ad5-a3c7-5ce28732237a",
-        "64fa781d-768e-4d42-8704-874d54e63e41",
+        "e3f97524-381b-44d4-945f-deaa79c52134",
         "5a5d1a97-97b4-4aa7-9662-907f915c53d7"
       ]
     },
@@ -1009,182 +1008,208 @@
         "y": 468
       },
       "children": [
-        "7c98d6b6-efd7-4115-8cdb-21d7c7c8c5ce",
-        "da83b5df-64be-4cb9-8b49-71f2f1539040"
+        "da83b5df-64be-4cb9-8b49-71f2f1539040",
+        "7c98d6b6-efd7-4115-8cdb-21d7c7c8c5ce"
       ]
     },
-    "5b5048d0-425f-47dd-97a3-6042fd0c923f": {
-      "id": "5b5048d0-425f-47dd-97a3-6042fd0c923f",
-      "name": "RepeatUntilFailure",
-      "title": "Repeat Until Failure",
+    "aeace93e-91d4-40b5-9779-c9bae029b1c8": {
+      "id": "aeace93e-91d4-40b5-9779-c9bae029b1c8",
+      "name": "RepeatUntilSuccess",
+      "title": "Repeat Until Success",
       "description": "",
       "properties": {
         "maxLoop": -1
       },
       "display": {
         "x": -1416,
-        "y": 360
+        "y": 372
       },
       "child": "1ff60e72-c7b6-40b6-9ea0-fc981175b312"
     },
-    "65f0ef0e-4182-43d2-959c-98f005ab81c2": {
-      "id": "65f0ef0e-4182-43d2-959c-98f005ab81c2",
+    "62492698-495c-4109-a447-221bf14725d0": {
+      "id": "62492698-495c-4109-a447-221bf14725d0",
       "name": "Evaluation Method",
-      "title": "user_not_answered",
-      "description": "asked a question or disproved",
+      "title": "user_greeted",
+      "description": "",
       "properties": {},
       "display": {
-        "x": 588,
-        "y": 1092
+        "x": -672,
+        "y": -24
       }
     },
-    "45f75e06-c980-4087-b549-3d1ce96a8e28": {
-      "id": "45f75e06-c980-4087-b549-3d1ce96a8e28",
-      "name": "Succeeder",
-      "title": "check_for_answer",
+    "2d79263e-826b-4901-b203-9e83c98dc803": {
+      "id": "2d79263e-826b-4901-b203-9e83c98dc803",
+      "name": "Priority",
+      "title": "Priority",
       "description": "",
+      "properties": {},
+      "display": {
+        "x": -552,
+        "y": -132
+      },
+      "children": [
+        "62492698-495c-4109-a447-221bf14725d0",
+        "43b3be20-cc9e-42fa-b6e0-7b394c4c56a2"
+      ]
+    },
+    "71c5fcc8-7623-45b3-baec-465c8acc4c0b": {
+      "id": "71c5fcc8-7623-45b3-baec-465c8acc4c0b",
+      "name": "Evaluation Method",
+      "title": "user_answered",
+      "description": "asked a question or disproved",
       "properties": {},
       "display": {
         "x": 780,
-        "y": 1092
+        "y": 1044
       }
     },
-    "4d4bb691-504f-440f-8d76-1e2d2061c223": {
-      "id": "4d4bb691-504f-440f-8d76-1e2d2061c223",
-      "name": "Sequence",
-      "title": "Sequence",
-      "description": "",
-      "properties": {},
-      "display": {
-        "x": 684,
-        "y": 984
-      },
-      "children": [
-        "65f0ef0e-4182-43d2-959c-98f005ab81c2",
-        "45f75e06-c980-4087-b549-3d1ce96a8e28"
-      ]
-    },
-    "f22f9d5e-102c-457e-855c-fc9acd83eb07": {
-      "id": "f22f9d5e-102c-457e-855c-fc9acd83eb07",
-      "name": "RepeatUntilFailure",
-      "title": "Repeat Until Failure",
-      "description": "",
-      "properties": {
-        "maxLoop": -1
-      },
-      "display": {
-        "x": 684,
-        "y": 876
-      },
-      "child": "4d4bb691-504f-440f-8d76-1e2d2061c223"
-    },
-    "356f425d-4d2e-4a43-83ca-df53181353eb": {
-      "id": "356f425d-4d2e-4a43-83ca-df53181353eb",
-      "name": "Evaluation Method",
-      "title": "user_not_answered",
-      "description": "asked a question or disproved",
-      "properties": {},
-      "display": {
-        "x": 660,
-        "y": 1644
-      }
-    },
-    "7124f318-1b72-43fc-8cd0-9852cac9411f": {
-      "id": "7124f318-1b72-43fc-8cd0-9852cac9411f",
+    "11b139d5-bd2f-4632-8f4d-6c1ebc5aa636": {
+      "id": "11b139d5-bd2f-4632-8f4d-6c1ebc5aa636",
       "name": "Succeeder",
       "title": "check_for_answer",
       "description": "",
       "properties": {},
       "display": {
-        "x": 852,
-        "y": 1644
+        "x": 576,
+        "y": 1044
       }
     },
-    "cc704ed9-479b-4f6e-820d-efaaf1d7137b": {
-      "id": "cc704ed9-479b-4f6e-820d-efaaf1d7137b",
+    "aa625bff-40d0-4044-9ef0-078d7b04565d": {
+      "id": "aa625bff-40d0-4044-9ef0-078d7b04565d",
       "name": "Sequence",
       "title": "Sequence",
       "description": "",
       "properties": {},
       "display": {
-        "x": 756,
-        "y": 1536
+        "x": 684,
+        "y": 936
       },
       "children": [
-        "356f425d-4d2e-4a43-83ca-df53181353eb",
-        "7124f318-1b72-43fc-8cd0-9852cac9411f"
+        "11b139d5-bd2f-4632-8f4d-6c1ebc5aa636",
+        "71c5fcc8-7623-45b3-baec-465c8acc4c0b"
       ]
     },
-    "68cdd328-d186-4e10-8bfe-3ac1363649d6": {
-      "id": "68cdd328-d186-4e10-8bfe-3ac1363649d6",
-      "name": "RepeatUntilFailure",
-      "title": "Repeat Until Failure",
+    "8b948dad-ef2c-45b0-8480-2b9eb642a25b": {
+      "id": "8b948dad-ef2c-45b0-8480-2b9eb642a25b",
+      "name": "RepeatUntilSuccess",
+      "title": "Repeat Until Success",
       "description": "",
       "properties": {
         "maxLoop": -1
       },
       "display": {
-        "x": 756,
+        "x": 684,
+        "y": 840
+      },
+      "child": "aa625bff-40d0-4044-9ef0-078d7b04565d"
+    },
+    "393942b0-4b30-4d69-8871-2e5abc1a02e9": {
+      "id": "393942b0-4b30-4d69-8871-2e5abc1a02e9",
+      "name": "Evaluation Method",
+      "title": "user_answered",
+      "description": "asked a question or disproved",
+      "properties": {},
+      "display": {
+        "x": 828,
+        "y": 1632
+      }
+    },
+    "bedf4348-2bbd-408e-8368-b420d17a06de": {
+      "id": "bedf4348-2bbd-408e-8368-b420d17a06de",
+      "name": "Succeeder",
+      "title": "check_for_answer",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 624,
+        "y": 1632
+      }
+    },
+    "ad671968-92d2-44b1-8d8b-55b2d90e1f71": {
+      "id": "ad671968-92d2-44b1-8d8b-55b2d90e1f71",
+      "name": "Sequence",
+      "title": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 732,
+        "y": 1524
+      },
+      "children": [
+        "bedf4348-2bbd-408e-8368-b420d17a06de",
+        "393942b0-4b30-4d69-8871-2e5abc1a02e9"
+      ]
+    },
+    "9a8403bb-2f28-4b35-85d8-34ad024e288f": {
+      "id": "9a8403bb-2f28-4b35-85d8-34ad024e288f",
+      "name": "RepeatUntilSuccess",
+      "title": "Repeat Until Success",
+      "description": "",
+      "properties": {
+        "maxLoop": -1
+      },
+      "display": {
+        "x": 732,
         "y": 1428
       },
-      "child": "cc704ed9-479b-4f6e-820d-efaaf1d7137b"
+      "child": "ad671968-92d2-44b1-8d8b-55b2d90e1f71"
     },
-    "fa989b7c-8222-4cb3-bd94-9d80399e5e1d": {
-      "id": "fa989b7c-8222-4cb3-bd94-9d80399e5e1d",
+    "6fe45283-c9ca-420c-b140-776d6c679a35": {
+      "id": "6fe45283-c9ca-420c-b140-776d6c679a35",
       "name": "Evaluation Method",
-      "title": "user_not_answered",
+      "title": "user_answered",
       "description": "asked a question or disproved",
-      "properties": {},
-      "display": {
-        "x": -1944,
-        "y": 2016
-      }
-    },
-    "cbbd7d3f-3988-4f04-8794-26b62f9f985f": {
-      "id": "cbbd7d3f-3988-4f04-8794-26b62f9f985f",
-      "name": "Succeeder",
-      "title": "check_for_answer",
-      "description": "",
       "properties": {},
       "display": {
         "x": -1752,
-        "y": 2016
+        "y": 1968
       }
     },
-    "cc534f0d-8029-4b46-9309-7e35a646e20d": {
-      "id": "cc534f0d-8029-4b46-9309-7e35a646e20d",
+    "81fe7fbd-f5d1-4c1f-8476-cb8c3fb28950": {
+      "id": "81fe7fbd-f5d1-4c1f-8476-cb8c3fb28950",
+      "name": "Succeeder",
+      "title": "check_for_answer",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -1956,
+        "y": 1968
+      }
+    },
+    "48250b1e-2c42-427f-8f2e-89d2d327a133": {
+      "id": "48250b1e-2c42-427f-8f2e-89d2d327a133",
       "name": "Sequence",
       "title": "Sequence",
       "description": "",
       "properties": {},
       "display": {
         "x": -1848,
-        "y": 1908
+        "y": 1860
       },
       "children": [
-        "fa989b7c-8222-4cb3-bd94-9d80399e5e1d",
-        "cbbd7d3f-3988-4f04-8794-26b62f9f985f"
+        "81fe7fbd-f5d1-4c1f-8476-cb8c3fb28950",
+        "6fe45283-c9ca-420c-b140-776d6c679a35"
       ]
     },
-    "64fa781d-768e-4d42-8704-874d54e63e41": {
-      "id": "64fa781d-768e-4d42-8704-874d54e63e41",
-      "name": "RepeatUntilFailure",
-      "title": "Repeat Until Failure",
+    "e3f97524-381b-44d4-945f-deaa79c52134": {
+      "id": "e3f97524-381b-44d4-945f-deaa79c52134",
+      "name": "RepeatUntilSuccess",
+      "title": "Repeat Until Success",
       "description": "",
       "properties": {
         "maxLoop": -1
       },
       "display": {
         "x": -1848,
-        "y": 1776
+        "y": 1764
       },
-      "child": "cc534f0d-8029-4b46-9309-7e35a646e20d"
+      "child": "48250b1e-2c42-427f-8f2e-89d2d327a133"
     }
   },
   "display": {
-    "camera_x": 1184,
-    "camera_y": 174.5,
-    "camera_z": 0.5,
+    "camera_x": 842,
+    "camera_y": 115.5,
+    "camera_z": 0.25,
     "x": -288,
     "y": -444
   },

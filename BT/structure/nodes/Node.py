@@ -1,13 +1,15 @@
 from abc import ABC, abstractmethod
 from ast import List
 
+from structure.nodes.StateType import StateType
+
 
 class Node :
 	def __init__(self, id) -> None:
 		self.children = []
 		self.parent = None
 		self.id = id
-		self.status = False
+		self.status = StateType.FAILURE
 
 
 

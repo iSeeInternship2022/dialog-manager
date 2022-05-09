@@ -8,16 +8,16 @@ class RepTillFailNode(Node) :
 
 	def toString(self):
 		kids =" ".join(str(elem) for elem in self.children)
-		return "Node : " + str(self.id) + " |  Type : decorator" + " | children : " + kids
+		return ( "REP TILL FAIL "+str(self.status) + " " + str(self.id))
 
 	def tick(self, predecessor : "Node"):
 		BT.BT.getBT().logger.log(self.toString())
 
 		#if we come from a child node
-		if (predecessor.Node in self.children):
+		if (predecessor in self.children):
 
 			#if this child is true, we re-execute the child
-			if(predecessor.Node.status == State.SUCCESS):
+			if(predecessor.status == State.SUCCESS):
 				self.status = State.RUNNING
 				self.parent.tick(self)
 
@@ -30,11 +30,13 @@ class RepTillFailNode(Node) :
 
 			#we check the first child (if it has one)
 			if(len(self.children)>0):
-				self.children[0].tick(self)
 				self.statut = State.RUNNING
+				self.children[0].tick(self)
+				
 
 			else:
-				self.parent.tick(self)
 				self.statut = State.FAILURE
+				self.parent.tick(self)
+				
 
 

@@ -21,6 +21,13 @@ def check_predicate(name):
        }
     return switch.get(name,'condition not implemented')
 
+def user_greeted():
+	res = False
+	if(BT.BT.getBT().user_greeted):
+		res = True
+	return res
+	
+
 def user_satisfied():
 	res = False
 	if (BT.BT.getBT().user_satisfied):

@@ -7,7 +7,7 @@ class Failer(Node.Node) :
 		super().__init__(id)
 
 	def toString(self):
-		return ("Node : " + str(self.id) + " |  Type : succeder")
+		return ( "FAILER "+str(self.status) + " " + str(self.id))
 
 	def tick(self, predecessor : "Node"):
 		BT.BT.getBT().logger.log(self.toString())

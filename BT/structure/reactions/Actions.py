@@ -1,23 +1,37 @@
 import BT
 
 def do_action(name):
-    switch={
-       'greet': greet(),
-       'ask_to_take_survey': ask_to_take_survey(),
-       'state_question': state_question(),
-       'wait_for_answer': wait_for_answer(),
-       'detect_intent': detect_intent(),
-	   'next_question': next_question(),
-	   'goodbye': goodbye(),
-	   'set_user_as_satisfied': set_user_as_satisfied(),
-	   'explain': explain(),
-	   'reset_user_answer': reset_user_answer(),
-	   'reset_users_intent': reset_users_intent(),
-	   'ask_more_details': ask_more_details(),
-	   'ask_if_clarification_wanted': ask_if_clarification_wanted(),
-	   'refuse_answer': refuse_answer(),
-       }
-    return switch.get(name,'action not implemented')
+	if(name == 'greet'):
+		greet()
+	elif(name == 'ask_to_take_survey'):
+		ask_to_take_survey()
+	elif(name == 'state_question'):
+		state_question()
+	elif(name == 'check_for_answer'):
+		check_for_answer()
+	elif(name == 'detect_intent'):
+		detect_intent()
+	elif(name == 'next_question'):
+		next_question()
+	elif(name == 'goodbye'):
+		goodbye()
+	elif(name == 'set_user_as_satisfied'):
+		set_user_as_satisfied()
+	elif(name == 'explain'):
+		explain()
+	elif(name == 'reset_user_answer'):
+		reset_user_answer()
+	elif(name == 'reset_users_intent'):
+		reset_users_intent()
+	elif(name == 'ask_more_details'):
+		ask_more_details()
+	elif(name == 'ask_if_clarification_wanted'):
+		ask_if_clarification_wanted()
+	elif(name == 'refuse_answer'):	
+		refuse_answer()
+	else:
+		BT.BT.getBT().logger.log("ACTION NOT IMPLEMENTED")
+
 
 
 def greet():
@@ -26,7 +40,7 @@ def greet():
 def ask_to_take_survey():
 	BT.BT.getBT().send("Would you like to helps us by answering a quick survey?")
 
-def wait_for_answer():
+def check_for_answer():
 	last_answer = BT.BT.getBT().last_user_answer
 	while(last_answer == BT.BT.getBT().last_user_answer):
 		BT.BT.getBT().receive()
