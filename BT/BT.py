@@ -1,5 +1,6 @@
 from asyncore import loop
 import threading
+from ui.Logger import Logger
 
 import data.TreeGenerator as tg
 from ui.UiConsole import UiConsole
@@ -27,6 +28,7 @@ class BT:
 		self.user_satisfied = False	
 		#self.currentState = self.tree.root
 		self.interface = UiConsole()
+		self.logger = Logger()
 		self.last_user_answer = ''
 		self.user_intent = ''
 		self.survey_is_completed = False

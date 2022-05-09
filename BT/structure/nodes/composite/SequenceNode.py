@@ -1,6 +1,6 @@
 from structure.nodes.Node import Node
 from structure.nodes.StateType import StateType as State
-
+import BT
 
 
 class SequenceNode(Node) :
@@ -12,7 +12,7 @@ class SequenceNode(Node) :
 		return ("Node : " + str(self.id) + " |  Type : sequence" + " | children : " + kids)
 
 	def tick(self, predecessor : "Node"):
-		print("Ticking : " + self.toString())
+		BT.BT.getBT().logger.log("Ticking : " + self.toString())
 
 		#if we come from a child node
 
@@ -40,14 +40,12 @@ class SequenceNode(Node) :
 			#we check the first child (if it has one)
 			if(len(self.children)>0):
 				self.status = State.RUNNING
-				print(self.children[0].toString())
 				self.children[0].tick(self)
 				
 
 			else:
 				#succeed when it has no child
 				self.status = State.SUCCESS
-				print("to parent")
 				self.parent.tick(self)
 				
 

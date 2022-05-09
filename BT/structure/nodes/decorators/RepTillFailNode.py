@@ -1,6 +1,6 @@
 from structure.nodes.Node import Node
 from structure.nodes.StateType import StateType as State
-
+import BT
 
 class RepTillFailNode(Node) :
 	def __init__(self, id) -> None:
@@ -11,7 +11,7 @@ class RepTillFailNode(Node) :
 		return "Node : " + str(self.id) + " |  Type : decorator" + " | children : " + kids
 
 	def tick(self, predecessor : "Node"):
-		print("Ticking : " + self.toString())
+		BT.BT.getBT().logger.log("Ticking : " + self.toString())
 
 		#if we come from a child node
 		if (predecessor.Node in self.children):

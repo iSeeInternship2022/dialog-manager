@@ -15,7 +15,8 @@ class ActionNode(Node.Node) :
 		return ("Node : " + str(self.id) + " |  Type : action |  Label : " + self.action)
 
 	def tick(self, predecessor : "Node"):
-		print("Ticking : " + self.toString())
+
+		BT.BT.getBT().logger.log("Ticking : " + self.toString())
 
 
 		if(self.status == State.RUNNING):

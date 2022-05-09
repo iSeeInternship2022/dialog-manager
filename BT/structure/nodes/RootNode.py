@@ -1,3 +1,4 @@
+import BT
 import structure.nodes.Node as Node
 
 class RootNode(Node.Node) :
@@ -9,5 +10,5 @@ class RootNode(Node.Node) :
 		return ("Node : " + str(self.id) + " |  Type : ROOT")
 
 	def tick(self, predecessor : "Node"):
-		print("Ticking : " + self.toString())
+		BT.BT.getBT().logger.log("Ticking : " + self.toString())
 		self.children[0].tick(self)
