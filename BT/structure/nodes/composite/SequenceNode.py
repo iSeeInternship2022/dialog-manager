@@ -12,7 +12,7 @@ class SequenceNode(Node) :
 		return ("Node : " + str(self.id) + " |  Type : sequence" + " | children : " + kids)
 
 	def tick(self, predecessor : "Node"):
-		BT.BT.getBT().logger.log("Ticking : " + self.toString())
+		BT.BT.getBT().logger.log(self.toString())
 
 		#if we come from a child node
 

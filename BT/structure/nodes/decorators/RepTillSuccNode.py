@@ -11,7 +11,7 @@ class RepTillSuccNode(Node) :
 		return "Node : " + str(self.id) + " |  Type : decorator" + " | children : " + kids
 
 	def tick(self, predecessor : "Node"):
-		BT.BT.getBT().logger.log("Ticking : " + self.toString())
+		BT.BT.getBT().logger.log(self.toString())
 
 		#if we come from a child node
 		if (predecessor.Node in self.children):

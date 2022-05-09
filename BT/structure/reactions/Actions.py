@@ -27,9 +27,9 @@ def ask_to_take_survey():
 	BT.BT.getBT().send("Would you like to helps us by answering a quick survey?")
 
 def wait_for_answer():
-	last_answer = BT.getBT().last_user_answer
-	while(last_answer == BT.getBT().last_user_answer):
-		BT.BT.receive()
+	last_answer = BT.BT.getBT().last_user_answer
+	while(last_answer == BT.BT.getBT().last_user_answer):
+		BT.BT.getBT().receive()
 		
 def detect_intent():
 	BT.BT.getBT().user_intent = 'Satisfaction'
@@ -46,17 +46,17 @@ def goodbye():
 	BT.BT.getBT().send("Thank you! Good bye!")
 
 def set_user_as_satisfied():
-	BT.getBT().user_satisfied = True
+	BT.BT.getBT().user_satisfied = True
 	BT.BT.getBT().send("Then we may end this conversation here.")
 
 def explain():
 	BT.BT.getBT().send("This is an explanation")
 
 def reset_user_answer():
-	BT.getBT().last_user_answer = ''
+	BT.BT.getBT().last_user_answer = ''
 
 def reset_users_intent():
-	BT.getBT().user_intent = 'None'
+	BT.BT.getBT().user_intent = 'None'
 	pass
 
 def ask_more_details():

@@ -6,4 +6,4 @@ class Logger:
         self.file.write("\r\r" + str(datetime.datetime.now()) + "\r")
 
     def log(self, message):
-        self.file.write(str(datetime.datetime.now().timestamp()) + " : " + message)
+        self.file.write(str(datetime.datetime.now()) + " : " + message + "\r")

@@ -16,7 +16,7 @@ class ActionNode(Node.Node) :
 
 	def tick(self, predecessor : "Node"):
 
-		BT.BT.getBT().logger.log("Ticking : " + self.toString())
+		BT.BT.getBT().logger.log( self.toString())
 
 
 		if(self.status == State.RUNNING):

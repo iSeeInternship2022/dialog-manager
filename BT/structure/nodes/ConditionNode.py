@@ -13,7 +13,7 @@ class ConditionNode(Node) :
 		return "Node : " + str(self.id) + " |  Type : desicion |  Label : " + self.predicate
 
 	def tick(self, predecessor : "Node"):
-		BT.BT.getBT().logger.log("Ticking : " + self.toString())
+		BT.BT.getBT().logger.log(self.toString())
 
 		bool = check_predicate(self.predicate)
 
