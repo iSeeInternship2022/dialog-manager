@@ -43,10 +43,10 @@ class BT:
 
 
 	def send(self, message):
-		self.interface.send_to_user(message)
+		self.interface.send_to_user("Bot : " + message)
 	
 	def receive(self):
-		self.last_user_answer = self.interface.get_response
+		self.last_user_answer = self.interface.get_response()
 
 	def restart(self):
 		pass

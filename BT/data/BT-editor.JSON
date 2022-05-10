@@ -270,7 +270,7 @@
       "description": "",
       "properties": {},
       "display": {
-        "x": 468,
+        "x": 480,
         "y": 1428
       }
     },
@@ -469,6 +469,7 @@
       "children": [
         "e6e4d01a-fe3c-4fd1-b2ec-821ce049a236",
         "b4c9092e-1d50-4de2-851f-2fe5b2154798",
+        "8b948dad-ef2c-45b0-8480-2b9eb642a25b",
         "94146c4e-9600-4503-a59a-2027e3c23dc0",
         "d21bb1f8-8283-4f60-ae1a-02cc339b4344",
         "72ee8447-636b-46ca-8425-e0434635c76b"
@@ -481,7 +482,7 @@
       "description": "asked a question or disproved",
       "properties": {},
       "display": {
-        "x": -1320,
+        "x": -1524,
         "y": 576
       }
     },
@@ -492,7 +493,7 @@
       "description": "",
       "properties": {},
       "display": {
-        "x": -1524,
+        "x": -1332,
         "y": 576
       }
     },
@@ -997,21 +998,6 @@
       },
       "child": "376b7f51-ce13-4337-96a4-ad17619e7be1"
     },
-    "1ff60e72-c7b6-40b6-9ea0-fc981175b312": {
-      "id": "1ff60e72-c7b6-40b6-9ea0-fc981175b312",
-      "name": "Sequence",
-      "title": "Sequence",
-      "description": "",
-      "properties": {},
-      "display": {
-        "x": -1416,
-        "y": 468
-      },
-      "children": [
-        "da83b5df-64be-4cb9-8b49-71f2f1539040",
-        "7c98d6b6-efd7-4115-8cdb-21d7c7c8c5ce"
-      ]
-    },
     "aeace93e-91d4-40b5-9779-c9bae029b1c8": {
       "id": "aeace93e-91d4-40b5-9779-c9bae029b1c8",
       "name": "RepeatUntilSuccess",
@@ -1024,7 +1010,7 @@
         "x": -1416,
         "y": 372
       },
-      "child": "1ff60e72-c7b6-40b6-9ea0-fc981175b312"
+      "child": "512da585-355f-4309-8a41-92cc28464909"
     },
     "62492698-495c-4109-a447-221bf14725d0": {
       "id": "62492698-495c-4109-a447-221bf14725d0",
@@ -1204,12 +1190,27 @@
         "y": 1764
       },
       "child": "48250b1e-2c42-427f-8f2e-89d2d327a133"
+    },
+    "512da585-355f-4309-8a41-92cc28464909": {
+      "id": "512da585-355f-4309-8a41-92cc28464909",
+      "name": "Priority",
+      "title": "Priority",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -1416,
+        "y": 480
+      },
+      "children": [
+        "7c98d6b6-efd7-4115-8cdb-21d7c7c8c5ce",
+        "da83b5df-64be-4cb9-8b49-71f2f1539040"
+      ]
     }
   },
   "display": {
-    "camera_x": 842,
-    "camera_y": 115.5,
-    "camera_z": 0.25,
+    "camera_x": 1297,
+    "camera_y": 281.5,
+    "camera_z": 0.5,
     "x": -288,
     "y": -444
   },

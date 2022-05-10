@@ -12,4 +12,4 @@ class Failer(Node.Node) :
 	def tick(self, predecessor : "Node"):
 		BT.BT.getBT().logger.log(self.toString())
 		self.status = State.FAILURE
-		self.parent.tick(self)
+		return self.status

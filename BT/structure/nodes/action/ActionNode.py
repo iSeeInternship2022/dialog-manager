@@ -16,20 +16,18 @@ class ActionNode(Node.Node) :
 
 	def tick(self, predecessor : "Node"):
 
-		BT.BT.getBT().logger.log( self.toString())
+		BT.BT.getBT().logger.log("open " +self.toString())
 
 
 		if(self.status == State.RUNNING):
-			if(self.thread.is_alive()):
-				#BT.BT.getBT().restart()
-				pass
-			else:
+			if(not self.thread.is_alive()):
 				self.status = State.SUCCESS
-				self.parent.tick(self)
 
 		else:
 			self.status = State.RUNNING
 			self.thread = threading.Thread(target=do_action, args=(self.action,))
 			self.thread.start()
+		
+		BT.BT.getBT().logger.log("closed " +self.toString())
+		return self.status
 			
-			#BT.BT.getBT().restart()

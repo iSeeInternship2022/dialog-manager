@@ -13,7 +13,7 @@ class ConditionNode(Node) :
 		return ( "DECISION "+str(self.status) + " " + str(self.id) + " " + self.predicate)
 
 	def tick(self, predecessor : "Node"):
-		BT.BT.getBT().logger.log(self.toString())
+		BT.BT.getBT().logger.log("open " + self.toString())
 
 		bool = check_predicate(self.predicate)
 
@@ -22,4 +22,6 @@ class ConditionNode(Node) :
 		else:
 			self.status = State.FAILURE
 
-		self.parent.tick(self)
+
+		BT.BT.getBT().logger.log("closed " +self.toString())
+		return self.status

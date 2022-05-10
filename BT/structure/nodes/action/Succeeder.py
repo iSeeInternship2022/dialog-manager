@@ -12,4 +12,4 @@ class Succeder(Node.Node) :
 	def tick(self, predecessor : "Node"):
 		BT.BT.getBT().logger.log(self.toString())
 		self.status = State.SUCCESS
-		self.parent.tick(self)
+		return self.status

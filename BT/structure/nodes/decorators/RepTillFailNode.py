@@ -11,7 +11,7 @@ class RepTillSuccNode(Node) :
 		return ( "REP TILL SUCC "+str(self.status) + " " + str(self.id))
 
 	def tick(self, predecessor : "Node"):
-		BT.BT.getBT().logger.log(self.toString())
+		BT.BT.getBT().logger.log("open " +self.toString())
 
 		
 		if (not (predecessor in self.children)):
@@ -34,6 +34,7 @@ class RepTillSuccNode(Node) :
 				
 				self.status = self.children[0].tick(self)
 
+		BT.BT.getBT().logger.log("closed " +self.toString())
 		return self.status
 
 
