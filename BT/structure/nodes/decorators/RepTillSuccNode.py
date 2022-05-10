@@ -13,22 +13,8 @@ class RepTillSuccNode(Node) :
 	def tick(self, predecessor : "Node"):
 		BT.BT.getBT().logger.log(self.toString())
 
-		#if we come from a child node
-		if (predecessor in self.children):
-
-			#if this child is true, yay, we exit to the parent
-			if(predecessor.status == State.SUCCESS):
-				#print("success, yay!")
-				self.status = State.RUNNING
-				self.parent.tick(self)
-
-			#else if this child is false re execute
-			elif(len(self.children) >= 1):
-					#print("failed : re-executing child")
-					self.status = State.SUCCESS
-					self.children[0].tick(self)
 		
-		else:
+		if (not (predecessor in self.children)):
 
 			#we check the first child (if it has one)
 			if(len(self.children)>0):
@@ -40,7 +26,16 @@ class RepTillSuccNode(Node) :
 			else:
 				#print("no child")
 				self.statut = State.FAILURE
-				self.parent.tick(self)
+
+
+		else:
+			while(self.status == State.FAILURE):
+				
+				self.status = self.children[0].tick(self)
+
+		return self.status
+
+
 				
 
 

@@ -16,7 +16,24 @@ class SequenceNode(Node) :
 
 		#if we come from a child node
 
-		if (predecessor in self.children):
+		if (not(predecessor in self.children)):
+
+			#we check the first child (if it has one)
+			if(len(self.children)>0):
+				#print("we check the first child (if it has one)")
+				self.status = State.RUNNING
+				self.children[0].tick(self)
+				
+
+			else:
+				#succeed when it has no child
+				#print("succeed when it has no child")
+				self.status = State.SUCCESS
+			
+
+
+		else:
+
 
 			#if the child is true but has unchecked siblings
 			if(predecessor.status == State.SUCCESS and self.children.index(predecessor) < len(self.children)-1):
@@ -37,20 +54,5 @@ class SequenceNode(Node) :
 					self.status = State.FAILURE
 					self.parent.tick(self)
 
-
-		else:
-
-			#we check the first child (if it has one)
-			if(len(self.children)>0):
-				#print("we check the first child (if it has one)")
-				self.status = State.RUNNING
-				self.children[0].tick(self)
-				
-
-			else:
-				#succeed when it has no child
-				#print("succeed when it has no child")
-				self.status = State.SUCCESS
-				self.parent.tick(self)
 				
 

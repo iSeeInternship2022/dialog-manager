@@ -36,6 +36,7 @@ def do_action(name):
 
 def greet():
 	BT.BT.getBT().send("Hello! May I help you?")
+	BT.BT.getBT().user_greeted = True
 
 def ask_to_take_survey():
 	BT.BT.getBT().send("Would you like to helps us by answering a quick survey?")
