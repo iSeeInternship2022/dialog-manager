@@ -21,9 +21,7 @@ class ActionNode(Node.Node) :
 
 		if(self.status == State.RUNNING):
 			if(not self.thread.is_alive()):
-				print("THREAD FINISHED")
 				self.status = State.SUCCESS
-
 		else:
 			self.status = State.RUNNING
 			self.thread = threading.Thread(target=do_action, args=(self.action,))
@@ -33,5 +31,5 @@ class ActionNode(Node.Node) :
 		return self.status
 	
 	def reset(self):
-		#if(self.status == State.SUCCESS):
-		self.status = State.FAILURE
+		if(self.status == State.SUCCESS):
+			self.status = State.FAILURE

@@ -195,13 +195,11 @@
       "description": "",
       "properties": {},
       "display": {
-        "x": -2340,
-        "y": 660
+        "x": -2376,
+        "y": 672
       },
       "children": [
-        "b3cd5ae3-a5c6-4629-8751-a57c8ffaebd9",
-        "78f79993-966d-4044-85ca-25f94e6dfaf4",
-        "be6cb42e-c7c4-4394-a942-112fd148b7d7",
+        "b3b74827-21bf-4f2a-871f-25e8a8ab5fd7",
         "e76d5d74-3529-4cbe-b009-32d26ae00eb6",
         "d59c7c77-98a2-4516-9040-7d710f30c218",
         "c7095ea2-ec57-41cd-8ada-7a92e38fc8b8",
@@ -621,8 +619,8 @@
       "description": "",
       "properties": {},
       "display": {
-        "x": -2496,
-        "y": 936
+        "x": -2520,
+        "y": 1152
       },
       "children": [
         "86c417d2-ae6e-419d-8336-2a74408f731c",
@@ -636,8 +634,8 @@
       "description": "asked a question or disproved",
       "properties": {},
       "display": {
-        "x": -2604,
-        "y": 1044
+        "x": -2628,
+        "y": 1260
       }
     },
     "410366fb-4d46-417f-9d36-20e2dac122af": {
@@ -647,8 +645,8 @@
       "description": "",
       "properties": {},
       "display": {
-        "x": -2412,
-        "y": 1044
+        "x": -2436,
+        "y": 1260
       }
     },
     "d59c7c77-98a2-4516-9040-7d710f30c218": {
@@ -1147,11 +1145,27 @@
         "x": -2880,
         "y": 936
       }
+    },
+    "b3b74827-21bf-4f2a-871f-25e8a8ab5fd7": {
+      "id": "b3b74827-21bf-4f2a-871f-25e8a8ab5fd7",
+      "name": "Sequence",
+      "title": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -2568,
+        "y": 792
+      },
+      "children": [
+        "b3cd5ae3-a5c6-4629-8751-a57c8ffaebd9",
+        "78f79993-966d-4044-85ca-25f94e6dfaf4",
+        "be6cb42e-c7c4-4394-a942-112fd148b7d7"
+      ]
     }
   },
   "display": {
-    "camera_x": 1961,
-    "camera_y": 14.5,
+    "camera_x": 2147,
+    "camera_y": -82.5,
     "camera_z": 0.5,
     "x": -288,
     "y": -444
