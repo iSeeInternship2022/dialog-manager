@@ -9,8 +9,8 @@ class UiConsole(UiInterface):
 	@staticmethod
 	def send_to_user_and_response(message):
 		print(message)
-		return input()
+		return input("You : ")
 
 	@staticmethod
 	def get_response():
-		return input()
+		return input("You : ")

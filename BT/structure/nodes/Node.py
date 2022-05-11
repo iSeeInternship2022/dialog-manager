@@ -1,19 +1,22 @@
 from abc import ABC, abstractmethod
 from ast import List
 
+from structure.nodes.StateType import StateType
+
 
 class Node :
 	def __init__(self, id) -> None:
-		self.children = [Node]
+		self.children = []
 		self.parent = None
 		self.id = id
-		self.status = False
+		self.status = StateType.FAILURE
 
 
 
 	@abstractmethod
-	def goToNext(self, predecessor : "Node"):
+	def tick(self, predecessor : "Node"):
 		pass
+
 
 	@abstractmethod
 	def toString(self):
