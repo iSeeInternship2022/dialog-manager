@@ -1,7 +1,7 @@
 from asyncore import loop
 import threading
 from ui.Logger import Logger
-
+from structure.Tree import printTree
 import data.TreeGenerator as tg
 from ui.UiConsole import UiConsole
 
@@ -24,7 +24,7 @@ class BT:
 			BT.__instance = self
 		
 		self.tree = tg.generateTree("BT\data\BT-editor.JSON")
-		self.tree.print_tree()
+		printTree(self.tree.root)
 		self.user_satisfied = False	
 		#self.currentState = self.tree.root
 		self.interface = UiConsole()

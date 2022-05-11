@@ -11,10 +11,7 @@ class Tree :
 	def goToNextDepthFirst() :
 		pass
 
-	def print_tree(self):
-		node_str = ""
-		i = 0
-
-		for k in self.nodes.keys():
-			print("\rNode " + str(i) + ":" + self.nodes.get(k).toString())
-			i += 1
+def printTree(root, level=0):
+	print(" - " * level, root.toString())
+	for child in root.children:
+		printTree(child, level + 1)

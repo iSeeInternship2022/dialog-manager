@@ -7,6 +7,7 @@ import structure.nodes.NodeFactory as maker
 import structure.nodes.NodeType as nt
 import structure.Tree as Tree 
 
+
 def generateTree(path) :
 
 	parser = TreeParser.TreeParser(path)

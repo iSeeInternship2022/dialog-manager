@@ -47,9 +47,39 @@ def check_for_answer():
 		BT.BT.getBT().receive()
 		
 def detect_intent():
-	BT.BT.getBT().user_intent = 'Satisfaction'
-	BT.BT.getBT().send("I understand that you are satisfied.")
-	set_user_as_satisfied()
+	if(BT.BT.getBT().last_user_answer == "Satisfied"):
+		BT.BT.getBT().user_intent = 'Satisfaction'
+		BT.BT.getBT().send("I understand that you are satisfied.")
+		set_user_as_satisfied()
+
+	elif(BT.BT.getBT().last_user_answer == "Question"):
+		BT.BT.getBT().user_intent = 'Question'
+		BT.BT.getBT().send("I understand that you asked a question")
+
+	elif(BT.BT.getBT().last_user_answer == "Affirm"):
+		BT.BT.getBT().user_intent = 'Affirm'
+		BT.BT.getBT().send("I understand that you understand.")
+
+	elif(BT.BT.getBT().last_user_answer == "Argue"):
+		BT.BT.getBT().user_intent = 'Argue'
+		BT.BT.getBT().send("I understand that you counter-argumented.")
+
+	elif(BT.BT.getBT().last_user_answer == "Detail"):
+		BT.BT.getBT().user_intent = 'Detail'
+		BT.BT.getBT().send("I understand that you provided details.")
+
+	elif(BT.BT.getBT().last_user_answer == "End"):
+		BT.BT.getBT().user_intent = 'End'
+		BT.BT.getBT().send("I understand that you wish to end")
+
+	elif(BT.BT.getBT().last_user_answer == "Refusal"):
+		BT.BT.getBT().user_intent = 'Refusal'
+		BT.BT.getBT().send("I understand that you refused.")
+
+	elif(BT.BT.getBT().last_user_answer == "Approval"):
+		BT.BT.getBT().user_intent = 'Approval'
+		BT.BT.getBT().send("I understand that you approved.")
+	
 
 def state_question():
 	BT.BT.getBT().send("Are you satisfied with the answers I provided?")
