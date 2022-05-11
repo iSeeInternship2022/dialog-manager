@@ -11,4 +11,9 @@ class RootNode(Node.Node) :
 
 	def tick(self, predecessor : "Node"):
 		BT.BT.getBT().logger.log(self.toString())
+
+		#set all states to failure
+		self.children[0].reset()
+
+		#run tree
 		self.children[0].tick(self)

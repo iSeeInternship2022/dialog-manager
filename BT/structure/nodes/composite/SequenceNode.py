@@ -25,5 +25,8 @@ class SequenceNode(Node) :
 		BT.BT.getBT().logger.log("closed " +self.toString())
 		return self.status
 
-				
+	def reset(self):
+		self.status = State.FAILURE
+		for child in self.children:
+			child.reset()
 

@@ -29,7 +29,7 @@ class BT:
 		#self.currentState = self.tree.root
 		self.interface = UiConsole()
 		self.logger = Logger()
-		self.last_user_answer = ''
+		self.last_user_answer = None
 		self.user_intent = ''
 		self.survey_is_completed = False
 		self.user_greeted = False

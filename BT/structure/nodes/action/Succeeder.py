@@ -13,3 +13,6 @@ class Succeder(Node.Node) :
 		BT.BT.getBT().logger.log(self.toString())
 		self.status = State.SUCCESS
 		return self.status
+
+	def reset(self):
+		self.status = State.FAILURE

@@ -19,8 +19,8 @@ def do_action(name):
 		set_user_as_satisfied()
 	elif(name == 'explain'):
 		explain()
-	elif(name == 'reset_user_answer'):
-		reset_user_answer()
+	elif(name == 'reset_users_answer'):
+		reset_users_answer()
 	elif(name == 'reset_users_intent'):
 		reset_users_intent()
 	elif(name == 'ask_more_details'):
@@ -30,7 +30,7 @@ def do_action(name):
 	elif(name == 'refuse_answer'):	
 		refuse_answer()
 	else:
-		BT.BT.getBT().logger.log("ACTION NOT IMPLEMENTED")
+		print("ACTION NOT IMPLEMENTED")
 
 
 
@@ -97,8 +97,10 @@ def set_user_as_satisfied():
 def explain():
 	BT.BT.getBT().send("This is an explanation")
 
-def reset_user_answer():
-	BT.BT.getBT().last_user_answer = ''
+def reset_users_answer():
+	BT.BT.getBT().last_user_answer = None
+	print("current answer = " + str(BT.BT.getBT().last_user_answer))
+	
 
 def reset_users_intent():
 	BT.BT.getBT().user_intent = 'None'

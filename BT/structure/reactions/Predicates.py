@@ -54,7 +54,8 @@ def user_satisfied():
 
 def user_answered():
 	res = False
-	if (BT.BT.getBT().last_user_answer != ''):
+	if (BT.BT.getBT().last_user_answer != None):
+		
 		res = True
 
 	return res

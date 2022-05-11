@@ -29,7 +29,7 @@
       "description": "",
       "properties": {},
       "display": {
-        "x": -2844,
+        "x": -3120,
         "y": 936
       }
     },
@@ -200,6 +200,7 @@
       },
       "children": [
         "b3cd5ae3-a5c6-4629-8751-a57c8ffaebd9",
+        "78f79993-966d-4044-85ca-25f94e6dfaf4",
         "be6cb42e-c7c4-4394-a942-112fd148b7d7",
         "e76d5d74-3529-4cbe-b009-32d26ae00eb6",
         "d59c7c77-98a2-4516-9040-7d710f30c218",
@@ -642,7 +643,7 @@
     "410366fb-4d46-417f-9d36-20e2dac122af": {
       "id": "410366fb-4d46-417f-9d36-20e2dac122af",
       "name": "Succeeder",
-      "title": "wait_for_answer",
+      "title": "check_for_answer",
       "description": "",
       "properties": {},
       "display": {
@@ -1135,12 +1136,23 @@
         "7c98d6b6-efd7-4115-8cdb-21d7c7c8c5ce",
         "da83b5df-64be-4cb9-8b49-71f2f1539040"
       ]
+    },
+    "78f79993-966d-4044-85ca-25f94e6dfaf4": {
+      "id": "78f79993-966d-4044-85ca-25f94e6dfaf4",
+      "name": "Succeeder",
+      "title": "reset_users_answer",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -2880,
+        "y": 936
+      }
     }
   },
   "display": {
-    "camera_x": 857,
-    "camera_y": 305.5,
-    "camera_z": 0.25,
+    "camera_x": 1961,
+    "camera_y": 14.5,
+    "camera_z": 0.5,
     "x": -288,
     "y": -444
   },

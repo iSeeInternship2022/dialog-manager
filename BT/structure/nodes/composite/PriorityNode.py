@@ -26,4 +26,8 @@ class PriorityNode(Node) :
 			#back to parents node
 				
 
+	def reset(self):
+		self.status = State.FAILURE
+		for child in self.children:
+			child.reset()
 

@@ -21,6 +21,7 @@ class ActionNode(Node.Node) :
 
 		if(self.status == State.RUNNING):
 			if(not self.thread.is_alive()):
+				print("THREAD FINISHED")
 				self.status = State.SUCCESS
 
 		else:
@@ -30,4 +31,7 @@ class ActionNode(Node.Node) :
 		
 		BT.BT.getBT().logger.log("closed " +self.toString())
 		return self.status
-			
+	
+	def reset(self):
+		#if(self.status == State.SUCCESS):
+		self.status = State.FAILURE

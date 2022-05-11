@@ -37,6 +37,9 @@ class RepTillSuccNode(Node) :
 		return self.status
 
 
-				
+	def reset(self):
+		self.status = State.FAILURE
+		for child in self.children:
+			child.reset()
 
 

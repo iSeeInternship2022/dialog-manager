@@ -13,3 +13,7 @@ class Failer(Node.Node) :
 		BT.BT.getBT().logger.log(self.toString())
 		self.status = State.FAILURE
 		return self.status
+
+
+	def reset(self):
+		self.status = State.FAILURE
