@@ -2,7 +2,7 @@ from structure.nodes.Node import Node
 from structure.nodes.StateType import StateType as State
 import BT
 
-class RepTillSuccNode(Node) :
+class RepTillFailNode(Node) :
 	def __init__(self, id) -> None:
 		super().__init__(id)
 
