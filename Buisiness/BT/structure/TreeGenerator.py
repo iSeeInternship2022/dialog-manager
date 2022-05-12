@@ -1,6 +1,6 @@
 import json
 from typing import Dict
-import data.TreeParser as TreeParser
+import Data.Data_Parser.TreeParser as TreeParser
 from structure.nodes.Node import Node
 from structure.nodes.RootNode import RootNode
 import structure.nodes.NodeFactory as maker

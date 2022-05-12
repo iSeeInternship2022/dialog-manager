@@ -23,7 +23,7 @@ class BT:
 		else:
 			BT.__instance = self
 		
-		self.tree = tg.generateTree("BT\data\BT-editor.JSON")
+		self.tree = tg.generateTree("Data\Data_Parser\BT-editor.JSON")
 		printTree(self.tree.root)
 		self.user_satisfied = False	
 		#self.currentState = self.tree.root
