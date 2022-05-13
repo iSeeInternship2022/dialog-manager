@@ -1,6 +1,6 @@
-from structure.nodes.Node import Node
-from structure.nodes.StateType import StateType as State
-import BT
+from  Buisiness.BT.structure.nodes.Node import Node
+from  Buisiness.BT.structure.nodes.StateType import StateType as State
+import Buisiness.BT.BT as BT
 
 class PriorityNode(Node) :
 	def __init__(self, id) -> None:

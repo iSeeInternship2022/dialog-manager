@@ -1,8 +1,8 @@
 from asyncore import loop
 import threading
+from Buisiness.BT.structure.Tree import printTree
 from ui.Logger import Logger
-from structure.Tree import printTree
-import data.TreeGenerator as tg
+import Buisiness.BT.structure.TreeGenerator as tg
 from ui.UiConsole import UiConsole
 
 

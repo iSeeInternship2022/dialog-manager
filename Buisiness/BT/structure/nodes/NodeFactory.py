@@ -1,12 +1,12 @@
 from regex import R
-import structure.nodes.NodeType as nt
-import structure.nodes.action.ActionNode as Action
-import structure.nodes.ConditionNode as Decision
-import structure.nodes.composite.PriorityNode as Priority
-import structure.nodes.composite.SequenceNode as Sequence
-import structure.nodes.decorators.RepTillFailNode as TillFail
-import structure.nodes.decorators.RepTillSuccNode as TillSucc
-import structure.nodes.Node as Node
+import Buisiness.BT.structure.nodes.NodeType as nt
+import Buisiness.BT.structure.nodes.action.ActionNode as Action
+import Buisiness.BT.structure.nodes.ConditionNode as Decision
+import Buisiness.BT.structure.nodes.composite.PriorityNode as Priority
+import Buisiness.BT.structure.nodes.composite.SequenceNode as Sequence
+import Buisiness.BT.structure.nodes.decorators.RepTillFailNode as TillFail
+import Buisiness.BT.structure.nodes.decorators.RepTillSuccNode as TillSucc
+import Buisiness.BT.structure.nodes.Node as Node
 
 
 def makeNode(type, id, label) :

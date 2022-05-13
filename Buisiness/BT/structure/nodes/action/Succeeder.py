@@ -1,6 +1,6 @@
-import structure.nodes.Node as Node
-from structure.nodes.StateType import StateType as State
-import BT
+import  Buisiness.BT.structure.nodes.Node as Node
+from  Buisiness.BT.structure.nodes.StateType import StateType as State
+import Buisiness.BT.BT as BT
 
 class Succeder(Node.Node) :
 	def __init__(self, id) -> None:

@@ -1,8 +1,8 @@
-from structure.nodes.Node import Node
+from  Buisiness.BT.structure.nodes.Node import Node
 import threading
-import BT
-from structure.nodes.StateType import StateType as State
-from structure.reactions.Predicates import check_predicate
+import Buisiness.BT.BT as BT
+from  Buisiness.BT.structure.nodes.StateType import StateType as State
+from  Buisiness.BT.structure.reactions.Predicates import check_predicate
 
 class ConditionNode(Node) :
 	def __init__(self, id, label) -> None:

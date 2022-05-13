@@ -1,4 +1,4 @@
-import BT
+import  Buisiness.BT.BT as BT
 
 def do_action(name):
 	if(name == 'greet'):

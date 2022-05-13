@@ -1,11 +1,11 @@
 import json
 from typing import Dict
 import Data.Data_Parser.TreeParser as TreeParser
-from structure.nodes.Node import Node
-from structure.nodes.RootNode import RootNode
-import structure.nodes.NodeFactory as maker
-import structure.nodes.NodeType as nt
-import structure.Tree as Tree 
+from Buisiness.BT.structure.nodes.Node import Node
+from Buisiness.BT.structure.nodes.RootNode import RootNode
+import Buisiness.BT.structure.nodes.NodeFactory as maker
+import Buisiness.BT.structure.nodes.NodeType as nt
+import Buisiness.BT.structure.Tree as Tree 
 
 
 def generateTree(path) :

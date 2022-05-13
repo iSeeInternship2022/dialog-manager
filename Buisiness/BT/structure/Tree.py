@@ -1,5 +1,5 @@
 from typing import Dict
-import structure.nodes.Node as Node
+import Buisiness.BT.structure.nodes.Node as Node
 
 class Tree :
 	def __init__(self, root : Node, nodes : Dict[str, Node.Node]) -> None:

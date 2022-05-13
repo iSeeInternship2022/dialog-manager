@@ -1,5 +1,5 @@
-import BT
-import structure.nodes.Node as Node
+import Buisiness.BT.BT as BT
+import Buisiness.BT.structure.nodes.Node as Node
 
 class RootNode(Node.Node) :
 	def __init__(self, id):
