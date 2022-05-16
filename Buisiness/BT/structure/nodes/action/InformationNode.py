@@ -14,9 +14,8 @@ class InformationNode(Node.Node) :
 	def toString(self):
 		return ( "message "+str(self.status) + " " + str(self.id) + " " + self.message)
 
-	def tick(self, predecessor : "Node"):
+	def tick(self):
 
-		BT.BT.getBT().logger.log("open " +self.toString())
 
 		# if(self.status == State.RUNNING):
 		# 	if(not self.thread.is_alive()):
@@ -28,7 +27,6 @@ class InformationNode(Node.Node) :
 			
 		C.Coordinator.get().inform(self.message)
 		self.status = State.SUCCESS
-		BT.BT.getBT().logger.log("closed " +self.toString())
 		return self.status
 	
 	def reset(self):

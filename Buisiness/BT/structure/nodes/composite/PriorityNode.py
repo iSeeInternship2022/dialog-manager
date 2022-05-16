@@ -12,18 +12,14 @@ class PriorityNode(Node) :
 		kids =" " + (str(len(self.children)))
 		return ( "PRIORITY "+str(self.status) + " " + str(self.id))
 
-	def tick(self, predecessor : "Node"):
-		BT.BT.getBT().logger.log("open " +self.toString())
-
+	def tick(self):
 
 
 		for child in self.children:
-			if(child.tick(self) == State.SUCCESS):
+			if(child.tick() == State.SUCCESS):
 				self.status = State.SUCCESS
 				break
 
-
-		BT.BT.getBT().logger.log("closed " +self.toString())
 		return self.status
 			#back to parents node
 				

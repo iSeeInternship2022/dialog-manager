@@ -13,24 +13,13 @@ class WorldModifierNode(Node.Node) :
 		self.data_slot = None
 
 	def toString(self):
-		return ( "message "+str(self.status) + " " + str(self.id) + " " + self.message)
+		return ( "message "+str(self.status) + " " + str(self.id))
 
-	def tick(self, predecessor : "Node"):
-
-		BT.BT.getBT().logger.log("open " +self.toString())
-
-
-		# if(self.status == State.RUNNING):
-		# 	if(not self.thread.is_alive()):
-		# 		self.status = State.SUCCESS
-		# else:
-			# self.status = State.RUNNING
-			# self.thread = threading.Thread(target=do_action, args=("send_message", self.message,))
-			# self.thread.start()
+	def tick(self):
 
 		C.Coordinator.get().modifyWorld(self.data_slot, self.value)
 		self.status = State.SUCCESS
-		BT.BT.getBT().logger.log("closed " +self.toString())
+
 		return self.status
 	
 	def reset(self):

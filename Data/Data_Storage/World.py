@@ -19,7 +19,7 @@ class World:
 
 	#returns the value of a given key (and create a new entry when doesn't exist)
 	def get(self, data_key):
-		res = self.storage.get(data_key)
+		res = self.storage.get(data_key, None)
 
 		#If the variable doesn't exist in the storage, it is created and set as False
 		if(res == None):

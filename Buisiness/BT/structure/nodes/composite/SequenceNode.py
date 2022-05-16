@@ -13,18 +13,17 @@ class SequenceNode(Node) :
 		kids =" "+ (str(len(self.children)))
 		return ( "SEQUENCE "+str(self.status) + " " + str(self.id))
 
-	def tick(self, predecessor : "Node"):
-		BT.BT.getBT().logger.log("open " +self.toString())
+	def tick(self):
+
 
 		
 		self.status = State.SUCCESS
 		for child in self.children:
-			if(child.tick(self) == State.FAILURE):
+			if(child.tick() == State.FAILURE):
 				self.status = State.FAILURE
 				break
 
 		#back to parents node
-		BT.BT.getBT().logger.log("closed " +self.toString())
 		return self.status
 
 	def reset(self):

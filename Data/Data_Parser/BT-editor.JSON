@@ -89,7 +89,9 @@
       "name": "Evaluation Method",
       "title": "intent_is_question",
       "description": "",
-      "properties": {},
+      "properties": {
+        "data_slot": "intent_is_question"
+      },
       "display": {
         "x": -780,
         "y": 840
@@ -104,8 +106,8 @@
         "data_slot": "intent_is_argument"
       },
       "display": {
-        "x": 264,
-        "y": 924
+        "x": 312,
+        "y": 960
       }
     },
     "c923a9ed-a22f-447c-8bc3-49bba5cac51e": {
@@ -146,8 +148,8 @@
         "data_slot": "details_provided"
       },
       "display": {
-        "x": 864,
-        "y": 1128
+        "x": 912,
+        "y": 1164
       }
     },
     "ca197bc6-20e1-4e52-88f0-6b71fd76880c": {
@@ -173,8 +175,8 @@
       "description": "",
       "properties": {},
       "display": {
-        "x": 1404,
-        "y": 720
+        "x": 1452,
+        "y": 756
       },
       "children": [
         "5c605fdf-1804-4bf1-ba1a-1438c1d28907",
@@ -188,8 +190,8 @@
       "description": "",
       "properties": {},
       "display": {
-        "x": 1272,
-        "y": 936
+        "x": 1320,
+        "y": 972
       },
       "children": [
         "68e51b43-eda8-4fb3-ad03-d97164551ad3",
@@ -205,8 +207,8 @@
       "description": "",
       "properties": {},
       "display": {
-        "x": 1776,
-        "y": 828
+        "x": 1824,
+        "y": 864
       },
       "children": [
         "ffa75f95-a859-4a0e-b2e9-13553d55f764",
@@ -222,8 +224,8 @@
         "data_slot": "intent_is_refusal"
       },
       "display": {
-        "x": 1704,
-        "y": 948
+        "x": 1752,
+        "y": 984
       }
     },
     "eb688b03-7053-4fd8-8cfd-15e00acf0d14": {
@@ -233,8 +235,8 @@
       "description": "",
       "properties": {},
       "display": {
-        "x": 1572,
-        "y": 1140
+        "x": 1620,
+        "y": 1176
       },
       "children": [
         "9cc35779-6e38-4b15-814b-e1810f2e9816",
@@ -248,8 +250,8 @@
       "description": "",
       "properties": {},
       "display": {
-        "x": 1356,
-        "y": 1344
+        "x": 1404,
+        "y": 1380
       },
       "children": [
         "297f8dd1-96e9-4c87-8cd8-7e8352c7ad18",
@@ -264,8 +266,8 @@
       "description": "",
       "properties": {},
       "display": {
-        "x": 1920,
-        "y": 1368
+        "x": 1968,
+        "y": 1404
       },
       "children": [
         "b240bfbb-cf53-43ce-818f-a2ad95e4ad16",
@@ -281,8 +283,8 @@
         "data_slot": "intent_is_approval"
       },
       "display": {
-        "x": 1152,
-        "y": 1452
+        "x": 1200,
+        "y": 1488
       }
     },
     "b240bfbb-cf53-43ce-818f-a2ad95e4ad16": {
@@ -294,8 +296,8 @@
         "data_slot": "intent_is_refusal"
       },
       "display": {
-        "x": 1824,
-        "y": 1464
+        "x": 1872,
+        "y": 1500
       }
     },
     "6120aa06-4da9-40e5-8fb0-46d4bd2059c1": {
@@ -307,8 +309,8 @@
         "message": ""
       },
       "display": {
-        "x": 708,
-        "y": 600
+        "x": 756,
+        "y": 636
       },
       "children": [
         "776468dc-1e62-46c6-8d7b-831ce843873d",
@@ -568,7 +570,7 @@
       },
       "display": {
         "x": -1812,
-        "y": 1260
+        "y": 1248
       }
     },
     "396e476e-9fce-4a4b-8028-ff84eece0751": {
@@ -683,8 +685,8 @@
       "description": "",
       "properties": {},
       "display": {
-        "x": 480,
-        "y": 684
+        "x": 528,
+        "y": 720
       },
       "children": [
         "a4f3d5b0-0f2e-4bde-81e8-dcb1ba717cbc",
@@ -700,8 +702,8 @@
         "data_slot": "argumenting"
       },
       "display": {
-        "x": 588,
-        "y": 816
+        "x": 636,
+        "y": 852
       }
     },
     "a4f3d5b0-0f2e-4bde-81e8-dcb1ba717cbc": {
@@ -711,8 +713,8 @@
       "description": "",
       "properties": {},
       "display": {
-        "x": 360,
-        "y": 780
+        "x": 408,
+        "y": 816
       },
       "children": [
         "e6e4d01a-fe3c-4fd1-b2ec-821ce049a236",
@@ -729,8 +731,8 @@
         "value": "True"
       },
       "display": {
-        "x": 468,
-        "y": 924
+        "x": 516,
+        "y": 960
       }
     },
     "ad1a0373-9879-484c-b29a-ffc1b72b237f": {
@@ -743,8 +745,8 @@
         "message": "Would you care to provide more details, please?"
       },
       "display": {
-        "x": 780,
-        "y": 924
+        "x": 828,
+        "y": 948
       }
     },
     "12768357-bc65-4ef3-82f6-c7eef91a4218": {
@@ -754,8 +756,8 @@
       "description": "",
       "properties": {},
       "display": {
-        "x": 960,
-        "y": 924
+        "x": 1008,
+        "y": 960
       }
     },
     "e7d57db2-0fb4-4cf8-a3fb-bf5ae480b1cb": {
@@ -768,8 +770,8 @@
         "value": "True"
       },
       "display": {
-        "x": 1932,
-        "y": 960
+        "x": 1980,
+        "y": 984
       }
     },
     "a5ba9911-2c01-48f5-802a-66b8d8511080": {
@@ -779,8 +781,8 @@
       "description": "",
       "properties": {},
       "display": {
-        "x": 1356,
-        "y": 1140
+        "x": 1404,
+        "y": 1176
       }
     },
     "93402749-1afc-4211-a1de-93efa56e0f39": {
@@ -793,8 +795,8 @@
         "message": "Would you like me to clarify?"
       },
       "display": {
-        "x": 1116,
-        "y": 1140
+        "x": 1164,
+        "y": 1176
       }
     },
     "0245587e-e468-47a2-8210-9518c79f04ae": {
@@ -806,8 +808,8 @@
         "message": "this is an explanation"
       },
       "display": {
-        "x": 1356,
-        "y": 1452
+        "x": 1404,
+        "y": 1488
       }
     },
     "4b21f24f-a513-4e34-92ac-c7d05f6bbfba": {
@@ -819,8 +821,8 @@
         "message": "this is an explanation"
       },
       "display": {
-        "x": -600,
-        "y": 840
+        "x": -612,
+        "y": 828
       }
     },
     "21350368-a924-46f4-b7db-a46eee4e79b4": {
@@ -833,8 +835,8 @@
         "value": "None"
       },
       "display": {
-        "x": 1584,
-        "y": 1452
+        "x": 1632,
+        "y": 1488
       }
     },
     "de1ef5f3-1983-4a1a-9f73-f0e4fc94eead": {
@@ -847,8 +849,8 @@
         "value": "True"
       },
       "display": {
-        "x": 2052,
-        "y": 1464
+        "x": 2100,
+        "y": 1500
       }
     },
     "7125f454-9ea6-42d3-95e1-cc6081e777da": {
@@ -881,7 +883,7 @@
     "e2771b40-29b4-4914-8404-ece9d5f9d620": {
       "id": "e2771b40-29b4-4914-8404-ece9d5f9d620",
       "name": "Explanation Method",
-      "title": "Explanation Method",
+      "title": "set_user_to_greeted",
       "description": "",
       "properties": {
         "data_slot": "user_greeted",
@@ -937,8 +939,8 @@
     }
   },
   "display": {
-    "camera_x": 893,
-    "camera_y": 287.5,
+    "camera_x": 1237,
+    "camera_y": -18.5,
     "camera_z": 0.5,
     "x": -288,
     "y": -444

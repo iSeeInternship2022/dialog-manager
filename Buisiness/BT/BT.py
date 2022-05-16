@@ -18,17 +18,9 @@ class BT:
 
 
 	def run(self):
-		self.interface.send_to_user("Welcome!")
 		while(True):
-			self.tree.root.tick(self.tree.root)
+			self.tree.root.tick()
 		
-
-	def send(self, message):
-		self.interface.send_to_user("Bot : " + message)
-	
-	def receive(self):
-		self.last_user_answer = self.interface.get_response()
-
 	def restart(self):
 		pass
 

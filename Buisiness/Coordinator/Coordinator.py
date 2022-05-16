@@ -1,7 +1,9 @@
 
-from ui.UiConsole import UiConsole
+
 from Data.Data_Storage.World import World
 from Buisiness.BT.BT import BT
+from ui.Logger import Logger
+from ui.UiConsole import UiConsole
 
 class Coordinator:
 
@@ -24,6 +26,7 @@ class Coordinator:
 		self.interface = UiConsole()
 		self.world = World()
 		self.bt = BT()
+		self.logger = Logger
 		self.bt.coordinator = self
 
 	def start(self):
@@ -50,3 +53,6 @@ class Coordinator:
 	def checkWorld(data_slot):
 		return Coordinator.get().world.get(data_slot)
 		
+
+	def log(self, message):
+		self.logger.log(message)

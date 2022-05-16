@@ -13,5 +13,6 @@ class Tree :
 
 def printTree(root, level=0):
 	print(" - " * level, root.toString())
-	for child in root.children:
-		printTree(child, level + 1)
+	if(hasattr(root, "children")):
+		for child in root.children:
+			printTree(child, level + 1)

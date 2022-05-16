@@ -11,10 +11,10 @@ class ConditionNode(Node) :
 		self.data_slot = None
 
 	def toString(self):
-		return ( "DECISION "+str(self.status) + " " + str(self.id) + " " + self.predicate)
+		return ( "DECISION "+str(self.status) + " " + str(self.id))
 
-	def tick(self, predecessor : "Node"):
-		BT.BT.getBT().logger.log("open " + self.toString())
+	def tick(self):
+
 
 		bool = C.Coordinator.get().checkWorld(self.data_slot)
 
@@ -23,8 +23,6 @@ class ConditionNode(Node) :
 		else:
 			self.status = State.FAILURE
 
-
-		BT.BT.getBT().logger.log("closed " +self.toString())
 		return self.status
 
 	def reset(self):

@@ -13,9 +13,8 @@ class ActionNode(Node.Node) :
 	def toString(self):
 		return ( "ACTION "+str(self.status) + " " + str(self.id) + " " + self.action)
 
-	def tick(self, predecessor : "Node"):
+	def tick(self):
 
-		BT.BT.getBT().logger.log("open " +self.toString())
 
 
 		if(self.status == State.RUNNING):
@@ -26,7 +25,6 @@ class ActionNode(Node.Node) :
 			self.thread = threading.Thread(target=do_action, args=(self.action,))
 			self.thread.start()
 		
-		BT.BT.getBT().logger.log("closed " +self.toString())
 		return self.status
 	
 	def reset(self):

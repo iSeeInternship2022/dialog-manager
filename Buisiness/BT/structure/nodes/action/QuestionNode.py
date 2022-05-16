@@ -13,14 +13,11 @@ class QuestionNode(Node.Node) :
 	def toString(self):
 		return ( "message "+str(self.status) + " " + str(self.id) + " " + self.message)
 
-	def tick(self, predecessor : "Node"):
-
-		BT.BT.getBT().logger.log("open " +self.toString())
+	def tick(self):
 
 		C.Coordinator.get().ask(self.message, self.data_slot)
 		self.status = State.SUCCESS
 		
-		BT.BT.getBT().logger.log("closed " +self.toString())
 		return self.status
 	
 	def reset(self):
