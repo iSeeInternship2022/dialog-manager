@@ -1,46 +1,27 @@
-from asyncore import loop
-import threading
 from Buisiness.BT.structure.Tree import printTree
 from ui.Logger import Logger
 import Buisiness.BT.structure.TreeGenerator as tg
-from ui.UiConsole import UiConsole
+
 
 
 class BT:
-	__instance = None
 
-	@staticmethod 
-	def getBT():
-		
-		if BT.__instance == None:
-			BT()
-		return BT.__instance
-	
 	def __init__(self):
-		#Virtually private constructor
-		if BT.__instance != None:
-			raise Exception("This is a singleton")
-		else:
-			BT.__instance = self
-		
+
 		self.tree = tg.generateTree("Data\Data_Parser\BT-editor.JSON")
 		printTree(self.tree.root)
-		self.user_satisfied = False	
+
 		#self.currentState = self.tree.root
-		self.interface = UiConsole()
+		
 		self.logger = Logger()
-		self.last_user_answer = None
-		self.user_intent = ''
-		self.survey_is_completed = False
-		self.user_greeted = False
+		self.coordinator = None
+
 
 	def run(self):
 		self.interface.send_to_user("Welcome!")
 		while(True):
 			self.tree.root.tick(self.tree.root)
 		
-
-
 
 	def send(self, message):
 		self.interface.send_to_user("Bot : " + message)

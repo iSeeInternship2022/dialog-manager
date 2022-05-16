@@ -1,13 +1,14 @@
+
 from  Buisiness.BT.structure.nodes.Node import Node
 import threading
 import Buisiness.BT.BT as BT
 from  Buisiness.BT.structure.nodes.StateType import StateType as State
-from  Buisiness.BT.structure.reactions.Predicates import check_predicate
+import Buisiness.Coordinator.Coordinator as C
 
 class ConditionNode(Node) :
-	def __init__(self, id, label) -> None:
+	def __init__(self, id) -> None:
 		super().__init__(id)
-		self.predicate = label
+		self.data_slot = None
 
 	def toString(self):
 		return ( "DECISION "+str(self.status) + " " + str(self.id) + " " + self.predicate)
@@ -15,7 +16,7 @@ class ConditionNode(Node) :
 	def tick(self, predecessor : "Node"):
 		BT.BT.getBT().logger.log("open " + self.toString())
 
-		bool = check_predicate(self.predicate)
+		bool = C.Coordinator.get().checkWorld(self.data_slot)
 
 		if(bool):
 				self.status = State.SUCCESS

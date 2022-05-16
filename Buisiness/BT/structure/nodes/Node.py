@@ -6,8 +6,6 @@ from Buisiness.BT.structure.nodes.StateType import StateType
 
 class Node :
 	def __init__(self, id) -> None:
-		self.children = []
-		self.parent = None
 		self.id = id
 		self.status = StateType.FAILURE
 

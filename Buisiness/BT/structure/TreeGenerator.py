@@ -39,20 +39,30 @@ def generateTree(path) :
 		or parser.BT_nodes[n]["name"] == "RepeatUntilFailure"):
 			child = parser.BT_nodes[n]["child"]
 			nodes.get(n).children.append(nodes.get(child))
+
+		#For question nodes and nodes that checks the world, we need to assign its data slot (where it has to look for the data it needs)
+		if(parser.BT_nodes[n]["name"] == "Evaluation Method"
+		or parser.BT_nodes[n]["name"] == "Failer"):
+			nodes.get(n).data_slot = parser.BT_nodes[n]["properties"]["data_slot"]
+
+		#Question nodes also needs to have the text of the question, for now its raw text, but it could be a type used for a querry in the future
+		if(parser.BT_nodes[n]["name"] == "Failer"
+		or parser.BT_nodes[n]["name"] == "Succeeder"):
+			nodes.get(n).message = parser.BT_nodes[n]["properties"]["message"]
 	
+		#For WorldModifiers nodes, we also need the value that will be asigned to the variable
+		if(parser.BT_nodes[n]["name"] == "Explanation Method"):
+			val = parser.BT_nodes[n]["properties"]["value"]
+
+			#Changing string for boolean values
+			if(val == "True" or val == "False"):
+				val = bool(val)
+
+			nodes.get(n).value = val
 
 	#make the root a RootNode and attach the first node
 	root_id = parser.BT_root
 	root = RootNode('0')
 	root.children.append(nodes.get(root_id))
-	nodes.get(root_id).parent = root
-
-
-	for n in nodes.values():
-		for c in n.children:
-			c.parent = n
-
-	# for n in nodes:
-	# 	print(n.toString())
 
 	return Tree.Tree(root, nodes)

@@ -1,7 +1,11 @@
-from regex import R
-import Buisiness.BT.structure.nodes.NodeType as nt
+
 import Buisiness.BT.structure.nodes.action.ActionNode as Action
 import Buisiness.BT.structure.nodes.ConditionNode as Decision
+from Buisiness.BT.structure.nodes.action.ComputingNode import ComputingNode
+from Buisiness.BT.structure.nodes.action.InformationNode import InformationNode
+from Buisiness.BT.structure.nodes.action.QuestionNode import QuestionNode
+from Buisiness.BT.structure.nodes.action.Succeeder import Succeder
+from Buisiness.BT.structure.nodes.action.WorldModifierNode import WorldModifierNode
 import Buisiness.BT.structure.nodes.composite.PriorityNode as Priority
 import Buisiness.BT.structure.nodes.composite.SequenceNode as Sequence
 import Buisiness.BT.structure.nodes.decorators.RepTillFailNode as TillFail
@@ -12,10 +16,21 @@ import Buisiness.BT.structure.nodes.Node as Node
 def makeNode(type, id, label) :
 	res = Node.Node(0)
 
-	if type == "Succeeder":
+	#Should have their own node type, using available types as a replacement for now
+	if type == "Explanation Method":
+		res = WorldModifierNode(id)
+
+	elif type == "Failer":
+		res = QuestionNode(id)
+
+	elif type == "Succeeder":
+		res = InformationNode(id)
+
+	elif type == "Inverter":
 		res = Action.ActionNode(id, label)
+
 	elif type == "Evaluation Method":
-		res = Decision.ConditionNode(id, label)
+		res = Decision.ConditionNode(id)
 	elif type == "Priority":
 		res = Priority.PriorityNode(id)
 	elif type == "Sequence":
@@ -31,11 +46,4 @@ def makeNode(type, id, label) :
 	return res
 
 
-	# switcher = {
-    # 	nt.NodeType.action: Action.ActionNode.__init__(id, label),
-    # 	nt.NodeType.decision: Decision.ConditionNode.__init__(id, label),
-    # 	nt.NodeType.priority: Priority.PriorityNode.__init__(id),
-	# 	nt.NodeType.sequence: Sequence.SequenceNode.__init__(id),
-    # }
-	# return switcher.get(type, "This type doesn't exist")
 

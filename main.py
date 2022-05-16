@@ -1,3 +1,3 @@
-from Buisiness.BT.BT import BT
+from Buisiness.Coordinator.Coordinator import Coordinator
 
-BT.getBT().run()
+Coordinator.get().start()

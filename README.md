@@ -50,3 +50,41 @@ functions:
 Setup **[Docker](https://www.docker.com/get-started)** locally in your development enviornment. 
 
 docker compose up
+
+
+
+
+Types of nodes available:
+
+
+It thought of adding :
+
+Action nodes :
+Information Nodes
+Sends a message to the user
+Properties :
+message (it could be replaced by a query in the future)
+
+Question Nodes
+Sends a message to the users and waits for an answer
+Properties :
+message
+answer_slot (where the answer is stored)
+
+WorldModifying Nodes
+changes a variable of the world
+Properties :
+data_slot (key of the variable to change)
+value
+
+Computing Nodes
+Uses world variables to compute a new value
+Properties :
+List of needed variables key
+key of where to store the result
+
+Decision Nodes:
+WorldChecking Nodes (slightly modified Condition Nodes) :
+Returns the value of a world variable
+Properties :
+data_slot (key of the variable to check)
