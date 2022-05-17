@@ -11,7 +11,7 @@ class QuestionNode(Node.Node) :
 		self.data_slot = None
 
 	def toString(self):
-		return ( "message "+str(self.status) + " " + str(self.id) + " " + self.message)
+		return ( "QUESTION "+str(self.status) + " " + str(self.id)  + " " + str(self.data_slot) + " " + str(self.message))
 
 	def tick(self):
 

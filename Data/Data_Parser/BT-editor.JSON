@@ -15,11 +15,11 @@
       "properties": {},
       "display": {
         "x": -288,
-        "y": -132
+        "y": -36
       },
       "children": [
         "ca197bc6-20e1-4e52-88f0-6b71fd76880c",
-        "b52ebe2d-4e7d-4adf-8c44-529fe9bba305"
+        "b46f8de3-f841-4182-853c-487a656e7f6b"
       ]
     },
     "b3cd5ae3-a5c6-4629-8751-a57c8ffaebd9": {
@@ -31,25 +31,9 @@
         "data_slot": "user_satisfied"
       },
       "display": {
-        "x": -3120,
-        "y": 936
+        "x": -3288,
+        "y": 948
       }
-    },
-    "b52ebe2d-4e7d-4adf-8c44-529fe9bba305": {
-      "id": "b52ebe2d-4e7d-4adf-8c44-529fe9bba305",
-      "name": "Sequence",
-      "title": "Sequence",
-      "description": "",
-      "properties": {},
-      "display": {
-        "x": -288,
-        "y": 156
-      },
-      "children": [
-        "b90fcc13-e65e-4afd-8600-18465f19b400",
-        "b46f8de3-f841-4182-853c-487a656e7f6b",
-        "5ac19188-00ca-45aa-8c69-2d33c8098186"
-      ]
     },
     "b46f8de3-f841-4182-853c-487a656e7f6b": {
       "id": "b46f8de3-f841-4182-853c-487a656e7f6b",
@@ -79,49 +63,10 @@
         "y": 696
       },
       "children": [
-        "bcdea152-8e1f-473a-8d6b-588e995ce3e8",
+        "18870b94-10ca-42f2-9b19-0fde4f4ec9eb",
         "4b21f24f-a513-4e34-92ac-c7d05f6bbfba",
-        "3898e7c4-d3ce-403b-b5f1-38b728b0a543"
+        "4eb49152-53dc-4492-974d-54ece8a77e83"
       ]
-    },
-    "bcdea152-8e1f-473a-8d6b-588e995ce3e8": {
-      "id": "bcdea152-8e1f-473a-8d6b-588e995ce3e8",
-      "name": "Evaluation Method",
-      "title": "intent_is_question",
-      "description": "",
-      "properties": {
-        "data_slot": "intent_is_question"
-      },
-      "display": {
-        "x": -780,
-        "y": 840
-      }
-    },
-    "e6e4d01a-fe3c-4fd1-b2ec-821ce049a236": {
-      "id": "e6e4d01a-fe3c-4fd1-b2ec-821ce049a236",
-      "name": "Evaluation Method",
-      "title": "intent_is_argument",
-      "description": "",
-      "properties": {
-        "data_slot": "intent_is_argument"
-      },
-      "display": {
-        "x": 312,
-        "y": 960
-      }
-    },
-    "c923a9ed-a22f-447c-8bc3-49bba5cac51e": {
-      "id": "c923a9ed-a22f-447c-8bc3-49bba5cac51e",
-      "name": "Evaluation Method",
-      "title": "",
-      "description": "user satisfied",
-      "properties": {
-        "data_slot": "intent_is_affirmation"
-      },
-      "display": {
-        "x": -432,
-        "y": 1056
-      }
     },
     "33342101-6a28-4a2f-9a76-64e2efa3c0d8": {
       "id": "33342101-6a28-4a2f-9a76-64e2efa3c0d8",
@@ -134,23 +79,10 @@
         "y": 888
       },
       "children": [
-        "c923a9ed-a22f-447c-8bc3-49bba5cac51e",
+        "14f816f7-acd4-43c1-8a5f-5039fdaf4ecf",
         "7125f454-9ea6-42d3-95e1-cc6081e777da",
-        "3ad241f3-f808-44b7-a212-13febe97c243"
+        "ed8980e2-a453-4d90-941a-27bbd6372e26"
       ]
-    },
-    "68e51b43-eda8-4fb3-ad03-d97164551ad3": {
-      "id": "68e51b43-eda8-4fb3-ad03-d97164551ad3",
-      "name": "Evaluation Method",
-      "title": "Intent is Details",
-      "description": "",
-      "properties": {
-        "data_slot": "details_provided"
-      },
-      "display": {
-        "x": 912,
-        "y": 1164
-      }
     },
     "ca197bc6-20e1-4e52-88f0-6b71fd76880c": {
       "id": "ca197bc6-20e1-4e52-88f0-6b71fd76880c",
@@ -194,7 +126,7 @@
         "y": 972
       },
       "children": [
-        "68e51b43-eda8-4fb3-ad03-d97164551ad3",
+        "14418abf-d73e-49f7-8340-785ae2c056c4",
         "93402749-1afc-4211-a1de-93efa56e0f39",
         "a5ba9911-2c01-48f5-802a-66b8d8511080",
         "eb688b03-7053-4fd8-8cfd-15e00acf0d14"
@@ -211,22 +143,9 @@
         "y": 864
       },
       "children": [
-        "ffa75f95-a859-4a0e-b2e9-13553d55f764",
+        "06b263cd-19e7-4327-8ac7-c06d6057d092",
         "e7d57db2-0fb4-4cf8-a3fb-bf5ae480b1cb"
       ]
-    },
-    "ffa75f95-a859-4a0e-b2e9-13553d55f764": {
-      "id": "ffa75f95-a859-4a0e-b2e9-13553d55f764",
-      "name": "Evaluation Method",
-      "title": "intent_is_refusal",
-      "description": "",
-      "properties": {
-        "data_slot": "intent_is_refusal"
-      },
-      "display": {
-        "x": 1752,
-        "y": 984
-      }
     },
     "eb688b03-7053-4fd8-8cfd-15e00acf0d14": {
       "id": "eb688b03-7053-4fd8-8cfd-15e00acf0d14",
@@ -254,9 +173,8 @@
         "y": 1380
       },
       "children": [
-        "297f8dd1-96e9-4c87-8cd8-7e8352c7ad18",
-        "0245587e-e468-47a2-8210-9518c79f04ae",
-        "21350368-a924-46f4-b7db-a46eee4e79b4"
+        "27446b48-51d1-4c0e-a2d6-8d92fdde398e",
+        "0245587e-e468-47a2-8210-9518c79f04ae"
       ]
     },
     "f28fa8c4-3624-47ee-8bc6-b3dbebec2636": {
@@ -266,39 +184,13 @@
       "description": "",
       "properties": {},
       "display": {
-        "x": 1968,
-        "y": 1404
+        "x": 1980,
+        "y": 1368
       },
       "children": [
-        "b240bfbb-cf53-43ce-818f-a2ad95e4ad16",
+        "e524b89e-2e5a-421e-8c33-6275f2716897",
         "de1ef5f3-1983-4a1a-9f73-f0e4fc94eead"
       ]
-    },
-    "297f8dd1-96e9-4c87-8cd8-7e8352c7ad18": {
-      "id": "297f8dd1-96e9-4c87-8cd8-7e8352c7ad18",
-      "name": "Evaluation Method",
-      "title": "intent_is_approval",
-      "description": "",
-      "properties": {
-        "data_slot": "intent_is_approval"
-      },
-      "display": {
-        "x": 1200,
-        "y": 1488
-      }
-    },
-    "b240bfbb-cf53-43ce-818f-a2ad95e4ad16": {
-      "id": "b240bfbb-cf53-43ce-818f-a2ad95e4ad16",
-      "name": "Evaluation Method",
-      "title": "intent_is_refusal",
-      "description": "",
-      "properties": {
-        "data_slot": "intent_is_refusal"
-      },
-      "display": {
-        "x": 1872,
-        "y": 1500
-      }
     },
     "6120aa06-4da9-40e5-8fb0-46d4bd2059c1": {
       "id": "6120aa06-4da9-40e5-8fb0-46d4bd2059c1",
@@ -327,7 +219,7 @@
       "properties": {},
       "display": {
         "x": -288,
-        "y": -300
+        "y": -504
       },
       "children": [
         "66eb9065-de21-40ee-8571-732b552dc20d",
@@ -441,12 +333,13 @@
       "description": "",
       "properties": {},
       "display": {
-        "x": -1080,
+        "x": -1140,
         "y": 648
       },
       "children": [
         "8158ceb1-2321-4e2a-9b83-c02c98aca491",
-        "bea075e0-b969-498b-80fd-39033b66833b"
+        "bea075e0-b969-498b-80fd-39033b66833b",
+        "9026d967-48ca-436c-8f1d-8d7a59009c1e"
       ]
     },
     "8158ceb1-2321-4e2a-9b83-c02c98aca491": {
@@ -456,39 +349,13 @@
       "description": "",
       "properties": {},
       "display": {
-        "x": -1236,
+        "x": -1332,
         "y": 732
       },
       "children": [
-        "2a5a0027-3e6e-4f33-8ba1-37ea1ae2ebd5",
-        "23ab0480-87ad-41f5-80e4-c2f99290b944"
+        "3d80ab00-79ff-490c-8468-94330b307069",
+        "167904b8-6870-4e0f-8910-2edd60eab38c"
       ]
-    },
-    "2a5a0027-3e6e-4f33-8ba1-37ea1ae2ebd5": {
-      "id": "2a5a0027-3e6e-4f33-8ba1-37ea1ae2ebd5",
-      "name": "Evaluation Method",
-      "title": "intent_is_satisfaction",
-      "description": "",
-      "properties": {
-        "data_slot": "intent_is_satisfaction"
-      },
-      "display": {
-        "x": -1368,
-        "y": 840
-      }
-    },
-    "23ab0480-87ad-41f5-80e4-c2f99290b944": {
-      "id": "23ab0480-87ad-41f5-80e4-c2f99290b944",
-      "name": "Evaluation Method",
-      "title": "intent_is_wishing_to_end",
-      "description": "",
-      "properties": {
-        "data_slot": "intent_is_wishing_to_end"
-      },
-      "display": {
-        "x": -1176,
-        "y": 840
-      }
     },
     "376b7f51-ce13-4337-96a4-ad17619e7be1": {
       "id": "376b7f51-ce13-4337-96a4-ad17619e7be1",
@@ -518,7 +385,7 @@
       "children": [
         "b3cd5ae3-a5c6-4629-8751-a57c8ffaebd9",
         "395ccf62-5b79-48cc-aaaa-f38b85601463",
-        "a4e97df2-7288-413f-8064-ca2b28bf4b43"
+        "5b88c3d6-4b17-4f8f-b05d-c50c1990d979"
       ]
     },
     "395ccf62-5b79-48cc-aaaa-f38b85601463": {
@@ -531,8 +398,8 @@
         "value": "None"
       },
       "display": {
-        "x": -2892,
-        "y": 936
+        "x": -3072,
+        "y": 948
       }
     },
     "a4e97df2-7288-413f-8064-ca2b28bf4b43": {
@@ -545,8 +412,8 @@
         "message": "Would you like to help us by answering a quick survey?"
       },
       "display": {
-        "x": -2652,
-        "y": 936
+        "x": -2484,
+        "y": 1128
       }
     },
     "480bd97e-f64a-4eb9-91aa-9dcdf09e130a": {
@@ -583,8 +450,8 @@
         "message": "Survey Question"
       },
       "display": {
-        "x": -1944,
-        "y": 1620
+        "x": -1932,
+        "y": 1644
       }
     },
     "145e8feb-d056-47c9-8914-b64f54f58505": {
@@ -595,7 +462,7 @@
       "properties": {},
       "display": {
         "x": -1704,
-        "y": 1632
+        "y": 1644
       }
     },
     "8e06f570-b263-45b9-af68-48076c0df1a4": {
@@ -611,17 +478,6 @@
         "y": 1200
       }
     },
-    "b90fcc13-e65e-4afd-8600-18465f19b400": {
-      "id": "b90fcc13-e65e-4afd-8600-18465f19b400",
-      "name": "Inverter",
-      "title": "detect_intent",
-      "description": "",
-      "properties": {},
-      "display": {
-        "x": -468,
-        "y": 384
-      }
-    },
     "bea075e0-b969-498b-80fd-39033b66833b": {
       "id": "bea075e0-b969-498b-80fd-39033b66833b",
       "name": "Explanation Method",
@@ -632,50 +488,8 @@
         "value": "True"
       },
       "display": {
-        "x": -960,
+        "x": -1020,
         "y": 756
-      }
-    },
-    "5ac19188-00ca-45aa-8c69-2d33c8098186": {
-      "id": "5ac19188-00ca-45aa-8c69-2d33c8098186",
-      "name": "Failer",
-      "title": "anything_else",
-      "description": "",
-      "properties": {
-        "data_slot": "user_answer",
-        "message": "Do you need anything else?"
-      },
-      "display": {
-        "x": -108,
-        "y": 384
-      }
-    },
-    "3898e7c4-d3ce-403b-b5f1-38b728b0a543": {
-      "id": "3898e7c4-d3ce-403b-b5f1-38b728b0a543",
-      "name": "Explanation Method",
-      "title": "reset_user_answer",
-      "description": "",
-      "properties": {
-        "data_slot": "user_answer",
-        "value": "None"
-      },
-      "display": {
-        "x": -408,
-        "y": 840
-      }
-    },
-    "3ad241f3-f808-44b7-a212-13febe97c243": {
-      "id": "3ad241f3-f808-44b7-a212-13febe97c243",
-      "name": "Explanation Method",
-      "title": "reset_user_answer",
-      "description": "",
-      "properties": {
-        "data_slot": "user_answer",
-        "value": "None"
-      },
-      "display": {
-        "x": -24,
-        "y": 1068
       }
     },
     "776468dc-1e62-46c6-8d7b-831ce843873d": {
@@ -717,7 +531,7 @@
         "y": 816
       },
       "children": [
-        "e6e4d01a-fe3c-4fd1-b2ec-821ce049a236",
+        "381c1649-d543-4b5e-87f9-c39a4d7284f0",
         "b6ea8226-5149-42a6-b9eb-29287a5095cd"
       ]
     },
@@ -821,22 +635,8 @@
         "message": "this is an explanation"
       },
       "display": {
-        "x": -612,
-        "y": 828
-      }
-    },
-    "21350368-a924-46f4-b7db-a46eee4e79b4": {
-      "id": "21350368-a924-46f4-b7db-a46eee4e79b4",
-      "name": "Explanation Method",
-      "title": "reset_user_answer",
-      "description": "",
-      "properties": {
-        "data_slot": "user_answer",
-        "value": "None"
-      },
-      "display": {
-        "x": 1632,
-        "y": 1488
+        "x": -504,
+        "y": 840
       }
     },
     "de1ef5f3-1983-4a1a-9f73-f0e4fc94eead": {
@@ -862,8 +662,8 @@
         "message": "Yes, that's it"
       },
       "display": {
-        "x": -216,
-        "y": 1068
+        "x": -60,
+        "y": 1056
       }
     },
     "977c4cf3-cd74-4dad-b12e-f124da438d7c": {
@@ -876,8 +676,8 @@
         "message": "Hello! How may I help you?"
       },
       "display": {
-        "x": -684,
-        "y": -12
+        "x": -828,
+        "y": -72
       }
     },
     "e2771b40-29b4-4914-8404-ece9d5f9d620": {
@@ -890,21 +690,21 @@
         "value": "True"
       },
       "display": {
-        "x": -480,
-        "y": -12
+        "x": -1032,
+        "y": -72
       }
     },
     "69ee9a4b-a97f-45ab-8250-bb47c9918783": {
       "id": "69ee9a4b-a97f-45ab-8250-bb47c9918783",
       "name": "Evaluation Method",
-      "title": "Evaluation Method",
+      "title": "user_greeted",
       "description": "",
       "properties": {
         "data_slot": "user_greeted"
       },
       "display": {
-        "x": -888,
-        "y": -108
+        "x": -2172,
+        "y": -132
       }
     },
     "66eb9065-de21-40ee-8571-732b552dc20d": {
@@ -914,11 +714,11 @@
       "description": "",
       "properties": {},
       "display": {
-        "x": -660,
-        "y": -252
+        "x": -1356,
+        "y": -312
       },
       "children": [
-        "69ee9a4b-a97f-45ab-8250-bb47c9918783",
+        "9c664c32-267b-4df8-82b7-db8fe20151ea",
         "2409b25f-6df4-4d84-94b3-9081cfafba22"
       ]
     },
@@ -929,21 +729,300 @@
       "description": "",
       "properties": {},
       "display": {
-        "x": -588,
-        "y": -108
+        "x": -948,
+        "y": -168
       },
       "children": [
-        "977c4cf3-cd74-4dad-b12e-f124da438d7c",
-        "e2771b40-29b4-4914-8404-ece9d5f9d620"
+        "e2771b40-29b4-4914-8404-ece9d5f9d620",
+        "977c4cf3-cd74-4dad-b12e-f124da438d7c"
+      ]
+    },
+    "9c664c32-267b-4df8-82b7-db8fe20151ea": {
+      "id": "9c664c32-267b-4df8-82b7-db8fe20151ea",
+      "name": "Sequence",
+      "title": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -1752,
+        "y": -240
+      },
+      "children": [
+        "69ee9a4b-a97f-45ab-8250-bb47c9918783",
+        "6c6b5dd0-c0a9-4ec3-8efb-bc8215afc940"
+      ]
+    },
+    "4eb49152-53dc-4492-974d-54ece8a77e83": {
+      "id": "4eb49152-53dc-4492-974d-54ece8a77e83",
+      "name": "Explanation Method",
+      "title": "reset_user_answer",
+      "description": "",
+      "properties": {
+        "data_slot": "user_answer",
+        "value": "None"
+      },
+      "display": {
+        "x": -300,
+        "y": 840
+      }
+    },
+    "ed8980e2-a453-4d90-941a-27bbd6372e26": {
+      "id": "ed8980e2-a453-4d90-941a-27bbd6372e26",
+      "name": "Explanation Method",
+      "title": "reset_user_answer",
+      "description": "",
+      "properties": {
+        "data_slot": "user_answer",
+        "value": "None"
+      },
+      "display": {
+        "x": 108,
+        "y": 1056
+      }
+    },
+    "9026d967-48ca-436c-8f1d-8d7a59009c1e": {
+      "id": "9026d967-48ca-436c-8f1d-8d7a59009c1e",
+      "name": "Explanation Method",
+      "title": "reset_user_answer",
+      "description": "",
+      "properties": {
+        "data_slot": "user_answer",
+        "value": "None"
+      },
+      "display": {
+        "x": -816,
+        "y": 756
+      }
+    },
+    "0a3188bd-b7c6-458b-9f15-c49690e331df": {
+      "id": "0a3188bd-b7c6-458b-9f15-c49690e331df",
+      "name": "Evaluation Method",
+      "title": "survey_asked",
+      "description": "",
+      "properties": {
+        "data_slot": "survey_asked"
+      },
+      "display": {
+        "x": -2868,
+        "y": 1128
+      }
+    },
+    "5b88c3d6-4b17-4f8f-b05d-c50c1990d979": {
+      "id": "5b88c3d6-4b17-4f8f-b05d-c50c1990d979",
+      "name": "Priority",
+      "title": "Priority",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -2724,
+        "y": 960
+      },
+      "children": [
+        "0a3188bd-b7c6-458b-9f15-c49690e331df",
+        "a376e7f3-3718-450e-8966-40803f95134c",
+        "a4e97df2-7288-413f-8064-ca2b28bf4b43"
+      ]
+    },
+    "a376e7f3-3718-450e-8966-40803f95134c": {
+      "id": "a376e7f3-3718-450e-8966-40803f95134c",
+      "name": "Explanation Method",
+      "title": "set_survey_asked",
+      "description": "",
+      "properties": {
+        "data_slot": "survey_asked",
+        "value": "True"
+      },
+      "display": {
+        "x": -2676,
+        "y": 1128
+      }
+    },
+    "210f360f-f153-4529-8be5-f0e6b209e43f": {
+      "id": "210f360f-f153-4529-8be5-f0e6b209e43f",
+      "name": "Failer",
+      "title": "anything_else",
+      "description": "",
+      "properties": {
+        "data_slot": "user_answer",
+        "message": "Do you need anything else?"
+      },
+      "display": {
+        "x": -1368,
+        "y": 144
+      }
+    },
+    "313f33bf-d34f-4a23-9c24-36796b654ce9": {
+      "id": "313f33bf-d34f-4a23-9c24-36796b654ce9",
+      "name": "Repeater",
+      "title": "no_answer",
+      "description": "equal",
+      "properties": {
+        "maxLoop": -1,
+        "data_slot": "user_answer",
+        "value": "None"
+      },
+      "display": {
+        "x": -1692,
+        "y": 120
+      }
+    },
+    "3d80ab00-79ff-490c-8468-94330b307069": {
+      "id": "3d80ab00-79ff-490c-8468-94330b307069",
+      "name": "Repeater",
+      "title": "answer_is_satisfaction",
+      "description": "equal",
+      "properties": {
+        "maxLoop": -1,
+        "data_slot": "user_answer",
+        "value": "Satisfaction"
+      },
+      "display": {
+        "x": -1464,
+        "y": 840
+      }
+    },
+    "167904b8-6870-4e0f-8910-2edd60eab38c": {
+      "id": "167904b8-6870-4e0f-8910-2edd60eab38c",
+      "name": "Repeater",
+      "title": "answer_is_end",
+      "description": "equal",
+      "properties": {
+        "maxLoop": -1,
+        "data_slot": "user_answer",
+        "value": "End"
+      },
+      "display": {
+        "x": -1224,
+        "y": 840
+      }
+    },
+    "18870b94-10ca-42f2-9b19-0fde4f4ec9eb": {
+      "id": "18870b94-10ca-42f2-9b19-0fde4f4ec9eb",
+      "name": "Repeater",
+      "title": "answer_is_question",
+      "description": "equal",
+      "properties": {
+        "maxLoop": -1,
+        "data_slot": "user_answer",
+        "value": "Question"
+      },
+      "display": {
+        "x": -708,
+        "y": 852
+      }
+    },
+    "14f816f7-acd4-43c1-8a5f-5039fdaf4ecf": {
+      "id": "14f816f7-acd4-43c1-8a5f-5039fdaf4ecf",
+      "name": "Repeater",
+      "title": "answer_is_affirmation",
+      "description": "equal",
+      "properties": {
+        "maxLoop": -1,
+        "data_slot": "user_answer",
+        "value": "Affirm"
+      },
+      "display": {
+        "x": -276,
+        "y": 1056
+      }
+    },
+    "381c1649-d543-4b5e-87f9-c39a4d7284f0": {
+      "id": "381c1649-d543-4b5e-87f9-c39a4d7284f0",
+      "name": "Repeater",
+      "title": "answer_is_argue",
+      "description": "equal",
+      "properties": {
+        "maxLoop": -1,
+        "data_slot": "user_answer",
+        "value": "Argue"
+      },
+      "display": {
+        "x": 312,
+        "y": 960
+      }
+    },
+    "14418abf-d73e-49f7-8340-785ae2c056c4": {
+      "id": "14418abf-d73e-49f7-8340-785ae2c056c4",
+      "name": "Repeater",
+      "title": "answer_is_details",
+      "description": "equal",
+      "properties": {
+        "maxLoop": -1,
+        "data_slot": "user_answer",
+        "value": "Details"
+      },
+      "display": {
+        "x": 924,
+        "y": 1176
+      }
+    },
+    "06b263cd-19e7-4327-8ac7-c06d6057d092": {
+      "id": "06b263cd-19e7-4327-8ac7-c06d6057d092",
+      "name": "Repeater",
+      "title": "answer_is_refusal",
+      "description": "equal",
+      "properties": {
+        "maxLoop": -1,
+        "data_slot": "user_answer",
+        "value": "No"
+      },
+      "display": {
+        "x": 1764,
+        "y": 984
+      }
+    },
+    "27446b48-51d1-4c0e-a2d6-8d92fdde398e": {
+      "id": "27446b48-51d1-4c0e-a2d6-8d92fdde398e",
+      "name": "Repeater",
+      "title": "answer_is_approval",
+      "description": "equal",
+      "properties": {
+        "maxLoop": -1,
+        "data_slot": "user_answer",
+        "value": "Yes"
+      },
+      "display": {
+        "x": 1200,
+        "y": 1500
+      }
+    },
+    "e524b89e-2e5a-421e-8c33-6275f2716897": {
+      "id": "e524b89e-2e5a-421e-8c33-6275f2716897",
+      "name": "Repeater",
+      "title": "answer_is_refusal",
+      "description": "equal",
+      "properties": {
+        "maxLoop": -1,
+        "data_slot": "user_answer",
+        "value": "No"
+      },
+      "display": {
+        "x": 1872,
+        "y": 1512
+      }
+    },
+    "6c6b5dd0-c0a9-4ec3-8efb-bc8215afc940": {
+      "id": "6c6b5dd0-c0a9-4ec3-8efb-bc8215afc940",
+      "name": "Sequence",
+      "title": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -1584,
+        "y": -84
+      },
+      "children": [
+        "313f33bf-d34f-4a23-9c24-36796b654ce9",
+        "210f360f-f153-4529-8be5-f0e6b209e43f"
       ]
     }
   },
   "display": {
-    "camera_x": 1237,
-    "camera_y": -18.5,
+    "camera_x": 1534,
+    "camera_y": 471.5,
     "camera_z": 0.5,
     "x": -288,
-    "y": -444
+    "y": -648
   },
   "custom_nodes": []
 }

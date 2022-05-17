@@ -13,7 +13,7 @@ class WorldModifierNode(Node.Node) :
 		self.data_slot = None
 
 	def toString(self):
-		return ( "message "+str(self.status) + " " + str(self.id))
+		return ( "MODIFIER "+str(self.status) + " " + str(self.id) + " " + str(self.data_slot) + " " + str(self.value))
 
 	def tick(self):
 

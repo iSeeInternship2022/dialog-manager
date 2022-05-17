@@ -42,7 +42,9 @@ def generateTree(path) :
 
 		#For question nodes and nodes that checks the world, we need to assign its data slot (where it has to look for the data it needs)
 		if(parser.BT_nodes[n]["name"] == "Evaluation Method"
-		or parser.BT_nodes[n]["name"] == "Failer"):
+		or parser.BT_nodes[n]["name"] == "Failer"
+		or parser.BT_nodes[n]["name"] == "Explanation Method"
+		or parser.BT_nodes[n]["name"] == "Repeater"):
 			nodes.get(n).data_slot = parser.BT_nodes[n]["properties"]["data_slot"]
 
 		#Question nodes also needs to have the text of the question, for now its raw text, but it could be a type used for a querry in the future
@@ -51,7 +53,8 @@ def generateTree(path) :
 			nodes.get(n).message = parser.BT_nodes[n]["properties"]["message"]
 	
 		#For WorldModifiers nodes, we also need the value that will be asigned to the variable
-		if(parser.BT_nodes[n]["name"] == "Explanation Method"):
+		if(parser.BT_nodes[n]["name"] == "Explanation Method"
+		or parser.BT_nodes[n]["name"] == "Repeater"):
 			val = parser.BT_nodes[n]["properties"]["value"]
 
 			#Changing string for boolean values

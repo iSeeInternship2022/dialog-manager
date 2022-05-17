@@ -16,14 +16,14 @@ class ActionNode(Node.Node) :
 	def tick(self):
 
 
-
-		if(self.status == State.RUNNING):
-			if(not self.thread.is_alive()):
-				self.status = State.SUCCESS
-		else:
-			self.status = State.RUNNING
-			self.thread = threading.Thread(target=do_action, args=(self.action,))
-			self.thread.start()
+		do_action(self.action)
+		# if(self.status == State.RUNNING):
+		# 	if(not self.thread.is_alive()):
+		# 		self.status = State.SUCCESS
+		# else:
+		# 	self.status = State.RUNNING
+		# 	self.thread = threading.Thread(target=do_action, args=(self.action,))
+		# 	self.thread.start()
 		
 		return self.status
 	

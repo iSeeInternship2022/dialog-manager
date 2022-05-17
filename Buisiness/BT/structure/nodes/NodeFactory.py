@@ -1,6 +1,7 @@
 
+from Buisiness.BT.structure.nodes.Condition.EqualNode import EqualNode
 import Buisiness.BT.structure.nodes.action.ActionNode as Action
-import Buisiness.BT.structure.nodes.ConditionNode as Decision
+import Buisiness.BT.structure.nodes.Condition.ConditionNode as Decision
 from Buisiness.BT.structure.nodes.action.ComputingNode import ComputingNode
 from Buisiness.BT.structure.nodes.action.InformationNode import InformationNode
 from Buisiness.BT.structure.nodes.action.QuestionNode import QuestionNode
@@ -28,6 +29,9 @@ def makeNode(type, id, label) :
 
 	elif type == "Inverter":
 		res = Action.ActionNode(id, label)
+
+	elif type == "Repeater":
+		res = EqualNode(id)
 
 	elif type == "Evaluation Method":
 		res = Decision.ConditionNode(id)

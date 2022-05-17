@@ -10,6 +10,9 @@ class Node :
 		self.id = id
 		self.status = StateType.FAILURE
 
+	@abstractmethod
+	def reset(self):
+		pass
 
 
 	@abstractmethod
