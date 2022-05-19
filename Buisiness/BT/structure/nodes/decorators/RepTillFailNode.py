@@ -8,7 +8,7 @@ class RepTillFailNode(Node) :
 		self.child = None
 
 	def toString(self):
-		return ( "REP TILL SUCC "+str(self.status) + " " + str(self.id))
+		return ( "REP TILL FAIL "+str(self.status) + " " + str(self.id))
 
 	def tick(self, predecessor : "Node"):
 

@@ -9,6 +9,7 @@ from Buisiness.BT.structure.nodes.action.Succeeder import Succeder
 from Buisiness.BT.structure.nodes.action.WorldModifierNode import WorldModifierNode
 import Buisiness.BT.structure.nodes.composite.PriorityNode as Priority
 import Buisiness.BT.structure.nodes.composite.SequenceNode as Sequence
+from Buisiness.BT.structure.nodes.decorators.InverterNode import InverterNode
 from Buisiness.BT.structure.nodes.decorators.LimitActivationNode import LimitActivationNode
 import Buisiness.BT.structure.nodes.decorators.RepTillFailNode as TillFail
 import Buisiness.BT.structure.nodes.decorators.RepTillSuccNode as TillSucc
@@ -28,7 +29,7 @@ def makeNode(type, id, label) :
 	elif type == "Succeeder":
 		res = InformationNode(id)
 
-	elif type == "Inverter":
+	elif type == "Action":
 		res = Action.ActionNode(id, label)
 
 	elif type == "Repeater":
@@ -46,6 +47,8 @@ def makeNode(type, id, label) :
 		res = TillSucc.RepTillSuccNode(id)
 	elif type == "Limiter":
 		res = LimitActivationNode(id)
+	elif type == "Inverter":
+		res = InverterNode(id)
 			
 	else :
 		print("no type")

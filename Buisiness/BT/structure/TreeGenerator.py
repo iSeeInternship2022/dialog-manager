@@ -37,7 +37,8 @@ def generateTree(path) :
 
 		if(parser.BT_nodes[n]["name"] == "RepeatUntilSuccess"
 		or parser.BT_nodes[n]["name"] == "RepeatUntilFailure"
-		or parser.BT_nodes[n]["name"] == "Limiter"):
+		or parser.BT_nodes[n]["name"] == "Limiter"
+		or parser.BT_nodes[n]["name"] == "Inverter"):
 			child = parser.BT_nodes[n]["child"]
 			nodes.get(n).child = nodes.get(child)
 
@@ -66,6 +67,7 @@ def generateTree(path) :
 
 		if(parser.BT_nodes[n]["name"] == "Limiter"):
 			nodes.get(n).limit = parser.BT_nodes[n]["properties"]["maxLoop"]
+
 
 	#make the root a RootNode and attach the first node
 	root_id = parser.BT_root

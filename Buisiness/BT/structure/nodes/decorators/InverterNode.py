@@ -2,11 +2,9 @@ from  Buisiness.BT.structure.nodes.Node import Node
 from  Buisiness.BT.structure.nodes.StateType import StateType as State
 import  Buisiness.BT.BT as BT
 
-class LimitActivationNode(Node) :
+class InverterNode(Node) :
 	def __init__(self, id) -> None:
 		super().__init__(id)
-		self.timesActivated = 0
-		self.limit = None
 		self.child = None
 
 	def toString(self):
@@ -15,11 +13,11 @@ class LimitActivationNode(Node) :
 
 	def tick(self):
 
-		if(self.timesActivated < self.limit):
-			self.status = self.child.tick()
+		if(self.child.tick()):
+			self.status = State.FAILURE
 		else:
 			self.status = State.SUCCESS
-
+		
 		return self.status
 
 
