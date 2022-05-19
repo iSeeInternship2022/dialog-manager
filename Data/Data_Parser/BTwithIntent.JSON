@@ -1,0 +1,1062 @@
+{
+    "version": "0.1.0",
+    "scope": "tree",
+    "id": "3ef88d19-132c-4e82-b265-0968fe79d292",
+    "title": "Explanation Experience",
+    "description": "",
+    "root": "d1bdc108-ca9b-4dee-9c49-fa2a2f7cc512",
+    "properties": {},
+    "nodes": {
+      "d2054a42-43b1-4eb7-94dd-dc62cc2f55da": {
+        "id": "d2054a42-43b1-4eb7-94dd-dc62cc2f55da",
+        "name": "Priority",
+        "title": "Priority",
+        "description": "",
+        "properties": {},
+        "display": {
+          "x": -288,
+          "y": -36
+        },
+        "children": [
+          "ca197bc6-20e1-4e52-88f0-6b71fd76880c",
+          "b52ebe2d-4e7d-4adf-8c44-529fe9bba305"
+        ]
+      },
+      "b3cd5ae3-a5c6-4629-8751-a57c8ffaebd9": {
+        "id": "b3cd5ae3-a5c6-4629-8751-a57c8ffaebd9",
+        "name": "Evaluation Method",
+        "title": "user_satisfied",
+        "description": "",
+        "properties": {
+          "data_slot": "user_satisfied"
+        },
+        "display": {
+          "x": -3288,
+          "y": 948
+        }
+      },
+      "b52ebe2d-4e7d-4adf-8c44-529fe9bba305": {
+        "id": "b52ebe2d-4e7d-4adf-8c44-529fe9bba305",
+        "name": "Sequence",
+        "title": "Sequence",
+        "description": "",
+        "properties": {},
+        "display": {
+          "x": -288,
+          "y": 156
+        },
+        "children": [
+          "b46f8de3-f841-4182-853c-487a656e7f6b"
+        ]
+      },
+      "b46f8de3-f841-4182-853c-487a656e7f6b": {
+        "id": "b46f8de3-f841-4182-853c-487a656e7f6b",
+        "name": "Priority",
+        "title": "Priority",
+        "description": "",
+        "properties": {},
+        "display": {
+          "x": -276,
+          "y": 564
+        },
+        "children": [
+          "bf3c3918-6718-49c8-99f8-220adb8d2ee4",
+          "37faab73-a767-4d53-b077-ebede475f096",
+          "33342101-6a28-4a2f-9a76-64e2efa3c0d8",
+          "6120aa06-4da9-40e5-8fb0-46d4bd2059c1"
+        ]
+      },
+      "37faab73-a767-4d53-b077-ebede475f096": {
+        "id": "37faab73-a767-4d53-b077-ebede475f096",
+        "name": "Sequence",
+        "title": "Sequence",
+        "description": "",
+        "properties": {},
+        "display": {
+          "x": -576,
+          "y": 696
+        },
+        "children": [
+          "bcdea152-8e1f-473a-8d6b-588e995ce3e8",
+          "4b21f24f-a513-4e34-92ac-c7d05f6bbfba",
+          "4eb49152-53dc-4492-974d-54ece8a77e83"
+        ]
+      },
+      "bcdea152-8e1f-473a-8d6b-588e995ce3e8": {
+        "id": "bcdea152-8e1f-473a-8d6b-588e995ce3e8",
+        "name": "Evaluation Method",
+        "title": "intent_is_question",
+        "description": "",
+        "properties": {
+          "data_slot": "intent_is_question"
+        },
+        "display": {
+          "x": -696,
+          "y": 840
+        }
+      },
+      "e6e4d01a-fe3c-4fd1-b2ec-821ce049a236": {
+        "id": "e6e4d01a-fe3c-4fd1-b2ec-821ce049a236",
+        "name": "Evaluation Method",
+        "title": "intent_is_argument",
+        "description": "",
+        "properties": {
+          "data_slot": "intent_is_argument"
+        },
+        "display": {
+          "x": 312,
+          "y": 960
+        }
+      },
+      "c923a9ed-a22f-447c-8bc3-49bba5cac51e": {
+        "id": "c923a9ed-a22f-447c-8bc3-49bba5cac51e",
+        "name": "Evaluation Method",
+        "title": "",
+        "description": "user satisfied",
+        "properties": {
+          "data_slot": "intent_is_affirmation"
+        },
+        "display": {
+          "x": -252,
+          "y": 1056
+        }
+      },
+      "33342101-6a28-4a2f-9a76-64e2efa3c0d8": {
+        "id": "33342101-6a28-4a2f-9a76-64e2efa3c0d8",
+        "name": "Sequence",
+        "title": "Sequence",
+        "description": "",
+        "properties": {},
+        "display": {
+          "x": -120,
+          "y": 888
+        },
+        "children": [
+          "c923a9ed-a22f-447c-8bc3-49bba5cac51e",
+          "7125f454-9ea6-42d3-95e1-cc6081e777da",
+          "ed8980e2-a453-4d90-941a-27bbd6372e26"
+        ]
+      },
+      "68e51b43-eda8-4fb3-ad03-d97164551ad3": {
+        "id": "68e51b43-eda8-4fb3-ad03-d97164551ad3",
+        "name": "Evaluation Method",
+        "title": "Intent is Details",
+        "description": "",
+        "properties": {
+          "data_slot": "details_provided"
+        },
+        "display": {
+          "x": 936,
+          "y": 1176
+        }
+      },
+      "ca197bc6-20e1-4e52-88f0-6b71fd76880c": {
+        "id": "ca197bc6-20e1-4e52-88f0-6b71fd76880c",
+        "name": "Sequence",
+        "title": "Sequence",
+        "description": "",
+        "properties": {},
+        "display": {
+          "x": -2364,
+          "y": 672
+        },
+        "children": [
+          "b3b74827-21bf-4f2a-871f-25e8a8ab5fd7",
+          "480bd97e-f64a-4eb9-91aa-9dcdf09e130a",
+          "779620ec-78cc-4554-b5ad-0c5eddd1dfd5"
+        ]
+      },
+      "72ee8447-636b-46ca-8425-e0434635c76b": {
+        "id": "72ee8447-636b-46ca-8425-e0434635c76b",
+        "name": "Priority",
+        "title": "Priority",
+        "description": "",
+        "properties": {},
+        "display": {
+          "x": 1452,
+          "y": 756
+        },
+        "children": [
+          "5c605fdf-1804-4bf1-ba1a-1438c1d28907",
+          "df0db687-0a9f-46bd-8ca6-ca0bfab6b17e"
+        ]
+      },
+      "5c605fdf-1804-4bf1-ba1a-1438c1d28907": {
+        "id": "5c605fdf-1804-4bf1-ba1a-1438c1d28907",
+        "name": "Sequence",
+        "title": "Sequence",
+        "description": "",
+        "properties": {},
+        "display": {
+          "x": 1320,
+          "y": 972
+        },
+        "children": [
+          "68e51b43-eda8-4fb3-ad03-d97164551ad3",
+          "93402749-1afc-4211-a1de-93efa56e0f39",
+          "a5ba9911-2c01-48f5-802a-66b8d8511080",
+          "eb688b03-7053-4fd8-8cfd-15e00acf0d14"
+        ]
+      },
+      "df0db687-0a9f-46bd-8ca6-ca0bfab6b17e": {
+        "id": "df0db687-0a9f-46bd-8ca6-ca0bfab6b17e",
+        "name": "Sequence",
+        "title": "Sequence",
+        "description": "",
+        "properties": {},
+        "display": {
+          "x": 1824,
+          "y": 864
+        },
+        "children": [
+          "ffa75f95-a859-4a0e-b2e9-13553d55f764",
+          "e7d57db2-0fb4-4cf8-a3fb-bf5ae480b1cb"
+        ]
+      },
+      "ffa75f95-a859-4a0e-b2e9-13553d55f764": {
+        "id": "ffa75f95-a859-4a0e-b2e9-13553d55f764",
+        "name": "Evaluation Method",
+        "title": "intent_is_refusal",
+        "description": "",
+        "properties": {
+          "data_slot": "intent_is_refusal"
+        },
+        "display": {
+          "x": 1752,
+          "y": 984
+        }
+      },
+      "eb688b03-7053-4fd8-8cfd-15e00acf0d14": {
+        "id": "eb688b03-7053-4fd8-8cfd-15e00acf0d14",
+        "name": "Priority",
+        "title": "Priority",
+        "description": "",
+        "properties": {},
+        "display": {
+          "x": 1620,
+          "y": 1176
+        },
+        "children": [
+          "9cc35779-6e38-4b15-814b-e1810f2e9816",
+          "f28fa8c4-3624-47ee-8bc6-b3dbebec2636"
+        ]
+      },
+      "9cc35779-6e38-4b15-814b-e1810f2e9816": {
+        "id": "9cc35779-6e38-4b15-814b-e1810f2e9816",
+        "name": "Sequence",
+        "title": "Sequence",
+        "description": "",
+        "properties": {},
+        "display": {
+          "x": 1404,
+          "y": 1380
+        },
+        "children": [
+          "297f8dd1-96e9-4c87-8cd8-7e8352c7ad18",
+          "0245587e-e468-47a2-8210-9518c79f04ae"
+        ]
+      },
+      "f28fa8c4-3624-47ee-8bc6-b3dbebec2636": {
+        "id": "f28fa8c4-3624-47ee-8bc6-b3dbebec2636",
+        "name": "Sequence",
+        "title": "Sequence",
+        "description": "",
+        "properties": {},
+        "display": {
+          "x": 1968,
+          "y": 1404
+        },
+        "children": [
+          "b240bfbb-cf53-43ce-818f-a2ad95e4ad16",
+          "de1ef5f3-1983-4a1a-9f73-f0e4fc94eead"
+        ]
+      },
+      "297f8dd1-96e9-4c87-8cd8-7e8352c7ad18": {
+        "id": "297f8dd1-96e9-4c87-8cd8-7e8352c7ad18",
+        "name": "Evaluation Method",
+        "title": "intent_is_approval",
+        "description": "",
+        "properties": {
+          "data_slot": "intent_is_approval"
+        },
+        "display": {
+          "x": 1200,
+          "y": 1488
+        }
+      },
+      "b240bfbb-cf53-43ce-818f-a2ad95e4ad16": {
+        "id": "b240bfbb-cf53-43ce-818f-a2ad95e4ad16",
+        "name": "Evaluation Method",
+        "title": "intent_is_refusal",
+        "description": "",
+        "properties": {
+          "data_slot": "intent_is_refusal"
+        },
+        "display": {
+          "x": 1872,
+          "y": 1500
+        }
+      },
+      "6120aa06-4da9-40e5-8fb0-46d4bd2059c1": {
+        "id": "6120aa06-4da9-40e5-8fb0-46d4bd2059c1",
+        "name": "Sequence",
+        "title": "Sequence",
+        "description": "",
+        "properties": {
+          "message": ""
+        },
+        "display": {
+          "x": 756,
+          "y": 636
+        },
+        "children": [
+          "776468dc-1e62-46c6-8d7b-831ce843873d",
+          "ad1a0373-9879-484c-b29a-ffc1b72b237f",
+          "12768357-bc65-4ef3-82f6-c7eef91a4218",
+          "72ee8447-636b-46ca-8425-e0434635c76b"
+        ]
+      },
+      "d1bdc108-ca9b-4dee-9c49-fa2a2f7cc512": {
+        "id": "d1bdc108-ca9b-4dee-9c49-fa2a2f7cc512",
+        "name": "Sequence",
+        "title": "Sequence",
+        "description": "",
+        "properties": {},
+        "display": {
+          "x": -288,
+          "y": -504
+        },
+        "children": [
+          "66eb9065-de21-40ee-8571-732b552dc20d",
+          "d2054a42-43b1-4eb7-94dd-dc62cc2f55da"
+        ]
+      },
+      "779620ec-78cc-4554-b5ad-0c5eddd1dfd5": {
+        "id": "779620ec-78cc-4554-b5ad-0c5eddd1dfd5",
+        "name": "Priority",
+        "title": "Priority",
+        "description": "",
+        "properties": {},
+        "display": {
+          "x": -1992,
+          "y": 900
+        },
+        "children": [
+          "b1b0ec47-dbee-4e6b-82d1-435de2df714d",
+          "29836b82-c91e-4642-bf94-2fe1fd9284df"
+        ]
+      },
+      "b1b0ec47-dbee-4e6b-82d1-435de2df714d": {
+        "id": "b1b0ec47-dbee-4e6b-82d1-435de2df714d",
+        "name": "Sequence",
+        "title": "Sequence",
+        "description": "",
+        "properties": {},
+        "display": {
+          "x": -1992,
+          "y": 1116
+        },
+        "children": [
+          "40b93bb4-63d5-462c-850b-1067900d8462",
+          "376b7f51-ce13-4337-96a4-ad17619e7be1",
+          "cd398f3b-999f-47af-b595-4ba13092ac8d"
+        ]
+      },
+      "29836b82-c91e-4642-bf94-2fe1fd9284df": {
+        "id": "29836b82-c91e-4642-bf94-2fe1fd9284df",
+        "name": "Sequence",
+        "title": "Sequence",
+        "description": "",
+        "properties": {},
+        "display": {
+          "x": -1404,
+          "y": 1056
+        },
+        "children": [
+          "f2c2c0bb-4993-48c4-95fe-b381210377c6",
+          "8e06f570-b263-45b9-af68-48076c0df1a4"
+        ]
+      },
+      "40b93bb4-63d5-462c-850b-1067900d8462": {
+        "id": "40b93bb4-63d5-462c-850b-1067900d8462",
+        "name": "Evaluation Method",
+        "title": "intent_is_approval",
+        "description": "",
+        "properties": {
+          "data_slot": "intent_is_approval"
+        },
+        "display": {
+          "x": -2256,
+          "y": 1248
+        }
+      },
+      "f2c2c0bb-4993-48c4-95fe-b381210377c6": {
+        "id": "f2c2c0bb-4993-48c4-95fe-b381210377c6",
+        "name": "Evaluation Method",
+        "title": "intent_is_refusal",
+        "description": "",
+        "properties": {
+          "data_slot": "intent_is_refusal"
+        },
+        "display": {
+          "x": -1524,
+          "y": 1200
+        }
+      },
+      "c5b4aded-2cce-4557-811c-29f53959429a": {
+        "id": "c5b4aded-2cce-4557-811c-29f53959429a",
+        "name": "Evaluation Method",
+        "title": "survey_completed",
+        "description": "",
+        "properties": {
+          "data_slot": "survey_completed"
+        },
+        "display": {
+          "x": -2292,
+          "y": 1524
+        }
+      },
+      "d445a8ab-2561-4733-8dad-a60e797887dc": {
+        "id": "d445a8ab-2561-4733-8dad-a60e797887dc",
+        "name": "Sequence",
+        "title": "Sequence",
+        "description": "",
+        "properties": {},
+        "display": {
+          "x": -1860,
+          "y": 1524
+        },
+        "children": [
+          "396e476e-9fce-4a4b-8028-ff84eece0751",
+          "145e8feb-d056-47c9-8914-b64f54f58505"
+        ]
+      },
+      "bf3c3918-6718-49c8-99f8-220adb8d2ee4": {
+        "id": "bf3c3918-6718-49c8-99f8-220adb8d2ee4",
+        "name": "Sequence",
+        "title": "Sequence",
+        "description": "",
+        "properties": {},
+        "display": {
+          "x": -1140,
+          "y": 648
+        },
+        "children": [
+          "8158ceb1-2321-4e2a-9b83-c02c98aca491",
+          "bea075e0-b969-498b-80fd-39033b66833b",
+          "9026d967-48ca-436c-8f1d-8d7a59009c1e"
+        ]
+      },
+      "8158ceb1-2321-4e2a-9b83-c02c98aca491": {
+        "id": "8158ceb1-2321-4e2a-9b83-c02c98aca491",
+        "name": "Priority",
+        "title": "Priority",
+        "description": "",
+        "properties": {},
+        "display": {
+          "x": -1296,
+          "y": 732
+        },
+        "children": [
+          "2a5a0027-3e6e-4f33-8ba1-37ea1ae2ebd5",
+          "23ab0480-87ad-41f5-80e4-c2f99290b944"
+        ]
+      },
+      "2a5a0027-3e6e-4f33-8ba1-37ea1ae2ebd5": {
+        "id": "2a5a0027-3e6e-4f33-8ba1-37ea1ae2ebd5",
+        "name": "Evaluation Method",
+        "title": "intent_is_satisfaction",
+        "description": "",
+        "properties": {
+          "data_slot": "intent_is_satisfaction"
+        },
+        "display": {
+          "x": -1428,
+          "y": 840
+        }
+      },
+      "23ab0480-87ad-41f5-80e4-c2f99290b944": {
+        "id": "23ab0480-87ad-41f5-80e4-c2f99290b944",
+        "name": "Evaluation Method",
+        "title": "intent_is_wishing_to_end",
+        "description": "",
+        "properties": {
+          "data_slot": "intent_is_wishing_to_end"
+        },
+        "display": {
+          "x": -1236,
+          "y": 840
+        }
+      },
+      "376b7f51-ce13-4337-96a4-ad17619e7be1": {
+        "id": "376b7f51-ce13-4337-96a4-ad17619e7be1",
+        "name": "Sequence",
+        "title": "Sequence",
+        "description": "",
+        "properties": {},
+        "display": {
+          "x": -2028,
+          "y": 1416
+        },
+        "children": [
+          "c5b4aded-2cce-4557-811c-29f53959429a",
+          "d445a8ab-2561-4733-8dad-a60e797887dc"
+        ]
+      },
+      "b3b74827-21bf-4f2a-871f-25e8a8ab5fd7": {
+        "id": "b3b74827-21bf-4f2a-871f-25e8a8ab5fd7",
+        "name": "Sequence",
+        "title": "Sequence",
+        "description": "",
+        "properties": {},
+        "display": {
+          "x": -2568,
+          "y": 792
+        },
+        "children": [
+          "b3cd5ae3-a5c6-4629-8751-a57c8ffaebd9",
+          "395ccf62-5b79-48cc-aaaa-f38b85601463",
+          "5b88c3d6-4b17-4f8f-b05d-c50c1990d979"
+        ]
+      },
+      "395ccf62-5b79-48cc-aaaa-f38b85601463": {
+        "id": "395ccf62-5b79-48cc-aaaa-f38b85601463",
+        "name": "Explanation Method",
+        "title": "reset_user_answer",
+        "description": "",
+        "properties": {
+          "data_slot": "user_answer",
+          "value": "None"
+        },
+        "display": {
+          "x": -3072,
+          "y": 948
+        }
+      },
+      "a4e97df2-7288-413f-8064-ca2b28bf4b43": {
+        "id": "a4e97df2-7288-413f-8064-ca2b28bf4b43",
+        "name": "Failer",
+        "title": "ask_to_take_survey",
+        "description": "",
+        "properties": {
+          "data_slot": "survey_accepted",
+          "message": "Would you like to help us by answering a quick survey?"
+        },
+        "display": {
+          "x": -2484,
+          "y": 1128
+        }
+      },
+      "480bd97e-f64a-4eb9-91aa-9dcdf09e130a": {
+        "id": "480bd97e-f64a-4eb9-91aa-9dcdf09e130a",
+        "name": "Inverter",
+        "title": "detect_intent",
+        "description": "",
+        "properties": {},
+        "display": {
+          "x": -2364,
+          "y": 948
+        }
+      },
+      "cd398f3b-999f-47af-b595-4ba13092ac8d": {
+        "id": "cd398f3b-999f-47af-b595-4ba13092ac8d",
+        "name": "Succeeder",
+        "title": "goodbye",
+        "description": "",
+        "properties": {
+          "message": "Goodbye!"
+        },
+        "display": {
+          "x": -1812,
+          "y": 1248
+        }
+      },
+      "396e476e-9fce-4a4b-8028-ff84eece0751": {
+        "id": "396e476e-9fce-4a4b-8028-ff84eece0751",
+        "name": "Failer",
+        "title": "state_question",
+        "description": "",
+        "properties": {
+          "data_slot": "survey_answer",
+          "message": "Survey Question"
+        },
+        "display": {
+          "x": -1932,
+          "y": 1644
+        }
+      },
+      "145e8feb-d056-47c9-8914-b64f54f58505": {
+        "id": "145e8feb-d056-47c9-8914-b64f54f58505",
+        "name": "Inverter",
+        "title": "next_question",
+        "description": "fetches next question and keeps track of the end of the survey",
+        "properties": {},
+        "display": {
+          "x": -1704,
+          "y": 1644
+        }
+      },
+      "8e06f570-b263-45b9-af68-48076c0df1a4": {
+        "id": "8e06f570-b263-45b9-af68-48076c0df1a4",
+        "name": "Succeeder",
+        "title": "goodbye",
+        "description": "",
+        "properties": {
+          "message": "Goodbye!"
+        },
+        "display": {
+          "x": -1296,
+          "y": 1200
+        }
+      },
+      "b90fcc13-e65e-4afd-8600-18465f19b400": {
+        "id": "b90fcc13-e65e-4afd-8600-18465f19b400",
+        "name": "Inverter",
+        "title": "detect_intent",
+        "description": "",
+        "properties": {},
+        "display": {
+          "x": -612,
+          "y": -72
+        }
+      },
+      "bea075e0-b969-498b-80fd-39033b66833b": {
+        "id": "bea075e0-b969-498b-80fd-39033b66833b",
+        "name": "Explanation Method",
+        "title": "set_user_as_satisfied",
+        "description": "",
+        "properties": {
+          "data_slot": "user_satisfied",
+          "value": "True"
+        },
+        "display": {
+          "x": -1020,
+          "y": 756
+        }
+      },
+      "776468dc-1e62-46c6-8d7b-831ce843873d": {
+        "id": "776468dc-1e62-46c6-8d7b-831ce843873d",
+        "name": "Priority",
+        "title": "Priority",
+        "description": "",
+        "properties": {},
+        "display": {
+          "x": 528,
+          "y": 720
+        },
+        "children": [
+          "a4f3d5b0-0f2e-4bde-81e8-dcb1ba717cbc",
+          "c3d623be-17cc-4e6b-b9b5-14599a3e13ce"
+        ]
+      },
+      "c3d623be-17cc-4e6b-b9b5-14599a3e13ce": {
+        "id": "c3d623be-17cc-4e6b-b9b5-14599a3e13ce",
+        "name": "Evaluation Method",
+        "title": "argumenting",
+        "description": "",
+        "properties": {
+          "data_slot": "argumenting"
+        },
+        "display": {
+          "x": 636,
+          "y": 852
+        }
+      },
+      "a4f3d5b0-0f2e-4bde-81e8-dcb1ba717cbc": {
+        "id": "a4f3d5b0-0f2e-4bde-81e8-dcb1ba717cbc",
+        "name": "Sequence",
+        "title": "Sequence",
+        "description": "",
+        "properties": {},
+        "display": {
+          "x": 408,
+          "y": 816
+        },
+        "children": [
+          "e6e4d01a-fe3c-4fd1-b2ec-821ce049a236",
+          "b6ea8226-5149-42a6-b9eb-29287a5095cd"
+        ]
+      },
+      "b6ea8226-5149-42a6-b9eb-29287a5095cd": {
+        "id": "b6ea8226-5149-42a6-b9eb-29287a5095cd",
+        "name": "Explanation Method",
+        "title": "is_argumenting",
+        "description": "",
+        "properties": {
+          "data_slot": "argumenting",
+          "value": "True"
+        },
+        "display": {
+          "x": 516,
+          "y": 960
+        }
+      },
+      "ad1a0373-9879-484c-b29a-ffc1b72b237f": {
+        "id": "ad1a0373-9879-484c-b29a-ffc1b72b237f",
+        "name": "Failer",
+        "title": "ask_more_details",
+        "description": "",
+        "properties": {
+          "data_slot": "details",
+          "message": "Would you care to provide more details, please?"
+        },
+        "display": {
+          "x": 828,
+          "y": 948
+        }
+      },
+      "12768357-bc65-4ef3-82f6-c7eef91a4218": {
+        "id": "12768357-bc65-4ef3-82f6-c7eef91a4218",
+        "name": "Inverter",
+        "title": "detect_intent",
+        "description": "",
+        "properties": {},
+        "display": {
+          "x": 1008,
+          "y": 960
+        }
+      },
+      "e7d57db2-0fb4-4cf8-a3fb-bf5ae480b1cb": {
+        "id": "e7d57db2-0fb4-4cf8-a3fb-bf5ae480b1cb",
+        "name": "Explanation Method",
+        "title": "set_user_as_satisfied",
+        "description": "",
+        "properties": {
+          "data_slot": "user_satisfied",
+          "value": "True"
+        },
+        "display": {
+          "x": 1980,
+          "y": 984
+        }
+      },
+      "a5ba9911-2c01-48f5-802a-66b8d8511080": {
+        "id": "a5ba9911-2c01-48f5-802a-66b8d8511080",
+        "name": "Inverter",
+        "title": "detect_intent",
+        "description": "",
+        "properties": {},
+        "display": {
+          "x": 1404,
+          "y": 1176
+        }
+      },
+      "93402749-1afc-4211-a1de-93efa56e0f39": {
+        "id": "93402749-1afc-4211-a1de-93efa56e0f39",
+        "name": "Failer",
+        "title": "ask_if_clarification_wanted",
+        "description": "",
+        "properties": {
+          "data_slot": "user_answer",
+          "message": "Would you like me to clarify?"
+        },
+        "display": {
+          "x": 1164,
+          "y": 1176
+        }
+      },
+      "0245587e-e468-47a2-8210-9518c79f04ae": {
+        "id": "0245587e-e468-47a2-8210-9518c79f04ae",
+        "name": "Succeeder",
+        "title": "explain",
+        "description": "",
+        "properties": {
+          "message": "this is an explanation"
+        },
+        "display": {
+          "x": 1404,
+          "y": 1488
+        }
+      },
+      "4b21f24f-a513-4e34-92ac-c7d05f6bbfba": {
+        "id": "4b21f24f-a513-4e34-92ac-c7d05f6bbfba",
+        "name": "Succeeder",
+        "title": "explain",
+        "description": "",
+        "properties": {
+          "message": "this is an explanation"
+        },
+        "display": {
+          "x": -504,
+          "y": 840
+        }
+      },
+      "de1ef5f3-1983-4a1a-9f73-f0e4fc94eead": {
+        "id": "de1ef5f3-1983-4a1a-9f73-f0e4fc94eead",
+        "name": "Explanation Method",
+        "title": "set_user_as_satisfied",
+        "description": "",
+        "properties": {
+          "data_slot": "user_satisfied",
+          "value": "True"
+        },
+        "display": {
+          "x": 2100,
+          "y": 1500
+        }
+      },
+      "7125f454-9ea6-42d3-95e1-cc6081e777da": {
+        "id": "7125f454-9ea6-42d3-95e1-cc6081e777da",
+        "name": "Succeeder",
+        "title": "affirm",
+        "description": "",
+        "properties": {
+          "message": "Yes, that's it"
+        },
+        "display": {
+          "x": -60,
+          "y": 1056
+        }
+      },
+      "977c4cf3-cd74-4dad-b12e-f124da438d7c": {
+        "id": "977c4cf3-cd74-4dad-b12e-f124da438d7c",
+        "name": "Failer",
+        "title": "greet",
+        "description": "",
+        "properties": {
+          "data_slot": "user_answer",
+          "message": "Hello! How may I help you?"
+        },
+        "display": {
+          "x": -828,
+          "y": -72
+        }
+      },
+      "e2771b40-29b4-4914-8404-ece9d5f9d620": {
+        "id": "e2771b40-29b4-4914-8404-ece9d5f9d620",
+        "name": "Explanation Method",
+        "title": "set_user_to_greeted",
+        "description": "",
+        "properties": {
+          "data_slot": "user_greeted",
+          "value": "True"
+        },
+        "display": {
+          "x": -1032,
+          "y": -72
+        }
+      },
+      "69ee9a4b-a97f-45ab-8250-bb47c9918783": {
+        "id": "69ee9a4b-a97f-45ab-8250-bb47c9918783",
+        "name": "Evaluation Method",
+        "title": "user_greeted",
+        "description": "",
+        "properties": {
+          "data_slot": "user_greeted"
+        },
+        "display": {
+          "x": -2172,
+          "y": -132
+        }
+      },
+      "66eb9065-de21-40ee-8571-732b552dc20d": {
+        "id": "66eb9065-de21-40ee-8571-732b552dc20d",
+        "name": "Priority",
+        "title": "Priority",
+        "description": "",
+        "properties": {},
+        "display": {
+          "x": -1356,
+          "y": -312
+        },
+        "children": [
+          "9c664c32-267b-4df8-82b7-db8fe20151ea",
+          "2409b25f-6df4-4d84-94b3-9081cfafba22"
+        ]
+      },
+      "2409b25f-6df4-4d84-94b3-9081cfafba22": {
+        "id": "2409b25f-6df4-4d84-94b3-9081cfafba22",
+        "name": "Sequence",
+        "title": "Sequence",
+        "description": "",
+        "properties": {},
+        "display": {
+          "x": -948,
+          "y": -168
+        },
+        "children": [
+          "e2771b40-29b4-4914-8404-ece9d5f9d620",
+          "977c4cf3-cd74-4dad-b12e-f124da438d7c",
+          "b90fcc13-e65e-4afd-8600-18465f19b400"
+        ]
+      },
+      "9c664c32-267b-4df8-82b7-db8fe20151ea": {
+        "id": "9c664c32-267b-4df8-82b7-db8fe20151ea",
+        "name": "Sequence",
+        "title": "Sequence",
+        "description": "",
+        "properties": {},
+        "display": {
+          "x": -1752,
+          "y": -240
+        },
+        "children": [
+          "69ee9a4b-a97f-45ab-8250-bb47c9918783",
+          "9660ba74-caea-4dae-b710-beb7e244bf0a"
+        ]
+      },
+      "4eb49152-53dc-4492-974d-54ece8a77e83": {
+        "id": "4eb49152-53dc-4492-974d-54ece8a77e83",
+        "name": "Explanation Method",
+        "title": "reset_user_answer",
+        "description": "",
+        "properties": {
+          "data_slot": "user_answer",
+          "value": "None"
+        },
+        "display": {
+          "x": -300,
+          "y": 840
+        }
+      },
+      "ed8980e2-a453-4d90-941a-27bbd6372e26": {
+        "id": "ed8980e2-a453-4d90-941a-27bbd6372e26",
+        "name": "Explanation Method",
+        "title": "reset_user_answer",
+        "description": "",
+        "properties": {
+          "data_slot": "user_answer",
+          "value": "None"
+        },
+        "display": {
+          "x": 108,
+          "y": 1056
+        }
+      },
+      "9026d967-48ca-436c-8f1d-8d7a59009c1e": {
+        "id": "9026d967-48ca-436c-8f1d-8d7a59009c1e",
+        "name": "Explanation Method",
+        "title": "reset_user_answer",
+        "description": "",
+        "properties": {
+          "data_slot": "user_answer",
+          "value": "None"
+        },
+        "display": {
+          "x": -816,
+          "y": 756
+        }
+      },
+      "0a3188bd-b7c6-458b-9f15-c49690e331df": {
+        "id": "0a3188bd-b7c6-458b-9f15-c49690e331df",
+        "name": "Evaluation Method",
+        "title": "survey_asked",
+        "description": "",
+        "properties": {
+          "data_slot": "survey_asked"
+        },
+        "display": {
+          "x": -2868,
+          "y": 1128
+        }
+      },
+      "5b88c3d6-4b17-4f8f-b05d-c50c1990d979": {
+        "id": "5b88c3d6-4b17-4f8f-b05d-c50c1990d979",
+        "name": "Priority",
+        "title": "Priority",
+        "description": "",
+        "properties": {},
+        "display": {
+          "x": -2724,
+          "y": 960
+        },
+        "children": [
+          "0a3188bd-b7c6-458b-9f15-c49690e331df",
+          "a376e7f3-3718-450e-8966-40803f95134c",
+          "a4e97df2-7288-413f-8064-ca2b28bf4b43"
+        ]
+      },
+      "a376e7f3-3718-450e-8966-40803f95134c": {
+        "id": "a376e7f3-3718-450e-8966-40803f95134c",
+        "name": "Explanation Method",
+        "title": "set_survey_asked",
+        "description": "",
+        "properties": {
+          "data_slot": "survey_asked",
+          "value": "True"
+        },
+        "display": {
+          "x": -2676,
+          "y": 1128
+        }
+      },
+      "210f360f-f153-4529-8be5-f0e6b209e43f": {
+        "id": "210f360f-f153-4529-8be5-f0e6b209e43f",
+        "name": "Failer",
+        "title": "anything_else",
+        "description": "",
+        "properties": {
+          "data_slot": "user_answer",
+          "message": "Do you need anything else?"
+        },
+        "display": {
+          "x": -1488,
+          "y": 144
+        }
+      },
+      "9660ba74-caea-4dae-b710-beb7e244bf0a": {
+        "id": "9660ba74-caea-4dae-b710-beb7e244bf0a",
+        "name": "Priority",
+        "title": "Priority",
+        "description": "",
+        "properties": {},
+        "display": {
+          "x": -1596,
+          "y": -132
+        },
+        "children": [
+          "313f33bf-d34f-4a23-9c24-36796b654ce9",
+          "e4f5acd5-1f04-4780-9472-c5a530a15acd"
+        ]
+      },
+      "313f33bf-d34f-4a23-9c24-36796b654ce9": {
+        "id": "313f33bf-d34f-4a23-9c24-36796b654ce9",
+        "name": "Repeater",
+        "title": "no_answer",
+        "description": "equal",
+        "properties": {
+          "maxLoop": -1,
+          "data_slot": "user_answer",
+          "value": "None"
+        },
+        "display": {
+          "x": -1668,
+          "y": 12
+        }
+      },
+      "e88bea5d-0154-4963-bd64-1236e687fc7b": {
+        "id": "e88bea5d-0154-4963-bd64-1236e687fc7b",
+        "name": "Inverter",
+        "title": "detect_intent",
+        "description": "",
+        "properties": {},
+        "display": {
+          "x": -1272,
+          "y": 132
+        }
+      },
+      "e4f5acd5-1f04-4780-9472-c5a530a15acd": {
+        "id": "e4f5acd5-1f04-4780-9472-c5a530a15acd",
+        "name": "Sequence",
+        "title": "Sequence",
+        "description": "",
+        "properties": {},
+        "display": {
+          "x": -1368,
+          "y": 0
+        },
+        "children": [
+          "210f360f-f153-4529-8be5-f0e6b209e43f",
+          "e88bea5d-0154-4963-bd64-1236e687fc7b"
+        ]
+      }
+    },
+    "display": {
+      "camera_x": 942,
+      "camera_y": 342.5,
+      "camera_z": 0.5,
+      "x": -288,
+      "y": -648
+    },
+    "custom_nodes": []
+  }
