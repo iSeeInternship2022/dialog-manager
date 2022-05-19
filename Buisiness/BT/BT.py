@@ -8,7 +8,7 @@ class BT:
 
 	def __init__(self):
 
-		self.tree = tg.generateTree("Data\Data_Parser\BT-editor.JSON")
+		self.tree = tg.generateTree("Data\Data_Parser\dialog-BT.JSON")
 		printTree(self.tree.root)
 
 		#self.currentState = self.tree.root

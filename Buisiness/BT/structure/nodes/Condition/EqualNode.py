@@ -19,10 +19,10 @@ class EqualNode(Node) :
 		data = C.Coordinator.get().checkWorld(self.data_slot)
 		if(data == self.value):
 			self.status = State.SUCCESS
-			print(str(self.data_slot) + " : " + str(data) + " = " + str(self.value))
+			#print(str(self.data_slot) + " : " + str(data) + " = " + str(self.value))
 		else:
 			self.status = State.FAILURE
-			print(str(self.data_slot) + " : " + str(data) + " != " + str(self.value))
+			#print(str(self.data_slot) + " : " + str(data) + " != " + str(self.value))
 
 		return self.status
 

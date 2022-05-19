@@ -44,7 +44,7 @@ def makeNode(type, id, label) :
 		res = TillFail.RepTillFailNode(id)
 	elif type == "RepeatUntilSuccess":
 		res = TillSucc.RepTillSuccNode(id)
-	elif type == "Limit <maxLoop> Activations":
+	elif type == "Limiter":
 		res = LimitActivationNode(id)
 			
 	else :

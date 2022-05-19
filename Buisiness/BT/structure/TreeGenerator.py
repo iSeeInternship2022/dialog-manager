@@ -37,9 +37,9 @@ def generateTree(path) :
 
 		if(parser.BT_nodes[n]["name"] == "RepeatUntilSuccess"
 		or parser.BT_nodes[n]["name"] == "RepeatUntilFailure"
-		or parser.BT_nodes[n]["name"] == "Limit <maxLoop> Activations"):
+		or parser.BT_nodes[n]["name"] == "Limiter"):
 			child = parser.BT_nodes[n]["child"]
-			nodes.get(n).children.append(nodes.get(child))
+			nodes.get(n).child = nodes.get(child)
 
 		#For question nodes and nodes that checks the world, we need to assign its data slot (where it has to look for the data it needs)
 		if(parser.BT_nodes[n]["name"] == "Evaluation Method"
@@ -64,8 +64,8 @@ def generateTree(path) :
 
 			nodes.get(n).value = val
 
-		if(parser.BT_nodes[n]["name"] == "Limit <maxLoop> Activations"):
-			nodes.get(n).limit = parser.BT_nodes[n]["properties"]["message"]
+		if(parser.BT_nodes[n]["name"] == "Limiter"):
+			nodes.get(n).limit = parser.BT_nodes[n]["properties"]["maxLoop"]
 
 	#make the root a RootNode and attach the first node
 	root_id = parser.BT_root

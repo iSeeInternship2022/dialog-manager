@@ -5,21 +5,21 @@ import  Buisiness.BT.BT as BT
 class RepTillFailNode(Node) :
 	def __init__(self, id) -> None:
 		super().__init__(id)
+		self.child = None
 
 	def toString(self):
-		kids =" ".join(str(elem) for elem in self.children)
 		return ( "REP TILL SUCC "+str(self.status) + " " + str(self.id))
 
 	def tick(self, predecessor : "Node"):
 
 		
-		if (not (predecessor in self.children)):
+		if (not (predecessor in self.child)):
 
 			#we check the first child (if it has one)
-			if(len(self.children)>0):
+			if(len(self.child)>0):
 				#print("go in first child")
 				self.statut = State.RUNNING
-				self.children[0].tick()
+				self.child[0].tick()
 				
 
 			else:
@@ -31,14 +31,13 @@ class RepTillFailNode(Node) :
 			self.status = State.SUCCESS
 			while(self.status == State.SUCCESS):
 				
-				self.status = self.children[0].tick()
+				self.status = self.child[0].tick()
 
 		return self.status
 
 
 	def reset(self):
 		self.status = State.FAILURE
-		for child in self.children:
-			child.reset()
+		self.child.reset()
 
 

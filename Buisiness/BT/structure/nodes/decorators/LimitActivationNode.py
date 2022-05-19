@@ -10,7 +10,7 @@ class LimitActivationNode(Node) :
 		self.child = None
 
 	def toString(self):
-		kids =" ".join(str(elem) for elem in self.child)
+		
 		return ( "REP TILL SUCC "+str(self.status) + " " + str(self.id))
 
 	def tick(self):
@@ -26,7 +26,6 @@ class LimitActivationNode(Node) :
 
 	def reset(self):
 		self.status = State.FAILURE
-		for child in self.children:
-			child.reset()
+		self.child.reset()
 
 
