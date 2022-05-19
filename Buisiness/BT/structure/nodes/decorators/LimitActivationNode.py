@@ -16,6 +16,7 @@ class LimitActivationNode(Node) :
 	def tick(self):
 
 		if(self.timesActivated < self.limit):
+			self.timesActivated += 1
 			self.status = self.child.tick()
 		else:
 			self.status = State.SUCCESS

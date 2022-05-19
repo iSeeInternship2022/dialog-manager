@@ -12,7 +12,7 @@ class World:
 	def store(self, answer_key, value):
 		#this function will need to change when introducing dialog logs
 			self.storage[answer_key] =  value
-			print("		" + str(answer_key) + " = " + str(value))
+			#print("		" + str(answer_key) + " = " + str(value))
 
 	#returns the value of a given key (and create a new entry when doesn't exist)
 	def get(self, data_key):
