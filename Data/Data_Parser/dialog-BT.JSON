@@ -1,0 +1,925 @@
+{
+    "version": "0.1.0",
+    "scope": "tree",
+    "id": "3ef88d19-132c-4e82-b265-0968fe79d292",
+    "title": "Explanation Experience",
+    "description": "",
+    "root": "d1bdc108-ca9b-4dee-9c49-fa2a2f7cc512",
+    "properties": {},
+    "nodes": {
+      "d2054a42-43b1-4eb7-94dd-dc62cc2f55da": {
+        "id": "d2054a42-43b1-4eb7-94dd-dc62cc2f55da",
+        "name": "Priority",
+        "title": "Priority",
+        "description": "",
+        "properties": {},
+        "display": {
+          "x": -288,
+          "y": -132
+        },
+        "children": [
+          "ca197bc6-20e1-4e52-88f0-6b71fd76880c",
+          "b52ebe2d-4e7d-4adf-8c44-529fe9bba305"
+        ]
+      },
+      "b3cd5ae3-a5c6-4629-8751-a57c8ffaebd9": {
+        "id": "b3cd5ae3-a5c6-4629-8751-a57c8ffaebd9",
+        "name": "Evaluation Method",
+        "title": "user_satisfied",
+        "description": "",
+        "properties": {
+          "data_slot": "user_satisfied"
+        },
+        "display": {
+          "x": -3120,
+          "y": 936
+        }
+      },
+      "b52ebe2d-4e7d-4adf-8c44-529fe9bba305": {
+        "id": "b52ebe2d-4e7d-4adf-8c44-529fe9bba305",
+        "name": "Sequence",
+        "title": "Sequence",
+        "description": "",
+        "properties": {},
+        "display": {
+          "x": -288,
+          "y": 156
+        },
+        "children": [
+          "b46f8de3-f841-4182-853c-487a656e7f6b",
+          "4b2f5eba-e7eb-4283-91ce-c81ea1d3c17e"
+        ]
+      },
+      "b46f8de3-f841-4182-853c-487a656e7f6b": {
+        "id": "b46f8de3-f841-4182-853c-487a656e7f6b",
+        "name": "Priority",
+        "title": "Priority",
+        "description": "",
+        "properties": {},
+        "display": {
+          "x": -276,
+          "y": 564
+        },
+        "children": [
+          "bf3c3918-6718-49c8-99f8-220adb8d2ee4",
+          "37faab73-a767-4d53-b077-ebede475f096",
+          "33342101-6a28-4a2f-9a76-64e2efa3c0d8",
+          "6120aa06-4da9-40e5-8fb0-46d4bd2059c1"
+        ]
+      },
+      "37faab73-a767-4d53-b077-ebede475f096": {
+        "id": "37faab73-a767-4d53-b077-ebede475f096",
+        "name": "Sequence",
+        "title": "Sequence",
+        "description": "",
+        "properties": {},
+        "display": {
+          "x": -576,
+          "y": 696
+        },
+        "children": [
+          "d989dd68-0a74-4871-8a16-b75a3b054b45",
+          "4b21f24f-a513-4e34-92ac-c7d05f6bbfba",
+          "3898e7c4-d3ce-403b-b5f1-38b728b0a543"
+        ]
+      },
+      "33342101-6a28-4a2f-9a76-64e2efa3c0d8": {
+        "id": "33342101-6a28-4a2f-9a76-64e2efa3c0d8",
+        "name": "Sequence",
+        "title": "Sequence",
+        "description": "",
+        "properties": {},
+        "display": {
+          "x": -120,
+          "y": 888
+        },
+        "children": [
+          "862a3b63-8891-45cc-829b-ae5b0e28ba54",
+          "7125f454-9ea6-42d3-95e1-cc6081e777da",
+          "3ad241f3-f808-44b7-a212-13febe97c243"
+        ]
+      },
+      "ca197bc6-20e1-4e52-88f0-6b71fd76880c": {
+        "id": "ca197bc6-20e1-4e52-88f0-6b71fd76880c",
+        "name": "Sequence",
+        "title": "Sequence",
+        "description": "",
+        "properties": {},
+        "display": {
+          "x": -2364,
+          "y": 672
+        },
+        "children": [
+          "b3b74827-21bf-4f2a-871f-25e8a8ab5fd7",
+          "779620ec-78cc-4554-b5ad-0c5eddd1dfd5"
+        ]
+      },
+      "72ee8447-636b-46ca-8425-e0434635c76b": {
+        "id": "72ee8447-636b-46ca-8425-e0434635c76b",
+        "name": "Priority",
+        "title": "Priority",
+        "description": "",
+        "properties": {},
+        "display": {
+          "x": 1452,
+          "y": 756
+        },
+        "children": [
+          "5c605fdf-1804-4bf1-ba1a-1438c1d28907",
+          "df0db687-0a9f-46bd-8ca6-ca0bfab6b17e"
+        ]
+      },
+      "5c605fdf-1804-4bf1-ba1a-1438c1d28907": {
+        "id": "5c605fdf-1804-4bf1-ba1a-1438c1d28907",
+        "name": "Sequence",
+        "title": "Sequence",
+        "description": "",
+        "properties": {},
+        "display": {
+          "x": 1320,
+          "y": 972
+        },
+        "children": [
+          "a965a8d1-d8b2-4e7f-8d70-d4ee459abd36",
+          "93402749-1afc-4211-a1de-93efa56e0f39",
+          "eb688b03-7053-4fd8-8cfd-15e00acf0d14"
+        ]
+      },
+      "df0db687-0a9f-46bd-8ca6-ca0bfab6b17e": {
+        "id": "df0db687-0a9f-46bd-8ca6-ca0bfab6b17e",
+        "name": "Sequence",
+        "title": "Sequence",
+        "description": "",
+        "properties": {},
+        "display": {
+          "x": 1824,
+          "y": 864
+        },
+        "children": [
+          "da494f53-8b24-4652-8964-e293ea568b9c",
+          "e7d57db2-0fb4-4cf8-a3fb-bf5ae480b1cb"
+        ]
+      },
+      "eb688b03-7053-4fd8-8cfd-15e00acf0d14": {
+        "id": "eb688b03-7053-4fd8-8cfd-15e00acf0d14",
+        "name": "Priority",
+        "title": "Priority",
+        "description": "",
+        "properties": {},
+        "display": {
+          "x": 1620,
+          "y": 1176
+        },
+        "children": [
+          "9cc35779-6e38-4b15-814b-e1810f2e9816",
+          "f28fa8c4-3624-47ee-8bc6-b3dbebec2636"
+        ]
+      },
+      "9cc35779-6e38-4b15-814b-e1810f2e9816": {
+        "id": "9cc35779-6e38-4b15-814b-e1810f2e9816",
+        "name": "Sequence",
+        "title": "Sequence",
+        "description": "",
+        "properties": {},
+        "display": {
+          "x": 1164,
+          "y": 1380
+        },
+        "children": [
+          "f1610e36-4c03-4d30-980b-1f74de12466e",
+          "0245587e-e468-47a2-8210-9518c79f04ae",
+          "85d27478-c0c1-4700-9a31-d6b8712a92c5",
+          "21350368-a924-46f4-b7db-a46eee4e79b4"
+        ]
+      },
+      "f28fa8c4-3624-47ee-8bc6-b3dbebec2636": {
+        "id": "f28fa8c4-3624-47ee-8bc6-b3dbebec2636",
+        "name": "Sequence",
+        "title": "Sequence",
+        "description": "",
+        "properties": {},
+        "display": {
+          "x": 1956,
+          "y": 1392
+        },
+        "children": [
+          "d3078e4a-191b-43bc-867a-10c73273a4d5",
+          "de1ef5f3-1983-4a1a-9f73-f0e4fc94eead"
+        ]
+      },
+      "6120aa06-4da9-40e5-8fb0-46d4bd2059c1": {
+        "id": "6120aa06-4da9-40e5-8fb0-46d4bd2059c1",
+        "name": "Sequence",
+        "title": "Sequence",
+        "description": "",
+        "properties": {
+          "message": ""
+        },
+        "display": {
+          "x": 756,
+          "y": 636
+        },
+        "children": [
+          "776468dc-1e62-46c6-8d7b-831ce843873d",
+          "ad1a0373-9879-484c-b29a-ffc1b72b237f",
+          "72ee8447-636b-46ca-8425-e0434635c76b"
+        ]
+      },
+      "d1bdc108-ca9b-4dee-9c49-fa2a2f7cc512": {
+        "id": "d1bdc108-ca9b-4dee-9c49-fa2a2f7cc512",
+        "name": "Sequence",
+        "title": "Sequence",
+        "description": "",
+        "properties": {},
+        "display": {
+          "x": -288,
+          "y": -300
+        },
+        "children": [
+          "8b1b27f6-4389-4694-adaf-0dd57f36d381",
+          "d2054a42-43b1-4eb7-94dd-dc62cc2f55da"
+        ]
+      },
+      "779620ec-78cc-4554-b5ad-0c5eddd1dfd5": {
+        "id": "779620ec-78cc-4554-b5ad-0c5eddd1dfd5",
+        "name": "Priority",
+        "title": "Priority",
+        "description": "",
+        "properties": {},
+        "display": {
+          "x": -1992,
+          "y": 900
+        },
+        "children": [
+          "b1b0ec47-dbee-4e6b-82d1-435de2df714d",
+          "29836b82-c91e-4642-bf94-2fe1fd9284df"
+        ]
+      },
+      "b1b0ec47-dbee-4e6b-82d1-435de2df714d": {
+        "id": "b1b0ec47-dbee-4e6b-82d1-435de2df714d",
+        "name": "Sequence",
+        "title": "Sequence",
+        "description": "",
+        "properties": {},
+        "display": {
+          "x": -1992,
+          "y": 1116
+        },
+        "children": [
+          "c18974ab-94d0-41d9-b31e-8d8cd6d81d9d",
+          "376b7f51-ce13-4337-96a4-ad17619e7be1",
+          "cd398f3b-999f-47af-b595-4ba13092ac8d"
+        ]
+      },
+      "29836b82-c91e-4642-bf94-2fe1fd9284df": {
+        "id": "29836b82-c91e-4642-bf94-2fe1fd9284df",
+        "name": "Sequence",
+        "title": "Sequence",
+        "description": "",
+        "properties": {},
+        "display": {
+          "x": -1404,
+          "y": 1056
+        },
+        "children": [
+          "228ad3b1-2703-497f-83bc-5ef1b002c8ad",
+          "8e06f570-b263-45b9-af68-48076c0df1a4"
+        ]
+      },
+      "d445a8ab-2561-4733-8dad-a60e797887dc": {
+        "id": "d445a8ab-2561-4733-8dad-a60e797887dc",
+        "name": "Sequence",
+        "title": "Sequence",
+        "description": "",
+        "properties": {},
+        "display": {
+          "x": -1860,
+          "y": 1524
+        },
+        "children": [
+          "396e476e-9fce-4a4b-8028-ff84eece0751",
+          "145e8feb-d056-47c9-8914-b64f54f58505"
+        ]
+      },
+      "bf3c3918-6718-49c8-99f8-220adb8d2ee4": {
+        "id": "bf3c3918-6718-49c8-99f8-220adb8d2ee4",
+        "name": "Sequence",
+        "title": "Sequence",
+        "description": "",
+        "properties": {},
+        "display": {
+          "x": -1080,
+          "y": 648
+        },
+        "children": [
+          "72cb70d6-b2ee-4b4f-8b56-8754282a0831",
+          "bea075e0-b969-498b-80fd-39033b66833b"
+        ]
+      },
+      "376b7f51-ce13-4337-96a4-ad17619e7be1": {
+        "id": "376b7f51-ce13-4337-96a4-ad17619e7be1",
+        "name": "Sequence",
+        "title": "Sequence",
+        "description": "",
+        "properties": {},
+        "display": {
+          "x": -2028,
+          "y": 1416
+        },
+        "children": [
+          "7b053994-e60a-42bc-a96d-ee5e9fe38e8e",
+          "d445a8ab-2561-4733-8dad-a60e797887dc"
+        ]
+      },
+      "b3b74827-21bf-4f2a-871f-25e8a8ab5fd7": {
+        "id": "b3b74827-21bf-4f2a-871f-25e8a8ab5fd7",
+        "name": "Sequence",
+        "title": "Sequence",
+        "description": "",
+        "properties": {},
+        "display": {
+          "x": -2568,
+          "y": 792
+        },
+        "children": [
+          "b3cd5ae3-a5c6-4629-8751-a57c8ffaebd9",
+          "4b95d7ea-3bec-4c9b-8c97-b7487ac9c955"
+        ]
+      },
+      "395ccf62-5b79-48cc-aaaa-f38b85601463": {
+        "id": "395ccf62-5b79-48cc-aaaa-f38b85601463",
+        "name": "Explanation Method",
+        "title": "reset_user_answer",
+        "description": "",
+        "properties": {
+          "data_slot": "user_answer",
+          "value": "None"
+        },
+        "display": {
+          "x": -2856,
+          "y": 1188
+        }
+      },
+      "a4e97df2-7288-413f-8064-ca2b28bf4b43": {
+        "id": "a4e97df2-7288-413f-8064-ca2b28bf4b43",
+        "name": "Failer",
+        "title": "ask_to_take_survey",
+        "description": "",
+        "properties": {
+          "data_slot": "survey_accepted",
+          "message": "Would you like to help us by answering a quick survey?"
+        },
+        "display": {
+          "x": -2640,
+          "y": 1200
+        }
+      },
+      "cd398f3b-999f-47af-b595-4ba13092ac8d": {
+        "id": "cd398f3b-999f-47af-b595-4ba13092ac8d",
+        "name": "Succeeder",
+        "title": "goodbye",
+        "description": "",
+        "properties": {
+          "message": "Goodbye!"
+        },
+        "display": {
+          "x": -1812,
+          "y": 1248
+        }
+      },
+      "396e476e-9fce-4a4b-8028-ff84eece0751": {
+        "id": "396e476e-9fce-4a4b-8028-ff84eece0751",
+        "name": "Failer",
+        "title": "state_question",
+        "description": "",
+        "properties": {
+          "data_slot": "survey_answer",
+          "message": "Survey Question"
+        },
+        "display": {
+          "x": -1944,
+          "y": 1620
+        }
+      },
+      "145e8feb-d056-47c9-8914-b64f54f58505": {
+        "id": "145e8feb-d056-47c9-8914-b64f54f58505",
+        "name": "Inverter",
+        "title": "next_question",
+        "description": "fetches next question and keeps track of the end of the survey",
+        "properties": {},
+        "display": {
+          "x": -1704,
+          "y": 1632
+        }
+      },
+      "8e06f570-b263-45b9-af68-48076c0df1a4": {
+        "id": "8e06f570-b263-45b9-af68-48076c0df1a4",
+        "name": "Succeeder",
+        "title": "goodbye",
+        "description": "",
+        "properties": {
+          "message": "Goodbye!"
+        },
+        "display": {
+          "x": -1296,
+          "y": 1200
+        }
+      },
+      "bea075e0-b969-498b-80fd-39033b66833b": {
+        "id": "bea075e0-b969-498b-80fd-39033b66833b",
+        "name": "Explanation Method",
+        "title": "set_user_as_satisfied",
+        "description": "",
+        "properties": {
+          "data_slot": "user_satisfied",
+          "value": "True"
+        },
+        "display": {
+          "x": -972,
+          "y": 768
+        }
+      },
+      "5ac19188-00ca-45aa-8c69-2d33c8098186": {
+        "id": "5ac19188-00ca-45aa-8c69-2d33c8098186",
+        "name": "Failer",
+        "title": "anything_else",
+        "description": "",
+        "properties": {
+          "data_slot": "user_answer",
+          "message": "Do you need anything else?"
+        },
+        "display": {
+          "x": 168,
+          "y": 420
+        }
+      },
+      "3898e7c4-d3ce-403b-b5f1-38b728b0a543": {
+        "id": "3898e7c4-d3ce-403b-b5f1-38b728b0a543",
+        "name": "Explanation Method",
+        "title": "reset_user_answer",
+        "description": "",
+        "properties": {
+          "data_slot": "user_answer",
+          "value": "None"
+        },
+        "display": {
+          "x": -360,
+          "y": 840
+        }
+      },
+      "3ad241f3-f808-44b7-a212-13febe97c243": {
+        "id": "3ad241f3-f808-44b7-a212-13febe97c243",
+        "name": "Explanation Method",
+        "title": "reset_user_answer",
+        "description": "",
+        "properties": {
+          "data_slot": "user_answer",
+          "value": "None"
+        },
+        "display": {
+          "x": -24,
+          "y": 1068
+        }
+      },
+      "776468dc-1e62-46c6-8d7b-831ce843873d": {
+        "id": "776468dc-1e62-46c6-8d7b-831ce843873d",
+        "name": "Priority",
+        "title": "Priority",
+        "description": "",
+        "properties": {},
+        "display": {
+          "x": 528,
+          "y": 720
+        },
+        "children": [
+          "a4f3d5b0-0f2e-4bde-81e8-dcb1ba717cbc",
+          "c3d623be-17cc-4e6b-b9b5-14599a3e13ce"
+        ]
+      },
+      "c3d623be-17cc-4e6b-b9b5-14599a3e13ce": {
+        "id": "c3d623be-17cc-4e6b-b9b5-14599a3e13ce",
+        "name": "Evaluation Method",
+        "title": "argumenting",
+        "description": "",
+        "properties": {
+          "data_slot": "argumenting"
+        },
+        "display": {
+          "x": 636,
+          "y": 852
+        }
+      },
+      "a4f3d5b0-0f2e-4bde-81e8-dcb1ba717cbc": {
+        "id": "a4f3d5b0-0f2e-4bde-81e8-dcb1ba717cbc",
+        "name": "Sequence",
+        "title": "Sequence",
+        "description": "",
+        "properties": {},
+        "display": {
+          "x": 408,
+          "y": 816
+        },
+        "children": [
+          "61bbdbae-937c-4985-8eb6-83b8e891f49e",
+          "b6ea8226-5149-42a6-b9eb-29287a5095cd"
+        ]
+      },
+      "b6ea8226-5149-42a6-b9eb-29287a5095cd": {
+        "id": "b6ea8226-5149-42a6-b9eb-29287a5095cd",
+        "name": "Explanation Method",
+        "title": "is_argumenting",
+        "description": "",
+        "properties": {
+          "data_slot": "argumenting",
+          "value": "True"
+        },
+        "display": {
+          "x": 516,
+          "y": 960
+        }
+      },
+      "ad1a0373-9879-484c-b29a-ffc1b72b237f": {
+        "id": "ad1a0373-9879-484c-b29a-ffc1b72b237f",
+        "name": "Failer",
+        "title": "ask_more_details",
+        "description": "",
+        "properties": {
+          "data_slot": "user_answer",
+          "message": "Would you care to provide more details, please?"
+        },
+        "display": {
+          "x": 792,
+          "y": 756
+        }
+      },
+      "e7d57db2-0fb4-4cf8-a3fb-bf5ae480b1cb": {
+        "id": "e7d57db2-0fb4-4cf8-a3fb-bf5ae480b1cb",
+        "name": "Explanation Method",
+        "title": "set_user_as_satisfied",
+        "description": "",
+        "properties": {
+          "data_slot": "user_satisfied",
+          "value": "True"
+        },
+        "display": {
+          "x": 2052,
+          "y": 972
+        }
+      },
+      "93402749-1afc-4211-a1de-93efa56e0f39": {
+        "id": "93402749-1afc-4211-a1de-93efa56e0f39",
+        "name": "Failer",
+        "title": "ask_if_clarification_wanted",
+        "description": "",
+        "properties": {
+          "data_slot": "user_answer",
+          "message": "Would you like me to clarify?"
+        },
+        "display": {
+          "x": 1164,
+          "y": 1176
+        }
+      },
+      "0245587e-e468-47a2-8210-9518c79f04ae": {
+        "id": "0245587e-e468-47a2-8210-9518c79f04ae",
+        "name": "Succeeder",
+        "title": "explain",
+        "description": "",
+        "properties": {
+          "message": "this is an explanation"
+        },
+        "display": {
+          "x": 1164,
+          "y": 1488
+        }
+      },
+      "4b21f24f-a513-4e34-92ac-c7d05f6bbfba": {
+        "id": "4b21f24f-a513-4e34-92ac-c7d05f6bbfba",
+        "name": "Succeeder",
+        "title": "explain",
+        "description": "",
+        "properties": {
+          "message": "this is an explanation"
+        },
+        "display": {
+          "x": -552,
+          "y": 840
+        }
+      },
+      "21350368-a924-46f4-b7db-a46eee4e79b4": {
+        "id": "21350368-a924-46f4-b7db-a46eee4e79b4",
+        "name": "Explanation Method",
+        "title": "reset_user_answer",
+        "description": "",
+        "properties": {
+          "data_slot": "user_answer",
+          "value": "None"
+        },
+        "display": {
+          "x": 1560,
+          "y": 1488
+        }
+      },
+      "de1ef5f3-1983-4a1a-9f73-f0e4fc94eead": {
+        "id": "de1ef5f3-1983-4a1a-9f73-f0e4fc94eead",
+        "name": "Explanation Method",
+        "title": "set_user_as_satisfied",
+        "description": "",
+        "properties": {
+          "data_slot": "user_satisfied",
+          "value": "True"
+        },
+        "display": {
+          "x": 2124,
+          "y": 1512
+        }
+      },
+      "7125f454-9ea6-42d3-95e1-cc6081e777da": {
+        "id": "7125f454-9ea6-42d3-95e1-cc6081e777da",
+        "name": "Succeeder",
+        "title": "affirm",
+        "description": "",
+        "properties": {
+          "message": "Yes, that's it"
+        },
+        "display": {
+          "x": -216,
+          "y": 1068
+        }
+      },
+      "977c4cf3-cd74-4dad-b12e-f124da438d7c": {
+        "id": "977c4cf3-cd74-4dad-b12e-f124da438d7c",
+        "name": "Failer",
+        "title": "greet",
+        "description": "",
+        "properties": {
+          "data_slot": "user_answer",
+          "message": "Hello! How may I help you?"
+        },
+        "display": {
+          "x": -792,
+          "y": 0
+        }
+      },
+      "8b1b27f6-4389-4694-adaf-0dd57f36d381": {
+        "id": "8b1b27f6-4389-4694-adaf-0dd57f36d381",
+        "name": "Limiter",
+        "title": "Limit <maxLoop> Activations",
+        "description": "",
+        "properties": {
+          "maxLoop": 1
+        },
+        "display": {
+          "x": -792,
+          "y": -132
+        },
+        "child": "977c4cf3-cd74-4dad-b12e-f124da438d7c"
+      },
+      "72cb70d6-b2ee-4b4f-8b56-8754282a0831": {
+        "id": "72cb70d6-b2ee-4b4f-8b56-8754282a0831",
+        "name": "Repeater",
+        "title": "answer_is_satisfied",
+        "description": "",
+        "properties": {
+          "maxLoop": -1,
+          "data_slot": "user_answer",
+          "value": "Satisfied"
+        },
+        "display": {
+          "x": -1236,
+          "y": 768
+        }
+      },
+      "d989dd68-0a74-4871-8a16-b75a3b054b45": {
+        "id": "d989dd68-0a74-4871-8a16-b75a3b054b45",
+        "name": "Repeater",
+        "title": "answer_is_question",
+        "description": "",
+        "properties": {
+          "maxLoop": -1,
+          "data_slot": "user_answer",
+          "value": "Question"
+        },
+        "display": {
+          "x": -756,
+          "y": 840
+        }
+      },
+      "862a3b63-8891-45cc-829b-ae5b0e28ba54": {
+        "id": "862a3b63-8891-45cc-829b-ae5b0e28ba54",
+        "name": "Repeater",
+        "title": "answer_is_affirm",
+        "description": "",
+        "properties": {
+          "maxLoop": -1,
+          "data_slot": "user_answer",
+          "value": "Affirm"
+        },
+        "display": {
+          "x": -444,
+          "y": 1068
+        }
+      },
+      "61bbdbae-937c-4985-8eb6-83b8e891f49e": {
+        "id": "61bbdbae-937c-4985-8eb6-83b8e891f49e",
+        "name": "Repeater",
+        "title": "answer_is_argument",
+        "description": "",
+        "properties": {
+          "maxLoop": -1,
+          "data_slot": "user_answer",
+          "value": "Argue"
+        },
+        "display": {
+          "x": 288,
+          "y": 960
+        }
+      },
+      "a965a8d1-d8b2-4e7f-8d70-d4ee459abd36": {
+        "id": "a965a8d1-d8b2-4e7f-8d70-d4ee459abd36",
+        "name": "Repeater",
+        "title": "answer_is_details",
+        "description": "",
+        "properties": {
+          "maxLoop": -1,
+          "data_slot": "user_answer",
+          "value": "Details"
+        },
+        "display": {
+          "x": 912,
+          "y": 1188
+        }
+      },
+      "f1610e36-4c03-4d30-980b-1f74de12466e": {
+        "id": "f1610e36-4c03-4d30-980b-1f74de12466e",
+        "name": "Repeater",
+        "title": "answer_is_approval",
+        "description": "",
+        "properties": {
+          "maxLoop": -1,
+          "data_slot": "user_answer",
+          "value": "Yes"
+        },
+        "display": {
+          "x": 936,
+          "y": 1500
+        }
+      },
+      "da494f53-8b24-4652-8964-e293ea568b9c": {
+        "id": "da494f53-8b24-4652-8964-e293ea568b9c",
+        "name": "Repeater",
+        "title": "answer_is_refusal",
+        "description": "",
+        "properties": {
+          "maxLoop": -1,
+          "data_slot": "user_answer",
+          "value": "No"
+        },
+        "display": {
+          "x": 1728,
+          "y": 972
+        }
+      },
+      "d3078e4a-191b-43bc-867a-10c73273a4d5": {
+        "id": "d3078e4a-191b-43bc-867a-10c73273a4d5",
+        "name": "Repeater",
+        "title": "answer_is_refusal",
+        "description": "",
+        "properties": {
+          "maxLoop": -1,
+          "data_slot": "user_answer",
+          "value": "No"
+        },
+        "display": {
+          "x": 1896,
+          "y": 1512
+        }
+      },
+      "7b053994-e60a-42bc-a96d-ee5e9fe38e8e": {
+        "id": "7b053994-e60a-42bc-a96d-ee5e9fe38e8e",
+        "name": "Repeater",
+        "title": "survey_not_finished",
+        "description": "",
+        "properties": {
+          "maxLoop": -1,
+          "data_slot": "survey_count",
+          "value": "Satisfied"
+        },
+        "display": {
+          "x": -2316,
+          "y": 1560
+        }
+      },
+      "228ad3b1-2703-497f-83bc-5ef1b002c8ad": {
+        "id": "228ad3b1-2703-497f-83bc-5ef1b002c8ad",
+        "name": "Repeater",
+        "title": "answer_is_refusal",
+        "description": "",
+        "properties": {
+          "maxLoop": -1,
+          "data_slot": "survey_accepted",
+          "value": "No"
+        },
+        "display": {
+          "x": -1536,
+          "y": 1236
+        }
+      },
+      "c18974ab-94d0-41d9-b31e-8d8cd6d81d9d": {
+        "id": "c18974ab-94d0-41d9-b31e-8d8cd6d81d9d",
+        "name": "Repeater",
+        "title": "answer_is_approval",
+        "description": "",
+        "properties": {
+          "maxLoop": -1,
+          "data_slot": "survey_accepted",
+          "value": "Yes"
+        },
+        "display": {
+          "x": -2232,
+          "y": 1236
+        }
+      },
+      "564271da-86d3-42db-8ff6-dffc93cdf99d": {
+        "id": "564271da-86d3-42db-8ff6-dffc93cdf99d",
+        "name": "Repeater",
+        "title": "no_answer",
+        "description": "",
+        "properties": {
+          "maxLoop": -1,
+          "data_slot": "user_answer",
+          "value": "None"
+        },
+        "display": {
+          "x": -48,
+          "y": 432
+        }
+      },
+      "4b2f5eba-e7eb-4283-91ce-c81ea1d3c17e": {
+        "id": "4b2f5eba-e7eb-4283-91ce-c81ea1d3c17e",
+        "name": "Sequence",
+        "title": "Sequence",
+        "description": "",
+        "properties": {},
+        "display": {
+          "x": 48,
+          "y": 312
+        },
+        "children": [
+          "564271da-86d3-42db-8ff6-dffc93cdf99d",
+          "5ac19188-00ca-45aa-8c69-2d33c8098186"
+        ]
+      },
+      "85d27478-c0c1-4700-9a31-d6b8712a92c5": {
+        "id": "85d27478-c0c1-4700-9a31-d6b8712a92c5",
+        "name": "Explanation Method",
+        "title": "argumenting_finished",
+        "description": "",
+        "properties": {
+          "data_slot": "argumenting",
+          "value": "False"
+        },
+        "display": {
+          "x": 1356,
+          "y": 1488
+        }
+      },
+      "4b95d7ea-3bec-4c9b-8c97-b7487ac9c955": {
+        "id": "4b95d7ea-3bec-4c9b-8c97-b7487ac9c955",
+        "name": "Limiter",
+        "title": "Limit <maxLoop> Activations",
+        "description": "",
+        "properties": {
+          "maxLoop": 1
+        },
+        "display": {
+          "x": -2712,
+          "y": 960
+        },
+        "child": "bd895f2d-ce69-422d-93f4-53584c57c7c5"
+      },
+      "bd895f2d-ce69-422d-93f4-53584c57c7c5": {
+        "id": "bd895f2d-ce69-422d-93f4-53584c57c7c5",
+        "name": "Sequence",
+        "title": "Sequence",
+        "description": "",
+        "properties": {},
+        "display": {
+          "x": -2712,
+          "y": 1068
+        },
+        "children": [
+          "395ccf62-5b79-48cc-aaaa-f38b85601463",
+          "a4e97df2-7288-413f-8064-ca2b28bf4b43"
+        ]
+      }
+    },
+    "display": {
+      "camera_x": 1791,
+      "camera_y": -231.5,
+      "camera_z": 0.5,
+      "x": -288,
+      "y": -444
+    },
+    "custom_nodes": []
+  }
