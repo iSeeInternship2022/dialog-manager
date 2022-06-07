@@ -1,5 +1,6 @@
 import json
 from typing import Dict
+from Buisiness.BT.structure.nodes.action.ExplanationExpType import ExplanationExp
 import Data.Data_Parser.TreeParser as TreeParser
 from Buisiness.BT.structure.nodes.Node import Node
 from Buisiness.BT.structure.nodes.RootNode import RootNode
@@ -44,19 +45,19 @@ def generateTree(path) :
 
 		#For question nodes and nodes that checks the world, we need to assign its data slot (where it has to look for the data it needs)
 		if(parser.BT_nodes[n]["name"] == "Evaluation Method"
-		or parser.BT_nodes[n]["name"] == "Failer"
-		or parser.BT_nodes[n]["name"] == "Explanation Method"
-		or parser.BT_nodes[n]["name"] == "Repeater"):
+		or parser.BT_nodes[n]["name"] == "Question"
+		or parser.BT_nodes[n]["name"] == "WorldModifier"
+		or parser.BT_nodes[n]["name"] == "Equal"):
 			nodes.get(n).data_slot = parser.BT_nodes[n]["properties"]["data_slot"]
 
 		#Question nodes also needs to have the text of the question, for now its raw text, but it could be a type used for a querry in the future
-		if(parser.BT_nodes[n]["name"] == "Failer"
-		or parser.BT_nodes[n]["name"] == "Succeeder"):
+		if(parser.BT_nodes[n]["name"] == "Question"
+		or parser.BT_nodes[n]["name"] == "Information"):
 			nodes.get(n).message = parser.BT_nodes[n]["properties"]["message"]
 	
 		#For WorldModifiers nodes, we also need the value that will be asigned to the variable
-		if(parser.BT_nodes[n]["name"] == "Explanation Method"
-		or parser.BT_nodes[n]["name"] == "Repeater"):
+		if(parser.BT_nodes[n]["name"] == "WorldModifier" #previously "Explanation Method"
+		or parser.BT_nodes[n]["name"] == "Equal"):
 			val = parser.BT_nodes[n]["properties"]["value"]
 
 			#Changing string for boolean values
@@ -67,6 +68,14 @@ def generateTree(path) :
 
 		if(parser.BT_nodes[n]["name"] == "Limiter"):
 			nodes.get(n).limit = parser.BT_nodes[n]["properties"]["maxLoop"]
+
+		#Explanation methods can be of two types, and all rely on an URL
+		if(parser.BT_nodes[n]["name"] == "Explanation Method"):
+			nodes.get(n).url = parser.BT_nodes[n]["properties"]["url"]
+			if(parser.BT_nodes[n]["properties"]["type"] == "tree plug-in"):
+				nodes.get(n).type = ExplanationExp.TREE
+			else :
+				nodes.get(n).type = ExplanationExp.EXPLANATION
 
 
 	#make the root a RootNode and attach the first node

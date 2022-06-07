@@ -2,6 +2,7 @@
 
 from Data.Data_Storage.World import World
 from Buisiness.BT.BT import BT
+from network.API_Network import api_request
 from ui.Logger import Logger
 from ui.UiConsole import UiConsole
 
@@ -26,21 +27,27 @@ class Coordinator:
 		self.interface = UiConsole()
 		self.world = World()
 		self.bt = BT()
-		self.logger = Logger
+		self.logger = Logger()
 		self.bt.coordinator = self
 
-	def start(self):
+
+	@staticmethod 
+	def start():
 		Coordinator.get().bt.run()
 
 	#send a question to the user and waits for an answer
 	@staticmethod 
 	def ask(message, answer_slot):
+		Coordinator.get().log("CHATBOT : " + message)
 		answer = Coordinator.get().interface.send_to_user_and_response(message)
+
+		Coordinator.get().log("USER : " + answer)
 		Coordinator.get().world.store(answer_slot, answer)
 
 	#send a message to the user
 	@staticmethod 
 	def inform(message):
+		Coordinator.get().log("CHATBOT : " + message)
 		Coordinator.get().interface.send_to_user(message)
 
 	#modify the value of a given world variable
@@ -53,6 +60,9 @@ class Coordinator:
 	def checkWorld(data_slot):
 		return Coordinator.get().world.get(data_slot)
 		
+	@staticmethod
+	def log(message):
+		Coordinator.get().logger.log(message)
 
-	def log(self, message):
-		self.logger.log(message)
+	def API_querry(url):
+		return api_request(url)

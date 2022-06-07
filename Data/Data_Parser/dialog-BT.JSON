@@ -287,7 +287,7 @@
     },
     "a4e97df2-7288-413f-8064-ca2b28bf4b43": {
       "id": "a4e97df2-7288-413f-8064-ca2b28bf4b43",
-      "name": "Failer",
+      "name": "Question",
       "title": "ask_to_take_survey",
       "description": "",
       "properties": {
@@ -301,7 +301,7 @@
     },
     "cd398f3b-999f-47af-b595-4ba13092ac8d": {
       "id": "cd398f3b-999f-47af-b595-4ba13092ac8d",
-      "name": "Succeeder",
+      "name": "Information",
       "title": "goodbye",
       "description": "",
       "properties": {
@@ -314,7 +314,7 @@
     },
     "8e06f570-b263-45b9-af68-48076c0df1a4": {
       "id": "8e06f570-b263-45b9-af68-48076c0df1a4",
-      "name": "Succeeder",
+      "name": "Information",
       "title": "goodbye",
       "description": "",
       "properties": {
@@ -327,7 +327,7 @@
     },
     "bea075e0-b969-498b-80fd-39033b66833b": {
       "id": "bea075e0-b969-498b-80fd-39033b66833b",
-      "name": "Explanation Method",
+      "name": "World Modifier",
       "title": "set_user_as_satisfied",
       "description": "",
       "properties": {
@@ -341,7 +341,7 @@
     },
     "5ac19188-00ca-45aa-8c69-2d33c8098186": {
       "id": "5ac19188-00ca-45aa-8c69-2d33c8098186",
-      "name": "Failer",
+      "name": "Question",
       "title": "anything_else",
       "description": "",
       "properties": {
@@ -355,7 +355,7 @@
     },
     "3898e7c4-d3ce-403b-b5f1-38b728b0a543": {
       "id": "3898e7c4-d3ce-403b-b5f1-38b728b0a543",
-      "name": "Explanation Method",
+      "name": "World Modifier",
       "title": "reset_user_answer",
       "description": "",
       "properties": {
@@ -369,7 +369,7 @@
     },
     "3ad241f3-f808-44b7-a212-13febe97c243": {
       "id": "3ad241f3-f808-44b7-a212-13febe97c243",
-      "name": "Explanation Method",
+      "name": "World Modifier",
       "title": "reset_user_answer",
       "description": "",
       "properties": {
@@ -426,7 +426,7 @@
     },
     "b6ea8226-5149-42a6-b9eb-29287a5095cd": {
       "id": "b6ea8226-5149-42a6-b9eb-29287a5095cd",
-      "name": "Explanation Method",
+      "name": "World Modifier",
       "title": "is_argumenting",
       "description": "",
       "properties": {
@@ -440,7 +440,7 @@
     },
     "ad1a0373-9879-484c-b29a-ffc1b72b237f": {
       "id": "ad1a0373-9879-484c-b29a-ffc1b72b237f",
-      "name": "Failer",
+      "name": "Question",
       "title": "ask_more_details",
       "description": "",
       "properties": {
@@ -454,7 +454,7 @@
     },
     "e7d57db2-0fb4-4cf8-a3fb-bf5ae480b1cb": {
       "id": "e7d57db2-0fb4-4cf8-a3fb-bf5ae480b1cb",
-      "name": "Explanation Method",
+      "name": "World Modifier",
       "title": "set_user_as_satisfied",
       "description": "",
       "properties": {
@@ -468,7 +468,7 @@
     },
     "93402749-1afc-4211-a1de-93efa56e0f39": {
       "id": "93402749-1afc-4211-a1de-93efa56e0f39",
-      "name": "Failer",
+      "name": "Question",
       "title": "ask_if_clarification_wanted",
       "description": "",
       "properties": {
@@ -482,7 +482,7 @@
     },
     "0245587e-e468-47a2-8210-9518c79f04ae": {
       "id": "0245587e-e468-47a2-8210-9518c79f04ae",
-      "name": "Succeeder",
+      "name": "Information",
       "title": "explain",
       "description": "",
       "properties": {
@@ -495,7 +495,7 @@
     },
     "4b21f24f-a513-4e34-92ac-c7d05f6bbfba": {
       "id": "4b21f24f-a513-4e34-92ac-c7d05f6bbfba",
-      "name": "Succeeder",
+      "name": "Information",
       "title": "explain",
       "description": "",
       "properties": {
@@ -508,7 +508,7 @@
     },
     "21350368-a924-46f4-b7db-a46eee4e79b4": {
       "id": "21350368-a924-46f4-b7db-a46eee4e79b4",
-      "name": "Explanation Method",
+      "name": "World Modifier",
       "title": "reset_user_answer",
       "description": "",
       "properties": {
@@ -522,7 +522,7 @@
     },
     "de1ef5f3-1983-4a1a-9f73-f0e4fc94eead": {
       "id": "de1ef5f3-1983-4a1a-9f73-f0e4fc94eead",
-      "name": "Explanation Method",
+      "name": "World Modifier",
       "title": "set_user_as_satisfied",
       "description": "",
       "properties": {
@@ -536,7 +536,7 @@
     },
     "7125f454-9ea6-42d3-95e1-cc6081e777da": {
       "id": "7125f454-9ea6-42d3-95e1-cc6081e777da",
-      "name": "Succeeder",
+      "name": "Information",
       "title": "affirm",
       "description": "",
       "properties": {
@@ -549,7 +549,7 @@
     },
     "72cb70d6-b2ee-4b4f-8b56-8754282a0831": {
       "id": "72cb70d6-b2ee-4b4f-8b56-8754282a0831",
-      "name": "Repeater",
+      "name": "Equal",
       "title": "answer_is_satisfied",
       "description": "",
       "properties": {
@@ -564,7 +564,7 @@
     },
     "d989dd68-0a74-4871-8a16-b75a3b054b45": {
       "id": "d989dd68-0a74-4871-8a16-b75a3b054b45",
-      "name": "Repeater",
+      "name": "Equal",
       "title": "answer_is_question",
       "description": "",
       "properties": {
@@ -579,7 +579,7 @@
     },
     "862a3b63-8891-45cc-829b-ae5b0e28ba54": {
       "id": "862a3b63-8891-45cc-829b-ae5b0e28ba54",
-      "name": "Repeater",
+      "name": "Equal",
       "title": "answer_is_affirm",
       "description": "",
       "properties": {
@@ -594,7 +594,7 @@
     },
     "61bbdbae-937c-4985-8eb6-83b8e891f49e": {
       "id": "61bbdbae-937c-4985-8eb6-83b8e891f49e",
-      "name": "Repeater",
+      "name": "Equal",
       "title": "answer_is_argument",
       "description": "",
       "properties": {
@@ -609,7 +609,7 @@
     },
     "a965a8d1-d8b2-4e7f-8d70-d4ee459abd36": {
       "id": "a965a8d1-d8b2-4e7f-8d70-d4ee459abd36",
-      "name": "Repeater",
+      "name": "Equal",
       "title": "answer_is_details",
       "description": "",
       "properties": {
@@ -624,7 +624,7 @@
     },
     "f1610e36-4c03-4d30-980b-1f74de12466e": {
       "id": "f1610e36-4c03-4d30-980b-1f74de12466e",
-      "name": "Repeater",
+      "name": "Equal",
       "title": "answer_is_approval",
       "description": "",
       "properties": {
@@ -639,7 +639,7 @@
     },
     "da494f53-8b24-4652-8964-e293ea568b9c": {
       "id": "da494f53-8b24-4652-8964-e293ea568b9c",
-      "name": "Repeater",
+      "name": "Equal",
       "title": "answer_is_refusal",
       "description": "",
       "properties": {
@@ -654,7 +654,7 @@
     },
     "d3078e4a-191b-43bc-867a-10c73273a4d5": {
       "id": "d3078e4a-191b-43bc-867a-10c73273a4d5",
-      "name": "Repeater",
+      "name": "Equal",
       "title": "answer_is_refusal",
       "description": "",
       "properties": {
@@ -669,7 +669,7 @@
     },
     "7b053994-e60a-42bc-a96d-ee5e9fe38e8e": {
       "id": "7b053994-e60a-42bc-a96d-ee5e9fe38e8e",
-      "name": "Repeater",
+      "name": "Equal",
       "title": "survey_finished",
       "description": "",
       "properties": {
@@ -684,7 +684,7 @@
     },
     "228ad3b1-2703-497f-83bc-5ef1b002c8ad": {
       "id": "228ad3b1-2703-497f-83bc-5ef1b002c8ad",
-      "name": "Repeater",
+      "name": "Equal",
       "title": "answer_is_refusal",
       "description": "",
       "properties": {
@@ -699,7 +699,7 @@
     },
     "85d27478-c0c1-4700-9a31-d6b8712a92c5": {
       "id": "85d27478-c0c1-4700-9a31-d6b8712a92c5",
-      "name": "Explanation Method",
+      "name": "World Modifier",
       "title": "argumenting_finished",
       "description": "",
       "properties": {
@@ -713,11 +713,12 @@
     },
     "faeefc92-a27e-4fe1-8f09-dbdd3ea311bd": {
       "id": "faeefc92-a27e-4fe1-8f09-dbdd3ea311bd",
-      "name": "Succeeder",
+      "name": "Explanation Method",
       "title": "greet",
       "description": "",
       "properties": {
-        "message": "Hello!"
+        "type": "Explanation",
+        "url": "http://localhost/content.json"
       },
       "display": {
         "x": -912,
@@ -741,7 +742,7 @@
     },
     "34279516-4dd1-4384-9360-6561761132ca": {
       "id": "34279516-4dd1-4384-9360-6561761132ca",
-      "name": "Explanation Method",
+      "name": "World Modifier",
       "title": "fetch_survey",
       "description": "",
       "properties": {
@@ -755,7 +756,7 @@
     },
     "31ef7ae8-93d1-4660-8647-c44489e6252f": {
       "id": "31ef7ae8-93d1-4660-8647-c44489e6252f",
-      "name": "Explanation Method",
+      "name": "World Modifier",
       "title": "init_survey",
       "description": "",
       "properties": {
@@ -784,7 +785,7 @@
     },
     "b05ddb0c-c846-4edc-8a30-0536b981fd38": {
       "id": "b05ddb0c-c846-4edc-8a30-0536b981fd38",
-      "name": "Explanation Method",
+      "name": "World Modifier",
       "title": "next_question",
       "description": "",
       "properties": {
@@ -814,7 +815,7 @@
     },
     "523960e9-cb1e-428f-9083-92e0617b81ac": {
       "id": "523960e9-cb1e-428f-9083-92e0617b81ac",
-      "name": "Repeater",
+      "name": "Equal",
       "title": "taking_survey",
       "description": "",
       "properties": {
@@ -844,7 +845,7 @@
     },
     "a9ac23dc-0742-43a2-8601-6f329ee7bda2": {
       "id": "a9ac23dc-0742-43a2-8601-6f329ee7bda2",
-      "name": "Failer",
+      "name": "Question",
       "title": "state_question",
       "description": "",
       "properties": {

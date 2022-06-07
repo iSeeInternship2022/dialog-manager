@@ -5,11 +5,8 @@ class Tree :
 	def __init__(self, root : Node, nodes : Dict[str, Node.Node]) -> None:
 		self.root = root
 		self.nodes = nodes
-		self.currentNode = root
+		
 
-
-	def goToNextDepthFirst() :
-		pass
 
 def printTree(root, level=0):
 	print(" - " * level, root.toString())
