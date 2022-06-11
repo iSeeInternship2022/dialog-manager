@@ -18,7 +18,7 @@ import Buisiness.BT.structure.nodes.decorators.RepTillSuccNode as TillSucc
 import Buisiness.BT.structure.nodes.Node as Node
 
 
-def makeNode(type, id, label) :
+def makeNode(type, id) :
 	res = Node.Node(0)
 
 	#Should have their own node type, using available types as a replacement for now
@@ -41,7 +41,7 @@ def makeNode(type, id, label) :
 		res = InformationNode(id)
 
 	elif type == "Action":
-		res = Action.ActionNode(id, label)
+		res = Action.ActionNode(id)
 
 	# elif type == "Repeater":
 	# 	res = Repeater(id)

@@ -5,9 +5,9 @@ from  Buisiness.BT.structure.reactions.Actions import do_action
 from  Buisiness.BT.structure.nodes.StateType import StateType as State
 
 class ActionNode(Node.Node) :
-	def __init__(self, id, label) -> None:
+	def __init__(self, id) -> None:
 		super().__init__(id)
-		self.action = label
+		self.action = "unused"
 		self.thread = None
 
 	def toString(self):

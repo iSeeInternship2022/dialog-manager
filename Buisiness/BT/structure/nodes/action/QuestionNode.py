@@ -7,15 +7,15 @@ import Buisiness.Coordinator.Coordinator as C
 class QuestionNode(Node.Node) :
 	def __init__(self, id) -> None:
 		super().__init__(id)
-		self.message = None
-		self.data_slot = None
+		self.question_slot = None
+		self.answer_slot = None
 
 	def toString(self):
 		return ( "QUESTION "+str(self.status) + " " + str(self.id)  + " " + str(self.data_slot) + " " + str(self.message))
 
 	def tick(self):
-
-		C.Coordinator.get().ask(self.message, self.data_slot)
+		question = C.Coordinator.checkWorld(self.question_slot)
+		C.Coordinator.get().ask(question, self.answer_slot)
 		self.status = State.SUCCESS
 		
 		return self.status

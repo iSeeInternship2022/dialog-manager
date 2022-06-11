@@ -9,7 +9,7 @@ import Buisiness.Coordinator.Coordinator as C
 class InformationNode(Node.Node) :
 	def __init__(self, id) -> None:
 		super().__init__(id)
-		self.message = None
+		self.message_slot = None
 
 	def toString(self):
 		return ( "message "+str(self.status) + " " + str(self.id) + " " + self.message)
@@ -17,15 +17,8 @@ class InformationNode(Node.Node) :
 	def tick(self):
 
 
-		# if(self.status == State.RUNNING):
-		# 	if(not self.thread.is_alive()):
-		# 		self.status = State.SUCCESS
-		# else:
-			# self.status = State.RUNNING
-			# self.thread = threading.Thread(target=do_action, args=("send_message", self.message,))
-			# self.thread.start()
-			
-		C.Coordinator.get().inform(self.message)
+		message = C.Coordinator.checkWorld(self.message_slot)
+		C.Coordinator.get().inform(message)
 		self.status = State.SUCCESS
 		return self.status
 	
