@@ -1,13 +1,12 @@
 from abc import abstractmethod
-import threading
-import Buisiness.BT.BT as BT
-import Buisiness.BT.structure.nodes.Node as Node
-from  Buisiness.BT.structure.reactions.Actions import do_action
+from  Buisiness.BT.structure.nodes.Node import Node
 from  Buisiness.BT.structure.nodes.StateType import StateType as State
+import  Buisiness.BT.BT as BT
 
-class ActionNode(Node.Node) :
+class DecoratorNode(Node) :
 	def __init__(self, id) -> None:
 		super().__init__(id)
+		self.child = None
 
 	@abstractmethod
 	def reset(self):
@@ -22,3 +21,4 @@ class ActionNode(Node.Node) :
 	@abstractmethod
 	def toString(self):
 		pass
+

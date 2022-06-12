@@ -157,7 +157,7 @@ def generateTree(path) :
 
 	return Tree.Tree(root, nodes)
 
-def generateSubTree(tree, root, path):
+def generateSubTree(tree, root, path, plug_in_node):
 	parsed_tree = TreeParser.TreeParser(path)
 	nodes : Dict[str, Node] = {}
 
@@ -167,5 +167,5 @@ def generateSubTree(tree, root, path):
 	giveNodesProperties(parsed_tree, nodes)
 
 	subTree = Tree.Tree(root, nodes)
-	
-	tree.plug_in(root, subTree)
+
+	tree.plug_in(root, plug_in_node, subTree)

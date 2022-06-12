@@ -1,13 +1,13 @@
 from  Buisiness.BT.structure.nodes.Node import Node
 from  Buisiness.BT.structure.nodes.StateType import StateType as State
 import  Buisiness.BT.BT as BT
+from Buisiness.BT.structure.nodes.decorators.DecoratorNode import DecoratorNode
 
-class LimitActivationNode(Node) :
+class LimitActivationNode(DecoratorNode) :
 	def __init__(self, id) -> None:
 		super().__init__(id)
 		self.timesActivated = 0
 		self.limit = None
-		self.child = None
 
 	def toString(self):
 		

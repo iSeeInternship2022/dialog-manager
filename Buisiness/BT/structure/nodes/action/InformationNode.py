@@ -2,11 +2,12 @@ from cProfile import label
 import threading
 import Buisiness.BT.BT as BT
 import Buisiness.BT.structure.nodes.Node as Node
+from Buisiness.BT.structure.nodes.action.ActionNode import ActionNode
 from  Buisiness.BT.structure.reactions.Actions import do_action
 from  Buisiness.BT.structure.nodes.StateType import StateType as State
 import Buisiness.Coordinator.Coordinator as C
 
-class InformationNode(Node.Node) :
+class InformationNode(ActionNode) :
 	def __init__(self, id) -> None:
 		super().__init__(id)
 		self.message_slot = None
