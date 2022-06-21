@@ -1,4 +1,5 @@
 import Buisiness.BT.BT as BT
+from Buisiness.BT.structure.Tree import printTree
 import Buisiness.BT.structure.nodes.Node as Node
 from Buisiness.BT.structure.nodes.StateType import StateType as State
 from Buisiness.BT.structure.nodes.action.ActionNode import ActionNode
@@ -16,15 +17,21 @@ class ExplanationExperienceNode(ActionNode) :
 		return ( "EXPLANATION "+str(self.status) + " " + str(self.id)  + " " + str(self.prop[P.SAVE]))
 
 	def tick(self):
+		print("calling " + self.prop[P.URL])
 		if(self.prop[P.TYPE] == ExplanationExp.EXPLANATION):
-			print("calling " + self.prop[P.URL])
+			
 			message = C.Coordinator.API_querry(self.prop[P.URL])
 			C.Coordinator.get().modifyWorld(self.prop[P.SAVE], str(message["text"]))
 			self.status = State.SUCCESS
 		else :
-			subtree_json = C.Coordinator.API_querry_raw(self.prop[P.URL])
-			C.Coordinator.API_plug_subtree(self, subtree_json)
-			pass
+			parent = C.Coordinator.get().bt.tree.findParent(self)
+			subtree_json = C.Coordinator.API_querry(self.prop[P.URL])
+			C.Coordinator.get().API_plug_subtree(self, subtree_json)
+			#tick parent
+			printTree(C.Coordinator.get().bt.tree.root, 0)
+			parent.tick()
+			
+			
 		
 		return self.status
 	

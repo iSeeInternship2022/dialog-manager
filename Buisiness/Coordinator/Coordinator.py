@@ -3,7 +3,7 @@
 from Data.Data_Parser.TreeParser import TreeParser
 from Data.Data_Storage.World import World
 from Buisiness.BT.BT import BT
-from network.API_Network import api_request, api_request_raw
+from network.API_Network import api_request
 from ui.Logger import Logger
 from ui.UiConsole import UiConsole
 
@@ -65,12 +65,11 @@ class Coordinator:
 	def log(message):
 		Coordinator.get().logger.log(message)
 
+	@staticmethod
 	def API_querry(url):
 		return api_request(url)
 
-	def API_querry_raw(url):
-		return api_request_raw(url)
-
+	@staticmethod
 	def API_plug_subtree(calling_node, rawjson):
 		Coordinator.get().bt.plug_subtree(calling_node, rawjson)
 		

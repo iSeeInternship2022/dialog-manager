@@ -9,9 +9,3 @@ def api_request(url):
 
     return json_res
 
-def api_request_raw(url):
-
-    response = requests.get(url)
-    json_res = json.dumps(response)
-
-    return json_res

@@ -31,7 +31,7 @@ class BT:
 	def plug_subtree(self, calling_node, rawjson):
 
 		#generate subtree
-		subtree = TreeParser_str.generateSubTree(rawjson)
+		subtree = tg.generateSubTree(rawjson) 
 
 		#keep old calling node stored in case we need to get it back (keeping the same id for both, so we know which node goes where)
 		removed_node = self.tree.nodes[calling_node.id]

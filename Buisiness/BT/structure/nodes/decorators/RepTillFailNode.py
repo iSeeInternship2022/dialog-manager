@@ -10,28 +10,15 @@ class RepTillFailNode(DecoratorNode) :
 	def toString(self):
 		return ( "REP TILL FAIL "+str(self.status) + " " + str(self.id))
 
-	def tick(self, predecessor : "Node"):
-
+	def tick(self):
 		
-		if (not (predecessor in self.child)):
+		self.status = State.SUCCESS
+		child_status = State.SUCCESS
+		while(child_status !=State.FAILURE):
+			child_status = self.child.tick()
+		
 
-			#we check the first child (if it has one)
-			if(len(self.child)>0):
-				#print("go in first child")
-				self.statut = State.RUNNING
-				self.child[0].tick()
-				
-
-			else:
-				#print("no child")
-				self.statut = State.FAILURE
-
-
-		else:
-			self.status = State.SUCCESS
-			while(self.status == State.SUCCESS):
-				
-				self.status = self.child[0].tick()
+		self.status = State.SUCCESS
 
 		return self.status
 

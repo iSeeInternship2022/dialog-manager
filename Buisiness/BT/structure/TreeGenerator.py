@@ -19,7 +19,8 @@ from Buisiness.BT.structure.nodes.Node import Node
 from Buisiness.BT.structure.nodes.RootNode import RootNode
 import Buisiness.BT.structure.nodes.NodeFactory as maker
 import Buisiness.BT.structure.nodes.NodeType as nt
-import Buisiness.BT.structure.Tree as Tree 
+import Buisiness.BT.structure.Tree as Tree
+from Data.Data_Parser.TreeParser_str import TreeParser_str 
 
 #To assign properties of PRIORITY or SEQUENCE nodes
 def makeCompositeNode(node, parsed_tree, node_list):
@@ -158,8 +159,8 @@ def generateTree(path) :
 
 	return Tree.Tree(root, nodes)
 
-def generateSubTree(calling_node, rawjson):
-	parsed_tree = TreeParser.TreeParser(rawjson)
+def generateSubTree(rawjson):
+	parsed_tree = TreeParser_str(rawjson)
 	nodes : Dict[str, Node] = {}
 
 	generateNodes(parsed_tree, nodes)
@@ -167,6 +168,12 @@ def generateSubTree(calling_node, rawjson):
 	#Do a second round to add the children and the properties now that every node is created
 	giveNodesProperties(parsed_tree, nodes)
 
+	#make the root a RootNode and attach the first node
+	root_id = parsed_tree.BT_root
+	root = RootNode('0')
+	nodes['0'] = root
+	root.children.append(nodes.get(root_id))
+
 	subTree = Tree.Tree(root, nodes)
 
-	tree.plug_in(root, plug_in_node, subTree)
+	return subTree

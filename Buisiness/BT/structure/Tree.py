@@ -26,22 +26,27 @@ class Tree :
 	def findParent(self, node):
 		res = None
 		for n in self.nodes:
-			if(hasattr(n, "children")):
-				for child in n.children :
+			if(hasattr(self.nodes[n], "children")):
+				for child in self.nodes[n].children :
 					if(child == node):
-						res = n
-			elif(hasattr(n, "child")):
-				if(n.child == node):
-					res = n
+						res = self.nodes[n]
+			elif(hasattr(self.nodes[n], "child")):
+				if(self.nodes[n].child == node):
+					res = self.nodes[n]
 		return res
 
+
+	#replace a child of a given parent by a new child given with the same id
 	def replaceChild(self, parent, new_child):
 		if(hasattr(parent, "children")):
+			index = 0
 			for child in parent.children :
 				if(child.id == new_child.id):
-					child = new_child
+					parent.children[index] = new_child
+				index += 1
 		elif(hasattr(parent, "child")):
-			child = new_child
+			parent.child = new_child
+
 
 
 

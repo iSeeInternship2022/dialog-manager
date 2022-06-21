@@ -1,8 +1,261 @@
 {
   "version": "0.1.0",
   "scope": "project",
-  "selectedTree": "3ef88d19-132c-4e82-b265-0968fe79d292",
+  "selectedTree": "6de24d55-ebd6-431c-822f-baaa099eaf9e",
   "trees": [
+    {
+      "version": "0.1.0",
+      "scope": "tree",
+      "id": "6de24d55-ebd6-431c-822f-baaa099eaf9e",
+      "title": "Explanation Experience",
+      "description": "",
+      "root": "bcab253c-09d0-4b80-9dba-de5cddf1e023",
+      "properties": {},
+      "nodes": {
+        "bcab253c-09d0-4b80-9dba-de5cddf1e023": {
+          "id": "bcab253c-09d0-4b80-9dba-de5cddf1e023",
+          "name": "RepeatUntilSuccess",
+          "title": "Repeat Until Success",
+          "description": "",
+          "properties": {
+            "maxLoop": -1
+          },
+          "display": {
+            "x": -12,
+            "y": 84
+          },
+          "child": "50d0ad61-9380-494c-9c22-f2d0c7ed6d46"
+        },
+        "50d0ad61-9380-494c-9c22-f2d0c7ed6d46": {
+          "id": "50d0ad61-9380-494c-9c22-f2d0c7ed6d46",
+          "name": "Priority",
+          "title": "Priority",
+          "description": "",
+          "properties": {},
+          "display": {
+            "x": -12,
+            "y": 228
+          },
+          "children": [
+            "819b484a-cbbd-4e51-b239-e92991b95025",
+            "6c201dea-ee8d-4fb1-96bd-22aff93d462b"
+          ]
+        },
+        "819b484a-cbbd-4e51-b239-e92991b95025": {
+          "id": "819b484a-cbbd-4e51-b239-e92991b95025",
+          "name": "Sequence",
+          "title": "Sequence",
+          "description": "",
+          "properties": {},
+          "display": {
+            "x": -492,
+            "y": 396
+          },
+          "children": [
+            "6b1851a3-a842-4bba-84bf-baf9f2b6aa94",
+            "ba36d07b-9f65-408f-94c2-e8151bdcf4a9",
+            "088ba49c-5ad3-4a46-8932-16575f067d9d",
+            "2905cda7-ce44-4b55-bde5-09ae8a641cad"
+          ]
+        },
+        "9092e8f7-9058-4f2c-87f6-b2c3e67acb1b": {
+          "id": "9092e8f7-9058-4f2c-87f6-b2c3e67acb1b",
+          "name": "Question",
+          "title": "Question",
+          "description": "",
+          "properties": {
+            "question_slot": "new_exp",
+            "answer_slot": "need_other"
+          },
+          "display": {
+            "x": -276,
+            "y": 660
+          }
+        },
+        "ba36d07b-9f65-408f-94c2-e8151bdcf4a9": {
+          "id": "ba36d07b-9f65-408f-94c2-e8151bdcf4a9",
+          "name": "Information",
+          "title": "Information",
+          "description": "",
+          "properties": {
+            "message_slot": "exp1"
+          },
+          "display": {
+            "x": -624,
+            "y": 540
+          }
+        },
+        "6b1851a3-a842-4bba-84bf-baf9f2b6aa94": {
+          "id": "6b1851a3-a842-4bba-84bf-baf9f2b6aa94",
+          "name": "Explanation Experience",
+          "title": "Explanation Experience",
+          "description": "",
+          "properties": {
+            "type": "explanation",
+            "url": "http://localhost/iSeeChatBot/explanation_1.JSON",
+            "save_slot": "exp1"
+          },
+          "display": {
+            "x": -840,
+            "y": 540
+          }
+        },
+        "5230eb73-c3b4-4a58-899d-fdead2a731a2": {
+          "id": "5230eb73-c3b4-4a58-899d-fdead2a731a2",
+          "name": "Explanation Experience",
+          "title": "Explanation Experience",
+          "description": "",
+          "properties": {
+            "type": "explanation",
+            "url": "http://localhost/iSeeChatBot/new_exp.JSON",
+            "save_slot": "new_exp"
+          },
+          "display": {
+            "x": -468,
+            "y": 660
+          }
+        },
+        "088ba49c-5ad3-4a46-8932-16575f067d9d": {
+          "id": "088ba49c-5ad3-4a46-8932-16575f067d9d",
+          "name": "Sequence",
+          "title": "Sequence",
+          "description": "",
+          "properties": {},
+          "display": {
+            "x": -396,
+            "y": 528
+          },
+          "children": [
+            "5230eb73-c3b4-4a58-899d-fdead2a731a2",
+            "9092e8f7-9058-4f2c-87f6-b2c3e67acb1b"
+          ]
+        },
+        "2905cda7-ce44-4b55-bde5-09ae8a641cad": {
+          "id": "2905cda7-ce44-4b55-bde5-09ae8a641cad",
+          "name": "Equal",
+          "title": "Equal",
+          "description": "",
+          "properties": {
+            "data_equal": "need_other",
+            "is_equal_to": "No"
+          },
+          "display": {
+            "x": -156,
+            "y": 540
+          }
+        },
+        "6c201dea-ee8d-4fb1-96bd-22aff93d462b": {
+          "id": "6c201dea-ee8d-4fb1-96bd-22aff93d462b",
+          "name": "Sequence",
+          "title": "Sequence",
+          "description": "",
+          "properties": {},
+          "display": {
+            "x": 480,
+            "y": 408
+          },
+          "children": [
+            "53b45fd4-1528-46af-aeae-9b0bc5668f94",
+            "cd9c06b2-91ce-4768-8fd2-4cc711a84539",
+            "2c96e0b3-3c67-44f9-85a4-8de309a29994",
+            "492caef3-7651-4b0f-9f1d-ec2b0ab6504a"
+          ]
+        },
+        "a5f46b31-debe-4e76-83cc-e8b44d027824": {
+          "id": "a5f46b31-debe-4e76-83cc-e8b44d027824",
+          "name": "Question",
+          "title": "Question",
+          "description": "",
+          "properties": {
+            "question_slot": "new_exp",
+            "answer_slot": "need_other"
+          },
+          "display": {
+            "x": 696,
+            "y": 672
+          }
+        },
+        "cd9c06b2-91ce-4768-8fd2-4cc711a84539": {
+          "id": "cd9c06b2-91ce-4768-8fd2-4cc711a84539",
+          "name": "Information",
+          "title": "Information",
+          "description": "",
+          "properties": {
+            "message_slot": "exp2"
+          },
+          "display": {
+            "x": 348,
+            "y": 552
+          }
+        },
+        "53b45fd4-1528-46af-aeae-9b0bc5668f94": {
+          "id": "53b45fd4-1528-46af-aeae-9b0bc5668f94",
+          "name": "Explanation Experience",
+          "title": "Explanation Experience",
+          "description": "",
+          "properties": {
+            "type": "explanation",
+            "url": "http://localhost/iSeeChatBot/explanation_2.JSON",
+            "save_slot": "exp2"
+          },
+          "display": {
+            "x": 132,
+            "y": 552
+          }
+        },
+        "3f2ed6c9-8317-4771-ab81-956e4992682f": {
+          "id": "3f2ed6c9-8317-4771-ab81-956e4992682f",
+          "name": "Explanation Experience",
+          "title": "Explanation Experience",
+          "description": "",
+          "properties": {
+            "type": "explanation",
+            "url": "http://localhost/iSeeChatBot/new_exp.JSON",
+            "save_slot": "new_exp"
+          },
+          "display": {
+            "x": 504,
+            "y": 672
+          }
+        },
+        "2c96e0b3-3c67-44f9-85a4-8de309a29994": {
+          "id": "2c96e0b3-3c67-44f9-85a4-8de309a29994",
+          "name": "Sequence",
+          "title": "Sequence",
+          "description": "",
+          "properties": {},
+          "display": {
+            "x": 576,
+            "y": 540
+          },
+          "children": [
+            "3f2ed6c9-8317-4771-ab81-956e4992682f",
+            "a5f46b31-debe-4e76-83cc-e8b44d027824"
+          ]
+        },
+        "492caef3-7651-4b0f-9f1d-ec2b0ab6504a": {
+          "id": "492caef3-7651-4b0f-9f1d-ec2b0ab6504a",
+          "name": "Equal",
+          "title": "Equal",
+          "description": "",
+          "properties": {
+            "data_equal": "need_other",
+            "is_equal_to": "No"
+          },
+          "display": {
+            "x": 816,
+            "y": 552
+          }
+        }
+      },
+      "display": {
+        "camera_x": 731,
+        "camera_y": 152,
+        "camera_z": 0.5,
+        "x": -12,
+        "y": -12
+      }
+    },
     {
       "version": "0.1.0",
       "scope": "tree",
@@ -43,7 +296,7 @@
       "id": "3ef88d19-132c-4e82-b265-0968fe79d292",
       "title": "Explanation Experience",
       "description": "",
-      "root": "d1bdc108-ca9b-4dee-9c49-fa2a2f7cc512",
+      "root": "d2054a42-43b1-4eb7-94dd-dc62cc2f55da",
       "properties": {},
       "nodes": {
         "d2054a42-43b1-4eb7-94dd-dc62cc2f55da": {
@@ -118,6 +371,7 @@
           },
           "children": [
             "d989dd68-0a74-4871-8a16-b75a3b054b45",
+            "29f08d37-8af2-4d87-904d-9f3fc1e32d8c",
             "4b21f24f-a513-4e34-92ac-c7d05f6bbfba",
             "3898e7c4-d3ce-403b-b5f1-38b728b0a543"
           ]
@@ -134,6 +388,7 @@
           },
           "children": [
             "862a3b63-8891-45cc-829b-ae5b0e28ba54",
+            "4ab04d31-ad69-46d9-8aa5-562930937743",
             "7125f454-9ea6-42d3-95e1-cc6081e777da",
             "3ad241f3-f808-44b7-a212-13febe97c243"
           ]
@@ -165,6 +420,7 @@
           },
           "children": [
             "a965a8d1-d8b2-4e7f-8d70-d4ee459abd36",
+            "8146dfe8-e84f-4f87-947e-5ce406d70e0a",
             "93402749-1afc-4211-a1de-93efa56e0f39",
             "eb688b03-7053-4fd8-8cfd-15e00acf0d14"
           ]
@@ -211,6 +467,7 @@
           },
           "children": [
             "f1610e36-4c03-4d30-980b-1f74de12466e",
+            "a91bc3c7-779d-4453-9ec5-6dd5672f2fbc",
             "0245587e-e468-47a2-8210-9518c79f04ae",
             "85d27478-c0c1-4700-9a31-d6b8712a92c5",
             "21350368-a924-46f4-b7db-a46eee4e79b4"
@@ -240,27 +497,14 @@
             "message": ""
           },
           "display": {
-            "x": 756,
-            "y": 636
+            "x": 780,
+            "y": 624
           },
           "children": [
             "776468dc-1e62-46c6-8d7b-831ce843873d",
+            "bd53be35-9d36-4499-8ef5-c80c016e9592",
             "ad1a0373-9879-484c-b29a-ffc1b72b237f",
             "72ee8447-636b-46ca-8425-e0434635c76b"
-          ]
-        },
-        "d1bdc108-ca9b-4dee-9c49-fa2a2f7cc512": {
-          "id": "d1bdc108-ca9b-4dee-9c49-fa2a2f7cc512",
-          "name": "Sequence",
-          "title": "Sequence",
-          "description": "",
-          "properties": {},
-          "display": {
-            "x": -288,
-            "y": -300
-          },
-          "children": [
-            "d2054a42-43b1-4eb7-94dd-dc62cc2f55da"
           ]
         },
         "29836b82-c91e-4642-bf94-2fe1fd9284df": {
@@ -327,47 +571,35 @@
         "a4e97df2-7288-413f-8064-ca2b28bf4b43": {
           "id": "a4e97df2-7288-413f-8064-ca2b28bf4b43",
           "name": "Question",
-          "title": "Question",
+          "title": "ask_to_take_survey",
           "description": "",
           "properties": {
-            "data_slot": "survey_accepted",
-            "message": "Would you like to help us by answering a quick survey?"
+            "question_slot": "ask_survey",
+            "answer_slot": "survey_accepted",
+            "data_slot": ""
           },
           "display": {
-            "x": -2460,
-            "y": 1512
+            "x": -2436,
+            "y": 1584
           }
         },
         "cd398f3b-999f-47af-b595-4ba13092ac8d": {
           "id": "cd398f3b-999f-47af-b595-4ba13092ac8d",
           "name": "Information",
-          "title": "Information",
+          "title": "goodbye",
           "description": "",
           "properties": {
-            "message": "Goodbye!"
+            "message_slot": "goodbye"
           },
           "display": {
-            "x": -1152,
-            "y": 2004
-          }
-        },
-        "8e06f570-b263-45b9-af68-48076c0df1a4": {
-          "id": "8e06f570-b263-45b9-af68-48076c0df1a4",
-          "name": "Information",
-          "title": "Information",
-          "description": "",
-          "properties": {
-            "message": "Goodbye!"
-          },
-          "display": {
-            "x": -312,
-            "y": 1728
+            "x": -1056,
+            "y": 2088
           }
         },
         "bea075e0-b969-498b-80fd-39033b66833b": {
           "id": "bea075e0-b969-498b-80fd-39033b66833b",
           "name": "World Modifier",
-          "title": "World Modifier",
+          "title": "set_user_as_satisfied",
           "description": "",
           "properties": {
             "data_slot": "user_satisfied",
@@ -381,21 +613,21 @@
         "5ac19188-00ca-45aa-8c69-2d33c8098186": {
           "id": "5ac19188-00ca-45aa-8c69-2d33c8098186",
           "name": "Question",
-          "title": "Question",
+          "title": "anything_else",
           "description": "",
           "properties": {
-            "data_slot": "user_answer",
-            "message": "What do you need?"
+            "question_slot": "else",
+            "answer_slot": "user_answer"
           },
           "display": {
             "x": -576,
-            "y": 228
+            "y": 216
           }
         },
         "3898e7c4-d3ce-403b-b5f1-38b728b0a543": {
           "id": "3898e7c4-d3ce-403b-b5f1-38b728b0a543",
           "name": "World Modifier",
-          "title": "World Modifier",
+          "title": "reset_user_answer",
           "description": "",
           "properties": {
             "data_slot": "user_answer",
@@ -403,21 +635,21 @@
           },
           "display": {
             "x": -360,
-            "y": 840
+            "y": 864
           }
         },
         "3ad241f3-f808-44b7-a212-13febe97c243": {
           "id": "3ad241f3-f808-44b7-a212-13febe97c243",
           "name": "World Modifier",
-          "title": "World Modifier",
+          "title": "reset_user_answer",
           "description": "",
           "properties": {
             "data_slot": "user_answer",
             "value": "None"
           },
           "display": {
-            "x": -24,
-            "y": 1068
+            "x": 384,
+            "y": 1080
           }
         },
         "776468dc-1e62-46c6-8d7b-831ce843873d": {
@@ -466,7 +698,7 @@
         "b6ea8226-5149-42a6-b9eb-29287a5095cd": {
           "id": "b6ea8226-5149-42a6-b9eb-29287a5095cd",
           "name": "World Modifier",
-          "title": "World Modifier",
+          "title": "is_argumenting",
           "description": "",
           "properties": {
             "data_slot": "argumenting",
@@ -480,21 +712,23 @@
         "ad1a0373-9879-484c-b29a-ffc1b72b237f": {
           "id": "ad1a0373-9879-484c-b29a-ffc1b72b237f",
           "name": "Question",
-          "title": "Question",
+          "title": "ask_more_details",
           "description": "",
           "properties": {
-            "data_slot": "user_answer",
-            "message": "Would you care to provide more details, please?"
+            "question_slot": "details",
+            "answer_slot": "user_answer",
+            "data_slot": "",
+            "message": ""
           },
           "display": {
-            "x": 792,
-            "y": 756
+            "x": 876,
+            "y": 720
           }
         },
         "e7d57db2-0fb4-4cf8-a3fb-bf5ae480b1cb": {
           "id": "e7d57db2-0fb4-4cf8-a3fb-bf5ae480b1cb",
           "name": "World Modifier",
-          "title": "World Modifier",
+          "title": "set_user_as_satisfied",
           "description": "",
           "properties": {
             "data_slot": "user_satisfied",
@@ -508,10 +742,12 @@
         "93402749-1afc-4211-a1de-93efa56e0f39": {
           "id": "93402749-1afc-4211-a1de-93efa56e0f39",
           "name": "Question",
-          "title": "Question",
+          "title": "ask_if_clarification_wanted",
           "description": "",
           "properties": {
-            "data_slot": "user_answer",
+            "question_slot": "clarify",
+            "answer_slot": "user_answer",
+            "data_slot": "",
             "message": "Would you like me to clarify?"
           },
           "display": {
@@ -522,9 +758,10 @@
         "0245587e-e468-47a2-8210-9518c79f04ae": {
           "id": "0245587e-e468-47a2-8210-9518c79f04ae",
           "name": "Information",
-          "title": "Information",
+          "title": "explain",
           "description": "",
           "properties": {
+            "message_slot": "explanation",
             "message": "this is an explanation"
           },
           "display": {
@@ -535,20 +772,20 @@
         "4b21f24f-a513-4e34-92ac-c7d05f6bbfba": {
           "id": "4b21f24f-a513-4e34-92ac-c7d05f6bbfba",
           "name": "Information",
-          "title": "Information",
+          "title": "explain",
           "description": "",
           "properties": {
-            "message": "this is an explanation"
+            "message_slot": "explanation"
           },
           "display": {
             "x": -552,
-            "y": 840
+            "y": 864
           }
         },
         "21350368-a924-46f4-b7db-a46eee4e79b4": {
           "id": "21350368-a924-46f4-b7db-a46eee4e79b4",
           "name": "World Modifier",
-          "title": "World Modifier",
+          "title": "reset_user_answer",
           "description": "",
           "properties": {
             "data_slot": "user_answer",
@@ -562,7 +799,7 @@
         "de1ef5f3-1983-4a1a-9f73-f0e4fc94eead": {
           "id": "de1ef5f3-1983-4a1a-9f73-f0e4fc94eead",
           "name": "World Modifier",
-          "title": "World Modifier",
+          "title": "set_user_as_satisfied",
           "description": "",
           "properties": {
             "data_slot": "user_satisfied",
@@ -576,70 +813,66 @@
         "7125f454-9ea6-42d3-95e1-cc6081e777da": {
           "id": "7125f454-9ea6-42d3-95e1-cc6081e777da",
           "name": "Information",
-          "title": "Information",
+          "title": "affirm",
           "description": "",
           "properties": {
-            "message": "Yes, that's it"
+            "message_slot": "affirm"
           },
           "display": {
-            "x": -216,
-            "y": 1068
+            "x": 192,
+            "y": 1080
           }
         },
         "72cb70d6-b2ee-4b4f-8b56-8754282a0831": {
           "id": "72cb70d6-b2ee-4b4f-8b56-8754282a0831",
           "name": "Equal",
-          "title": "Equal",
+          "title": "answer_is_satisfied",
           "description": "",
           "properties": {
-            "data_slot": "user_answer",
-            "value": "Satisfied",
-            "maxLoop": -1
+            "data_equal": "user_answer",
+            "is_equal_to": "Satisfied"
           },
           "display": {
-            "x": -1236,
+            "x": -1260,
             "y": 768
           }
         },
         "d989dd68-0a74-4871-8a16-b75a3b054b45": {
           "id": "d989dd68-0a74-4871-8a16-b75a3b054b45",
           "name": "Equal",
-          "title": "Equal",
+          "title": "answer_is_question",
           "description": "",
           "properties": {
-            "data_slot": "user_answer",
-            "value": "Question",
-            "maxLoop": -1
+            "data_equal": "user_answer",
+            "is_equal_to": "Question"
           },
           "display": {
-            "x": -756,
-            "y": 840
+            "x": -936,
+            "y": 864
           }
         },
         "862a3b63-8891-45cc-829b-ae5b0e28ba54": {
           "id": "862a3b63-8891-45cc-829b-ae5b0e28ba54",
           "name": "Equal",
-          "title": "Equal",
+          "title": "answer_is_affirm",
           "description": "",
           "properties": {
-            "data_slot": "user_answer",
-            "value": "Affirm",
-            "maxLoop": -1
+            "data_equal": "user_answer",
+            "is_equal_to": "Affirm"
           },
           "display": {
-            "x": -444,
+            "x": -156,
             "y": 1068
           }
         },
         "61bbdbae-937c-4985-8eb6-83b8e891f49e": {
           "id": "61bbdbae-937c-4985-8eb6-83b8e891f49e",
           "name": "Equal",
-          "title": "Equal",
+          "title": "answer_is_argument",
           "description": "",
           "properties": {
-            "data_slot": "user_answer",
-            "value": "Argue",
-            "maxLoop": -1
+            "data_equal": "user_answer",
+            "is_equal_to": "Argue"
           },
           "display": {
             "x": 288,
@@ -649,42 +882,39 @@
         "a965a8d1-d8b2-4e7f-8d70-d4ee459abd36": {
           "id": "a965a8d1-d8b2-4e7f-8d70-d4ee459abd36",
           "name": "Equal",
-          "title": "Equal",
+          "title": "answer_is_details",
           "description": "",
           "properties": {
-            "data_slot": "user_answer",
-            "value": "Details",
-            "maxLoop": -1
+            "data_equal": "user_answer",
+            "is_equal_to": "Details"
           },
           "display": {
-            "x": 912,
-            "y": 1188
+            "x": 720,
+            "y": 1152
           }
         },
         "f1610e36-4c03-4d30-980b-1f74de12466e": {
           "id": "f1610e36-4c03-4d30-980b-1f74de12466e",
           "name": "Equal",
-          "title": "Equal",
+          "title": "answer_is_approval",
           "description": "",
           "properties": {
-            "data_slot": "user_answer",
-            "value": "Yes",
-            "maxLoop": -1
+            "data_equal": "user_answer",
+            "is_equal_to": "Yes"
           },
           "display": {
-            "x": 936,
-            "y": 1500
+            "x": 780,
+            "y": 1476
           }
         },
         "da494f53-8b24-4652-8964-e293ea568b9c": {
           "id": "da494f53-8b24-4652-8964-e293ea568b9c",
           "name": "Equal",
-          "title": "Equal",
+          "title": "answer_is_refusal",
           "description": "",
           "properties": {
-            "data_slot": "user_answer",
-            "value": "No",
-            "maxLoop": -1
+            "data_equal": "user_answer",
+            "is_equal_to": "No"
           },
           "display": {
             "x": 1728,
@@ -694,12 +924,11 @@
         "d3078e4a-191b-43bc-867a-10c73273a4d5": {
           "id": "d3078e4a-191b-43bc-867a-10c73273a4d5",
           "name": "Equal",
-          "title": "Equal",
+          "title": "answer_is_refusal",
           "description": "",
           "properties": {
-            "data_slot": "user_answer",
-            "value": "No",
-            "maxLoop": -1
+            "data_equal": "user_answer",
+            "is_equal_to": "No"
           },
           "display": {
             "x": 1896,
@@ -709,12 +938,11 @@
         "7b053994-e60a-42bc-a96d-ee5e9fe38e8e": {
           "id": "7b053994-e60a-42bc-a96d-ee5e9fe38e8e",
           "name": "Equal",
-          "title": "Equal",
+          "title": "survey_finished",
           "description": "",
           "properties": {
-            "data_slot": "survey_i",
-            "value": 2,
-            "maxLoop": -1
+            "data_equal": "survey_i",
+            "is_equal_to": 2
           },
           "display": {
             "x": -1380,
@@ -724,12 +952,11 @@
         "228ad3b1-2703-497f-83bc-5ef1b002c8ad": {
           "id": "228ad3b1-2703-497f-83bc-5ef1b002c8ad",
           "name": "Equal",
-          "title": "Equal",
+          "title": "answer_is_refusal",
           "description": "",
           "properties": {
-            "data_slot": "survey_accepted",
-            "value": "No",
-            "maxLoop": -1
+            "data_equal": "survey_accepted",
+            "is_equal_to": "No"
           },
           "display": {
             "x": -600,
@@ -739,7 +966,7 @@
         "85d27478-c0c1-4700-9a31-d6b8712a92c5": {
           "id": "85d27478-c0c1-4700-9a31-d6b8712a92c5",
           "name": "World Modifier",
-          "title": "World Modifier",
+          "title": "argumenting_finished",
           "description": "",
           "properties": {
             "data_slot": "argumenting",
@@ -762,27 +989,14 @@
           },
           "children": [
             "f97e99fc-a2e4-4dc1-a016-8a5dc03c98eb",
+            "3783c740-b695-47f2-b42f-681465aa9e74",
             "5ac19188-00ca-45aa-8c69-2d33c8098186"
           ]
-        },
-        "34279516-4dd1-4384-9360-6561761132ca": {
-          "id": "34279516-4dd1-4384-9360-6561761132ca",
-          "name": "World Modifier",
-          "title": "World Modifier",
-          "description": "",
-          "properties": {
-            "data_slot": "survey_count",
-            "value": 2
-          },
-          "display": {
-            "x": -1956,
-            "y": 1920
-          }
         },
         "31ef7ae8-93d1-4660-8647-c44489e6252f": {
           "id": "31ef7ae8-93d1-4660-8647-c44489e6252f",
           "name": "World Modifier",
-          "title": "World Modifier",
+          "title": "init_survey",
           "description": "",
           "properties": {
             "data_slot": "survey_i",
@@ -804,14 +1018,14 @@
             "y": 1824
           },
           "children": [
-            "34279516-4dd1-4384-9360-6561761132ca",
+            "5c2531d4-e007-4720-84a4-428fefcc4482",
             "31ef7ae8-93d1-4660-8647-c44489e6252f"
           ]
         },
         "b05ddb0c-c846-4edc-8a30-0536b981fd38": {
           "id": "b05ddb0c-c846-4edc-8a30-0536b981fd38",
           "name": "World Modifier",
-          "title": "World Modifier",
+          "title": "next_question",
           "description": "",
           "properties": {
             "data_slot": "survey_i",
@@ -841,15 +1055,17 @@
         "523960e9-cb1e-428f-9083-92e0617b81ac": {
           "id": "523960e9-cb1e-428f-9083-92e0617b81ac",
           "name": "Equal",
-          "title": "Equal",
+          "title": "taking_survey",
           "description": "",
           "properties": {
-            "data_slot": "survey_accepted",
+            "data_equal": "survey_accepted",
+            "is_equal_to": "Yes",
+            "data_slot": "",
             "value": "Yes",
             "maxLoop": -1
           },
           "display": {
-            "x": -2148,
+            "x": -2160,
             "y": 1524
           }
         },
@@ -871,9 +1087,11 @@
         "a9ac23dc-0742-43a2-8601-6f329ee7bda2": {
           "id": "a9ac23dc-0742-43a2-8601-6f329ee7bda2",
           "name": "Question",
-          "title": "Question",
+          "title": "state_question",
           "description": "",
           "properties": {
+            "question_slot": "empty",
+            "answer_slot": "empty",
             "data_slot": "survey_answer",
             "message": "Survey Question"
           },
@@ -924,7 +1142,7 @@
             "x": -1152,
             "y": 1884
           },
-          "child": "cd398f3b-999f-47af-b595-4ba13092ac8d"
+          "child": "ae5943b0-cded-4863-9a64-8b279cef02bd"
         },
         "b45f66f3-ad94-4760-a7fa-c7be13d26278": {
           "id": "b45f66f3-ad94-4760-a7fa-c7be13d26278",
@@ -952,7 +1170,7 @@
             "x": -2460,
             "y": 1380
           },
-          "child": "a4e97df2-7288-413f-8064-ca2b28bf4b43"
+          "child": "9aa7a085-79c5-46b3-8e21-e0f141c3a345"
         },
         "f97e99fc-a2e4-4dc1-a016-8a5dc03c98eb": {
           "id": "f97e99fc-a2e4-4dc1-a016-8a5dc03c98eb",
@@ -980,19 +1198,20 @@
             "x": -300,
             "y": 1608
           },
-          "child": "8e06f570-b263-45b9-af68-48076c0df1a4"
+          "child": "1f0463a9-3364-41f7-8f3f-daf840fa5df1"
         },
         "723a2eb8-cd16-4160-8c26-4e009fba255e": {
           "id": "723a2eb8-cd16-4160-8c26-4e009fba255e",
           "name": "Explanation Experience",
-          "title": "Explanation Experience",
+          "title": "Fetch Greetings",
           "description": "",
           "properties": {
             "type": "explanation",
+            "url": "http://localhost/iSeeChatBot/greet.JSON",
             "save_slot": "greetings"
           },
           "display": {
-            "x": -1128,
+            "x": -1140,
             "y": 420
           }
         },
@@ -1014,7 +1233,7 @@
         "a614c2c0-1c77-4708-a825-fb9918c49ee3": {
           "id": "a614c2c0-1c77-4708-a825-fb9918c49ee3",
           "name": "Information",
-          "title": "Information",
+          "title": "Greet",
           "description": "",
           "properties": {
             "message_slot": "greetings"
@@ -1023,11 +1242,219 @@
             "x": -876,
             "y": 420
           }
+        },
+        "29f08d37-8af2-4d87-904d-9f3fc1e32d8c": {
+          "id": "29f08d37-8af2-4d87-904d-9f3fc1e32d8c",
+          "name": "Explanation Experience",
+          "title": "Fetch Greetings",
+          "description": "",
+          "properties": {
+            "type": "plug-in tree",
+            "url": "http://localhost/iSeeChatBot/explanation.JSON",
+            "save_slot": "explanation"
+          },
+          "display": {
+            "x": -744,
+            "y": 864
+          }
+        },
+        "4ab04d31-ad69-46d9-8aa5-562930937743": {
+          "id": "4ab04d31-ad69-46d9-8aa5-562930937743",
+          "name": "Explanation Experience",
+          "title": "Fetch Greetings",
+          "description": "",
+          "properties": {
+            "type": "explanation",
+            "url": "http://localhost/iSeeChatBot/affirm.JSON",
+            "save_slot": "affirm"
+          },
+          "display": {
+            "x": 12,
+            "y": 1080
+          }
+        },
+        "bd53be35-9d36-4499-8ef5-c80c016e9592": {
+          "id": "bd53be35-9d36-4499-8ef5-c80c016e9592",
+          "name": "Explanation Experience",
+          "title": "Fetch Greetings",
+          "description": "",
+          "properties": {
+            "type": "explanation",
+            "url": "http://localhost/iSeeChatBot/details.JSON",
+            "save_slot": "details"
+          },
+          "display": {
+            "x": 708,
+            "y": 732
+          }
+        },
+        "8146dfe8-e84f-4f87-947e-5ce406d70e0a": {
+          "id": "8146dfe8-e84f-4f87-947e-5ce406d70e0a",
+          "name": "Explanation Experience",
+          "title": "Fetch Greetings",
+          "description": "",
+          "properties": {
+            "type": "explanation",
+            "url": "http://localhost/iSeeChatBot/clarify.JSON",
+            "save_slot": "clarify"
+          },
+          "display": {
+            "x": 924,
+            "y": 1176
+          }
+        },
+        "9d985412-0e1f-40df-943a-0b2a5bd656e2": {
+          "id": "9d985412-0e1f-40df-943a-0b2a5bd656e2",
+          "name": "Explanation Experience",
+          "title": "Fetch Greetings",
+          "description": "",
+          "properties": {
+            "type": "explanation",
+            "url": "http://localhost/iSeeChatBot/ask_survey.JSON",
+            "save_slot": "ask_survey"
+          },
+          "display": {
+            "x": -2640,
+            "y": 1584
+          }
+        },
+        "5c2531d4-e007-4720-84a4-428fefcc4482": {
+          "id": "5c2531d4-e007-4720-84a4-428fefcc4482",
+          "name": "Explanation Experience",
+          "title": "Fetch survey",
+          "description": "",
+          "properties": {
+            "type": "explanation",
+            "url": "http://localhost/iSeeChatBot/survey.JSON",
+            "save_slot": "survey"
+          },
+          "display": {
+            "x": -1956,
+            "y": 1920
+          }
+        },
+        "a91bc3c7-779d-4453-9ec5-6dd5672f2fbc": {
+          "id": "a91bc3c7-779d-4453-9ec5-6dd5672f2fbc",
+          "name": "Explanation Experience",
+          "title": "Fetch Greetings",
+          "description": "",
+          "properties": {
+            "type": "explanation",
+            "url": "http://localhost/iSeeChatBot/explanation.JSON",
+            "save_slot": "explanation"
+          },
+          "display": {
+            "x": 960,
+            "y": 1488
+          }
+        },
+        "9aa7a085-79c5-46b3-8e21-e0f141c3a345": {
+          "id": "9aa7a085-79c5-46b3-8e21-e0f141c3a345",
+          "name": "Sequence",
+          "title": "Sequence",
+          "description": "",
+          "properties": {},
+          "display": {
+            "x": -2508,
+            "y": 1488
+          },
+          "children": [
+            "9d985412-0e1f-40df-943a-0b2a5bd656e2",
+            "a4e97df2-7288-413f-8064-ca2b28bf4b43"
+          ]
+        },
+        "3783c740-b695-47f2-b42f-681465aa9e74": {
+          "id": "3783c740-b695-47f2-b42f-681465aa9e74",
+          "name": "Explanation Experience",
+          "title": "Fetch Greetings",
+          "description": "",
+          "properties": {
+            "type": "explanation",
+            "url": "http://localhost/iSeeChatBot/else.JSON",
+            "save_slot": "else"
+          },
+          "display": {
+            "x": -768,
+            "y": 216
+          }
+        },
+        "be85144e-89c4-4c98-9491-0987ddd10da9": {
+          "id": "be85144e-89c4-4c98-9491-0987ddd10da9",
+          "name": "Explanation Experience",
+          "title": "Fetch goodbye",
+          "description": "",
+          "properties": {
+            "type": "explanation",
+            "url": "http://localhost/iSeeChatBot/goodbye.JSON",
+            "save_slot": "goodbye"
+          },
+          "display": {
+            "x": -1248,
+            "y": 2076
+          }
+        },
+        "ae5943b0-cded-4863-9a64-8b279cef02bd": {
+          "id": "ae5943b0-cded-4863-9a64-8b279cef02bd",
+          "name": "Sequence",
+          "title": "Sequence",
+          "description": "",
+          "properties": {},
+          "display": {
+            "x": -1152,
+            "y": 1992
+          },
+          "children": [
+            "be85144e-89c4-4c98-9491-0987ddd10da9",
+            "cd398f3b-999f-47af-b595-4ba13092ac8d"
+          ]
+        },
+        "0c70f5e1-ba34-48cc-8266-63e90e89a6fc": {
+          "id": "0c70f5e1-ba34-48cc-8266-63e90e89a6fc",
+          "name": "Information",
+          "title": "goodbye",
+          "description": "",
+          "properties": {
+            "message_slot": "goodbye"
+          },
+          "display": {
+            "x": -204,
+            "y": 1812
+          }
+        },
+        "a1aae657-683f-4d52-809d-e824af115e20": {
+          "id": "a1aae657-683f-4d52-809d-e824af115e20",
+          "name": "Explanation Experience",
+          "title": "Fetch goodbye",
+          "description": "",
+          "properties": {
+            "type": "explanation",
+            "url": "http://localhost/iSeeChatBot/goodbye.JSON",
+            "save_slot": "goodbye"
+          },
+          "display": {
+            "x": -396,
+            "y": 1800
+          }
+        },
+        "1f0463a9-3364-41f7-8f3f-daf840fa5df1": {
+          "id": "1f0463a9-3364-41f7-8f3f-daf840fa5df1",
+          "name": "Sequence",
+          "title": "Sequence",
+          "description": "",
+          "properties": {},
+          "display": {
+            "x": -300,
+            "y": 1716
+          },
+          "children": [
+            "a1aae657-683f-4d52-809d-e824af115e20",
+            "0c70f5e1-ba34-48cc-8266-63e90e89a6fc"
+          ]
         }
       },
       "display": {
-        "camera_x": 1094,
-        "camera_y": 177.5,
+        "camera_x": 1055,
+        "camera_y": -77.5,
         "camera_z": 0.5,
         "x": -288,
         "y": -444
