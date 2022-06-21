@@ -14,10 +14,8 @@ class SequenceNode(CompositeNode) :
 		return ( "SEQUENCE "+str(self.status) + " " + str(self.id))
 
 	def tick(self):
-
-
-		
 		self.status = State.SUCCESS
+
 		for child in self.children:
 			if(child.tick() == State.FAILURE):
 				self.status = State.FAILURE

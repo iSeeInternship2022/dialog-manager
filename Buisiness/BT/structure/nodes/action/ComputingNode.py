@@ -7,8 +7,7 @@ import Buisiness.Coordinator.Coordinator as C
 class ComputingNode(ActionNode) :
 	def __init__(self, id) -> None:
 		super().__init__(id)
-		self.value = None
-		self.data_slot = None
+
 
 	def toString(self):
 		return ( "message "+str(self.status) + " " + str(self.id))

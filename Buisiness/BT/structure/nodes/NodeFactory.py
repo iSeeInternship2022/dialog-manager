@@ -22,7 +22,7 @@ def makeNode(type, id) :
 	res = Node.Node(0)
 
 	#Should have their own node type, using available types as a replacement for now
-	if type == "Explanation Method":
+	if type == "Explanation Experience":
 		res = ExplanationExperienceNode(id)
 
 	elif type == "World Modifier":

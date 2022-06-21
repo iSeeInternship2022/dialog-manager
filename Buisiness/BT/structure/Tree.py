@@ -27,15 +27,21 @@ class Tree :
 		res = None
 		for n in self.nodes:
 			if(hasattr(n, "children")):
-				index = 0
 				for child in n.children :
 					if(child == node):
-						res = {n, index}
-					index += 1
+						res = n
 			elif(hasattr(n, "child")):
 				if(n.child == node):
-					res = {n, -1}
+					res = n
 		return res
+
+	def replaceChild(self, parent, new_child):
+		if(hasattr(parent, "children")):
+			for child in parent.children :
+				if(child.id == new_child.id):
+					child = new_child
+		elif(hasattr(parent, "child")):
+			child = new_child
 
 
 
@@ -44,4 +50,6 @@ def printTree(root, level=0):
 	if(hasattr(root, "children")):
 		for child in root.children:
 			printTree(child, level + 1)
+	elif(hasattr(root, "child")):
+		printTree(root.child, level+1)
 

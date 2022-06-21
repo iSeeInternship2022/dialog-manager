@@ -1,6 +1,6 @@
 from enum import Enum
 
 
-class ExplanationExp(Enum):
-	TREE = 1
-	EXPLANATION = 2
+class ExplanationExp(str, Enum):
+	TREE = "plug-in tree",
+	EXPLANATION = "explanation"

@@ -4,23 +4,24 @@ import threading
 import Buisiness.BT.BT as BT
 from  Buisiness.BT.structure.nodes.StateType import StateType as State
 import Buisiness.Coordinator.Coordinator as C
+from Buisiness.BT.structure.nodes.properties import Properties as P
 
 class EqualNode(Node) :
 	def __init__(self, id) -> None:
 		super().__init__(id)
-		self.data_slot = None
-		self.value = None
 
 	def toString(self):
-		return ( "EQUAL "+str(self.status) + " " + str(self.id) + " " + str(self.data_slot) + " " + str(self.value))
+		return ( "EQUAL "+str(self.status) + " " + str(self.id) + " " + str(self.prop[P.DATA_IS_EQUAL.value]) + " " + str(self.prop[P.EQUAL_TO_VALUE.value]))
 
 	def tick(self):
 
-		data = C.Coordinator.get().checkWorld(self.data_slot)
-		if(data == self.value):
+		data = C.Coordinator.get().checkWorld(self.prop[P.DATA_IS_EQUAL])
+		if(data == self.prop[P.EQUAL_TO_VALUE]):
+			print("equal")
 			self.status = State.SUCCESS
 			#print(str(self.data_slot) + " : " + str(data) + " = " + str(self.value))
 		else:
+			print("not equal")
 			self.status = State.FAILURE
 			#print(str(self.data_slot) + " : " + str(data) + " != " + str(self.value))
 
