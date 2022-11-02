@@ -1,12 +1,11 @@
+from collections import defaultdict
+
+
 class World:
 	def __init__(self) -> None:
-		self.last_user_answer = None
-		self.user_intent = ''
-		self.survey_is_completed = False
-		self.user_greeted = False
-		self.user_satisfied = False
 		#self.save = JSONS
 		self.storage = dict()
+		my_dict = defaultdict(default_factory=False)
 
 	#put or update a value in the storage dictionnary
 	def store(self, answer_key, value):

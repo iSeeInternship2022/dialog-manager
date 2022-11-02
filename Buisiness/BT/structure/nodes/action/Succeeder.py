@@ -1,8 +1,9 @@
 import  Buisiness.BT.structure.nodes.Node as Node
 from  Buisiness.BT.structure.nodes.StateType import StateType as State
 import Buisiness.BT.BT as BT
+from Buisiness.BT.structure.nodes.action.ActionNode import ActionNode
 
-class Succeder(Node.Node) :
+class Succeeder(ActionNode) :
 	def __init__(self, id) -> None:
 		super().__init__(id)
 

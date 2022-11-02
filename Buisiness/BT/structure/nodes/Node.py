@@ -9,6 +9,7 @@ class Node :
 	def __init__(self, id) -> None:
 		self.id = id
 		self.status = StateType.FAILURE
+		self.prop = {}
 
 	@abstractmethod
 	def reset(self):

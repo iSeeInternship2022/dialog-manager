@@ -2,11 +2,11 @@ from typing import List
 from  Buisiness.BT.structure.nodes.Node import Node
 from  Buisiness.BT.structure.nodes.StateType import StateType as State
 import Buisiness.BT.BT as BT
+from Buisiness.BT.structure.nodes.composite.CompositeNode import CompositeNode
 
-class PriorityNode(Node) :
+class PriorityNode(CompositeNode) :
 	def __init__(self, id) -> None:
 		super().__init__(id)
-		self.children = []
 
 	def toString(self):
 		kids =" " + (str(len(self.children)))

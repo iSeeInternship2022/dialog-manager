@@ -2,31 +2,28 @@ from cProfile import label
 import threading
 import Buisiness.BT.BT as BT
 import Buisiness.BT.structure.nodes.Node as Node
+from Buisiness.BT.structure.nodes.action.ActionNode import ActionNode
 from  Buisiness.BT.structure.reactions.Actions import do_action
 from  Buisiness.BT.structure.nodes.StateType import StateType as State
 import Buisiness.Coordinator.Coordinator as C
+from Buisiness.BT.structure.nodes.properties import Properties as P
 
-class InformationNode(Node.Node) :
+class InformationNode(ActionNode) :
 	def __init__(self, id) -> None:
 		super().__init__(id)
-		self.message = None
 
 	def toString(self):
-		return ( "message "+str(self.status) + " " + str(self.id) + " " + self.message)
+		return ( "message "+str(self.status) + " " + str(self.id) + " " + self.prop[P.MESSAGE])
 
 	def tick(self):
 
 
-		# if(self.status == State.RUNNING):
-		# 	if(not self.thread.is_alive()):
-		# 		self.status = State.SUCCESS
-		# else:
-			# self.status = State.RUNNING
-			# self.thread = threading.Thread(target=do_action, args=("send_message", self.message,))
-			# self.thread.start()
-			
-		C.Coordinator.get().inform(self.message)
+		message = C.Coordinator.checkWorld(self.prop[P.MESSAGE])
+		C.Coordinator.get().inform(message)
+
+		#Here should be a verification that the message has been sent correctly
 		self.status = State.SUCCESS
+		
 		return self.status
 	
 	def reset(self):
